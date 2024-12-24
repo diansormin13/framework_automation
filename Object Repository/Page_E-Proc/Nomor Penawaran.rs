@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Nomor Penawaran</name>
+   <tag></tag>
+   <elementGuidId>b7fc7a9f-e04d-4c47-9ddd-a758bee7d39d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='core-view']/div/div/div/div/div[2]/div/form/div/div[3]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>form div >> internal:has-text=&quot;Nomor Penawaran&quot;i >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7545c0d0-941e-45cc-850b-75ddbd11d627</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-input__slot</value>
+      <webElementGuid>e7320301-206d-4132-84a8-bc8bff2f64a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>​Nomor Penawaran</value>
+      <webElementGuid>ebc9d96e-c085-4683-996c-199c18eae8ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;core-view&quot;)/div[@class=&quot;container container--fluid&quot;]/div[@class=&quot;row pb-10 justify-center&quot;]/div[@class=&quot;col-md-12 col-12&quot;]/div[@class=&quot;v-card v-sheet theme--light&quot;]/div[@class=&quot;v-card__text&quot;]/div[1]/form[@class=&quot;v-form&quot;]/div[@class=&quot;col-lg-6 col-12&quot;]/div[@class=&quot;v-input theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined&quot;]/div[@class=&quot;v-input__control&quot;]/div[@class=&quot;v-input__slot&quot;]</value>
+      <webElementGuid>a2c438cc-073e-4f97-a37e-443f3f992a94</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='core-view']/div/div/div/div/div[2]/div/form/div/div[3]/div/div</value>
+      <webElementGuid>f1c286cf-e582-4653-9e12-2865591634dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Penawaran'])[1]/following::div[3]</value>
+      <webElementGuid>9e2c58f1-57af-4ac1-a48e-6b38327c2d35</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Pekerjaan'])[1]/following::div[6]</value>
+      <webElementGuid>72ee97cb-fc71-4651-b257-a3618dc903b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div/div[3]/div/div</value>
+      <webElementGuid>73522f2d-8fae-4276-8fdf-9d69660c284c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '​Nomor Penawaran' or . = '​Nomor Penawaran')]</value>
+      <webElementGuid>9db26c72-5447-46a6-af32-8ab3a94505f7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

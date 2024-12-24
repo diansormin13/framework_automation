@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div__v-file-input__text v-file-input__text--chips</name>
+   <tag></tag>
+   <elementGuidId>ed594e4b-19d4-425a-a959-0dd3c71a619c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='core-view']/div/div/div/div/div[2]/div/form/div[2]/div/div/table/tbody/tr/td[3]/div/div[2]/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.v-file-input__text.v-file-input__text--chips</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>td:nth-child(3) > .v-input > .v-input__control > .v-input__slot > .v-text-field__slot > .v-file-input__text >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f5c0484a-254a-4e9d-ae35-9baef99c1c4e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-file-input__text v-file-input__text--chips</value>
+      <webElementGuid>9e3f24cc-8378-42ed-802a-08517e73d8bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;core-view&quot;)/div[@class=&quot;container container--fluid&quot;]/div[@class=&quot;row pb-10 justify-center&quot;]/div[@class=&quot;col-md-12 col-12&quot;]/div[@class=&quot;v-card v-sheet theme--light&quot;]/div[@class=&quot;v-card__text&quot;]/div[1]/form[@class=&quot;v-form&quot;]/div[@class=&quot;col col-12&quot;]/div[@class=&quot;v-data-table theme--light&quot;]/div[@class=&quot;v-data-table__wrapper&quot;]/table[1]/tbody[1]/tr[1]/td[3]/div[@class=&quot;v-input pt-2 v-input--dense theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-file-input&quot;]/div[@class=&quot;v-input__control&quot;]/div[@class=&quot;v-input__slot&quot;]/div[@class=&quot;v-text-field__slot&quot;]/div[@class=&quot;v-file-input__text v-file-input__text--chips&quot;]</value>
+      <webElementGuid>5d2b98f7-8ca3-4155-9a93-569b423d4099</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='core-view']/div/div/div/div/div[2]/div/form/div[2]/div/div/table/tbody/tr/td[3]/div/div[2]/div/div/div</value>
+      <webElementGuid>e1d5ef60-43f8-4a9c-8573-52b0cacce69e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/div/div[2]/div/div/div</value>
+      <webElementGuid>527ea1c7-2c82-4cf5-8244-1e0a57b673b6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

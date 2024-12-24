@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Eproc_Eksternal_Daftar Lelang</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c5d4b6ae-deca-4e19-96ce-3bf3ff3e8abb</testCaseGuid>
+</TestCaseEntity>
