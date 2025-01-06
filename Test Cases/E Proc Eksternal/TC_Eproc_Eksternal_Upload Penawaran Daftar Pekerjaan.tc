@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Eproc_Eksternal_Upload Penawaran Daftar Pekerjaan</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ef5769e3-1a7d-471d-a051-d0bea83d63b1</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Eproc Eksternal_Searching Notif Pengadaan</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>735cbf28-a8fc-464e-9d02-db9568ca08d7</testCaseGuid>
+</TestCaseEntity>

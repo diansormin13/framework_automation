@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>${tanggal}</description>
+      <initValue>'10'</initValue>
+      <name>tanggal</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>DEV</description>
+      <initValue>'http://172.28.108.251:8300/login'</initValue>
+      <name>baseUrlDEV</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Testing</description>
+      <initValue>'https://eproc-testing.bpjsketenagakerjaan.go.id/login'</initValue>
+      <name>BaseUrlTesting</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
