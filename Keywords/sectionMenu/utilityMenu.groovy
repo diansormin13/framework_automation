@@ -32,9 +32,9 @@ public class utilityMenu {
 	@Keyword
 	def selectMenu(String menuName) {
 		// Clicks on the main menu button with the dynamic parameter
-		WebUI.scrollToElement(findTestObject('Object Repository/02-Menu/button_mainMenu', [('yourMenu') : menuName]),1)
-		WebUI.verifyElementVisible(findTestObject('Object Repository/02-Menu/button_mainMenu', [('yourMenu') : menuName]))
-		WebUI.click(findTestObject('Object Repository/02-Menu/button_mainMenu', [('yourMenu') : menuName]))
+		WebUI.scrollToElement(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]),2)
+		//WebUI.verifyElementVisible(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]))
+		WebUI.doubleClick(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]))
 	}
 
 	/*
@@ -42,8 +42,8 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def logoutSMILE() {
-		WebUI.click(findTestObject('Object Repository/02-Menu/button_logOut'))
-		WebUI.verifyElementNotPresent(findTestObject('Object Repository/02-Menu/button_logOut'), 3)
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_logOut'))
+		WebUI.verifyElementNotPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_logOut'), 3)
 	}
 
 	/*
@@ -51,7 +51,7 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def changeRoleSMILE() {
-		WebUI.click(findTestObject('Object Repository/02-Menu/button_gantiRole'))
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_gantiRole'))
 		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'))
 	}
 }

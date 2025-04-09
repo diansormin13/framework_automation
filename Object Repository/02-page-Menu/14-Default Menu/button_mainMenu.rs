@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_mainMenu</name>
+   <tag></tag>
+   <elementGuidId>1d646185-cc08-4929-84c7-8bb80ca9461b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class='x-tree-node-text ' and text() = &quot;${yourMenu}&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>&#xd;
+</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//span[normalize-space(.)=&quot;${yourMenu}&quot;]/preceding-sibling::img[1]</value>
+      <webElementGuid>5061bc8a-fc3e-44d4-9816-b5999cfcf579</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>assesmentKPI-01_Success</name>
+   <tag>kpipusat,regression</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a2af30a-7971-4d91-aa80-09309e1f5b83</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d8e3fa8c-88bc-4c10-8c2e-bfbc094c26fc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2cdfa116-3c90-4c25-8b9a-ce0690e88322</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d8b5c8e4-75e9-4985-9b26-9696a757a8b4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 3)</defaultValue>
+      <description></description>
+      <id>d8e3fa8c-88bc-4c10-8c2e-bfbc094c26fc</id>
+      <masked>false</masked>
+      <name>inisial</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 3)</defaultValue>
+      <description></description>
+      <id>2cdfa116-3c90-4c25-8b9a-ce0690e88322</id>
+      <masked>false</masked>
+      <name>role</name>
+   </variable>
+   <variable>
+      <defaultValue>[('inputKepatuhan') : '100', ('inputSKM') : '100', ('inputUnit') : '92', ('InputRKAT') : '95', ('inputMaturnityLevel') : '3.97', ('inputAPI') : '100', ('inputOtomatisasi') : '100', ('inputITLancarStabul') : '100', ('inputSSOT') : '100', ('inputSNP') : '0', ('inputFraud') : '0']</defaultValue>
+      <description></description>
+      <id>d8b5c8e4-75e9-4985-9b26-9696a757a8b4</id>
+      <masked>false</masked>
+      <name>inputRealisasi</name>
+   </variable>
+</TestCaseEntity>

@@ -50,6 +50,7 @@ public class pilihRole {
 		WebUI.click(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_pilih'))
 	}
 
+
 	/*
 	 *  This function clicks the cancel button and verifies that it is no longer visible.
 	 */
