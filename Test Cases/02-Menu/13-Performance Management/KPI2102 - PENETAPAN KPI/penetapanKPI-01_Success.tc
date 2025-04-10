@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>penetapanKPI-01_Success</name>
+   <tag>kpipusat, regression</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f334c0a-53c2-4e00-b8b9-3f440509e148</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d8e3fa8c-88bc-4c10-8c2e-bfbc094c26fc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2cdfa116-3c90-4c25-8b9a-ce0690e88322</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 3)</defaultValue>
+      <description></description>
+      <id>d8e3fa8c-88bc-4c10-8c2e-bfbc094c26fc</id>
+      <masked>false</masked>
+      <name>inisial</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 3)</defaultValue>
+      <description></description>
+      <id>2cdfa116-3c90-4c25-8b9a-ce0690e88322</id>
+      <masked>false</masked>
+      <name>role</name>
+   </variable>
+</TestCaseEntity>

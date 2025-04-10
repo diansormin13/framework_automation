@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login-LoginToSMILE-01_Success</name>
+   <tag>GenAI</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aa2e3483-df85-4386-942a-a2f8000c28a7</testCaseGuid>
+</TestCaseEntity>
