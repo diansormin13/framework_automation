@@ -17,7 +17,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
+import com.kms.katalon.core.configuration.RunConfiguration
 import internal.GlobalVariable
 
 public class utilityMenu {
@@ -53,5 +53,64 @@ public class utilityMenu {
 	def changeRoleSMILE() {
 		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_gantiRole'))
 		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'))
+	}
+
+	/*
+	 *  @param fileName The name of the file to save the screenshot as.
+	 */
+	@Keyword
+	def takeScreenshot(String fileName) {
+		String baseDir = RunConfiguration.getProjectDir()
+		String folderPath = baseDir + '/Screenshots/'
+		String fullPath = folderPath + fileName + '.png'
+		WebUI.takeScreenshot(fullPath) // Capture the screenshot and save it to the full path
+	}
+
+	/*
+	 *  This function clicks on the Todolist button after verifying its visibility.
+	 *  @return void
+	 */
+	@Keyword
+	def clickTab(param) {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 1)
+		WebUI.verifyElementVisible(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]))
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]))
+	}
+
+	/*
+	 *  Closes the active tab by clicking the close button.
+	 *
+	 *  @param param The dynamic parameter used to identify the specific tab to close.
+	 */
+	@Keyword
+	def closeTabActive(param) {
+		// Clicks the close tab button using the provided dynamic parameter
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_closeTab', [('param') : param]))
+		WebUI.verifyElementNotPresent(findTestObject('02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 2)
+	}
+
+	@Keyword
+	def waitForSpinnerToDisappear() {
+		int maxWait = 900  // set timeout 15 menit
+		int interval = 15  // cek setiap 15 detik
+		int waited = 0
+
+		while (waited < maxWait) {
+			boolean isSpinnerVisible = WebUI.verifyElementPresent(findTestObject('Object Repository/02-page-Menu/12-Tugas Hari Ini/spinner'), 1, FailureHandling.OPTIONAL)
+
+			if (!isSpinnerVisible) {
+				WebUI.comment("Spinner hilang setelah ${waited}s.")
+				break
+			}
+
+			WebUI.comment("Spinner masih ada, menunggu ${waited}s...")
+			WebUI.delay(interval)
+			waited += interval
+		}
+
+		if (waited >= maxWait) {
+			WebUI.comment("❌ Spinner tidak hilang dalam ${maxWait / 60} menit.")
+			WebUI.takeScreenshot()
+		}
 	}
 }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Sebagai Role PMP/KAKACAB, saya ingi melihat detail Approval pada salah satu approval ePLKK Tahap 2 jika nilainya selain 0</description>
+   <name>SMTC_TugasHariIni_13-PMPViewDetailApprovalePLKK2_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cbfecbf4-db31-435c-8791-be174567a253</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>19f9466b-b89d-4cba-937d-5a465b682497</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>55d09684-0058-4bc3-9bb7-040395eb1db3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>677b9a80-431f-40e6-8f94-bd724718b137</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>19e7b247-1a62-4256-a4ba-dab34af33e9c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>778782dc-cac9-494a-9cb7-9f2322e44264</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0c5e2149-8d99-4abe-9f9d-b456bd5bc331</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3e794ec7-3e50-4526-aeda-38d56bf1fd94</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'todo'</defaultValue>
+      <description></description>
+      <id>19f9466b-b89d-4cba-937d-5a465b682497</id>
+      <masked>false</masked>
+      <name>typeApproval</name>
+   </variable>
+   <variable>
+      <defaultValue>'SELECT id FROM master.categories AS c WHERE name = \'Pelayanan Kanal\''</defaultValue>
+      <description></description>
+      <id>55d09684-0058-4bc3-9bb7-040395eb1db3</id>
+      <masked>false</masked>
+      <name>categoryID</name>
+   </variable>
+   <variable>
+      <defaultValue>'SELECT id FROM master.sub_categories AS sc WHERE name = \'ePLKK Tahap II\''</defaultValue>
+      <description></description>
+      <id>677b9a80-431f-40e6-8f94-bd724718b137</id>
+      <masked>false</masked>
+      <name>subCategoryId</name>
+   </variable>
+   <variable>
+      <defaultValue>'MK/PMP'</defaultValue>
+      <description></description>
+      <id>19e7b247-1a62-4256-a4ba-dab34af33e9c</id>
+      <masked>false</masked>
+      <name>role</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pelayanan Kanal'</defaultValue>
+      <description></description>
+      <id>778782dc-cac9-494a-9cb7-9f2322e44264</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>'ePLKK Tahap II'</defaultValue>
+      <description></description>
+      <id>0c5e2149-8d99-4abe-9f9d-b456bd5bc331</id>
+      <masked>false</masked>
+      <name>subCategory</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tugas Hari Ini'</defaultValue>
+      <description></description>
+      <id>3e794ec7-3e50-4526-aeda-38d56bf1fd94</id>
+      <masked>false</masked>
+      <name>param</name>
+   </variable>
+</TestCaseEntity>

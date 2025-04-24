@@ -21,9 +21,6 @@ CustomKeywords.'sectionLogin.Login.openSMILE'(GlobalVariable.baseURL)
 
 CustomKeywords.'sectionLogin.Login.validatePageLoginSMILE'()
 
-CustomKeywords.'sectionLogin.Login.loginToSMILE'(GlobalVariable.username, GlobalVariable.password)
-
-CustomKeywords.'sectionLogin.Login.activeAccount'()
-
+CustomKeywords.'sectionLogin.Login.loginToSMILE'(username, password)
 
 CustomKeywords.'sectionLogin.Login.activeAccount'()

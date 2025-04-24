@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-TDL-014</description>
+   <name>SMTC_TugasHariIni_13-ViewDetailePLKKTahap2_Failed</name>
+   <tag>todolist</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f7b6e72b-a12f-4d24-9c57-fd565449aca7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>552f8394-9384-4c8f-8772-44a6547de217</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>877466b7-31ea-4fcc-8020-12f9ec519f52</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d4766e78-6a36-48ba-8a99-e300beab23cd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7c1ddb16-c490-4304-bce0-5300e2591f21</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>01d3f73f-d4c4-450e-ab14-3877821bf9dc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a2476743-afde-4528-8413-f4671aa8173f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'todo'</defaultValue>
+      <description></description>
+      <id>552f8394-9384-4c8f-8772-44a6547de217</id>
+      <masked>false</masked>
+      <name>typeApproval</name>
+   </variable>
+   <variable>
+      <defaultValue>'SELECT id FROM master.categories AS c WHERE name = \'Pelayanan Kanal\''</defaultValue>
+      <description></description>
+      <id>877466b7-31ea-4fcc-8020-12f9ec519f52</id>
+      <masked>false</masked>
+      <name>categoryID</name>
+   </variable>
+   <variable>
+      <defaultValue>'SELECT id FROM master.sub_categories AS sc WHERE name = \'ePLKK Tahap II\''</defaultValue>
+      <description></description>
+      <id>d4766e78-6a36-48ba-8a99-e300beab23cd</id>
+      <masked>false</masked>
+      <name>subCategoryId</name>
+   </variable>
+   <variable>
+      <defaultValue>'MK/PMP'</defaultValue>
+      <description></description>
+      <id>7c1ddb16-c490-4304-bce0-5300e2591f21</id>
+      <masked>false</masked>
+      <name>role</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pelayanan Kanal'</defaultValue>
+      <description></description>
+      <id>01d3f73f-d4c4-450e-ab14-3877821bf9dc</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>'ePLKK Tahap II'</defaultValue>
+      <description></description>
+      <id>a2476743-afde-4528-8413-f4671aa8173f</id>
+      <masked>false</masked>
+      <name>subCategory</name>
+   </variable>
+</TestCaseEntity>

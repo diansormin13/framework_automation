@@ -19,6 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import org.openqa.selenium.NoAlertPresentException
 
 public class pilihRole {
 
@@ -66,5 +67,15 @@ public class pilihRole {
 		def getrole = WebUI.getText(findTestObject('02-page_main/02-panel_navigation/text_role'), FailureHandling.STOP_ON_FAILURE)
 		getrole = getrole.replaceAll("\\s+", " ").trim()
 		WebUI.verifyMatch(getrole, "Role: ${role}", false)
+	}
+
+	@Keyword
+	def handleAlerts() {
+		try {
+			WebUI.waitForAlert(4)
+			WebUI.acceptAlert(FailureHandling.OPTIONAL)
+		} catch (NoAlertPresentException e) {
+			WebUI.comment("Tidak ada alert yang muncul")
+		}
 	}
 }
