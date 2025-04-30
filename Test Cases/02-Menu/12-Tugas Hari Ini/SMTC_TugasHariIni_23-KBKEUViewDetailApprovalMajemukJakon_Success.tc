@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-024</description>
    <name>SMTC_TugasHariIni_23-KBKEUViewDetailApprovalMajemukJakon_Success</name>
-   <tag>pelayanan</tag>
+   <tag>todolist</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>2b98fd2a-a2d3-479a-af85-88fc74604e98</testCaseGuid>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC-TDL-028</description>
+   <description>TC-TDL-027</description>
    <name>SMTC_TugasHariIni_26-KBKEUViewDetailApprovalDokJak_Failed</name>
-   <tag>pelayanan</tag>
+   <tag>todolist</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>80d916a7-26b1-48d9-8653-6c875cd1fd71</testCaseGuid>
@@ -68,7 +68,7 @@
       <name>typeApproval</name>
    </variable>
    <variable>
-      <defaultValue>'SELECT id FROM master.categories AS c WHERE name = \'Pelayanan Kanal\''</defaultValue>
+      <defaultValue>'SELECT id FROM master.categories AS c WHERE name = \'Kepesertaan\''</defaultValue>
       <description></description>
       <id>fcd2d22e-1e2d-4165-8257-1c27b24994ae</id>
       <masked>false</masked>

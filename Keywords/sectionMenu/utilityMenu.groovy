@@ -109,8 +109,49 @@ public class utilityMenu {
 		}
 
 		if (waited >= maxWait) {
-			WebUI.comment("❌ Spinner tidak hilang dalam ${maxWait / 60} menit.")
+			WebUI.comment("Spinner tidak hilang dalam ${maxWait / 60} menit.")
 			WebUI.takeScreenshot()
 		}
 	}
+	
+	
+	 /*
+    *  Wait for a specified element to appear within a maximum time limit.
+    *
+    *      - Parameters:
+    *          - String testObjectPath: The path of the test object to wait for.
+    *      - Steps:
+    *          1. Set the maximum wait time to 900 seconds and the interval to check every 15 seconds.
+    *          2. Find the test object using the provided path.
+    *          3. Enter a loop that continues until the waited time exceeds the maximum wait time.
+    *          4. Check if the element is present; if it is, log a message and break the loop.
+    *          5. If the element is not present, log a message and wait for the specified interval before checking again.
+    *          6. If the maximum wait time is reached without the element appearing, log a message indicating the failure.
+    */
+	@Keyword
+	def waitForElementToAppear(String testObjectPath) {
+		int maxWait = 900   // Maksimal 900 detik = 15 menit
+		int interval = 15   // Cek setiap 15 detik
+		int waited = 0
+	
+		TestObject testObject = findTestObject(testObjectPath)
+	
+		while (waited < maxWait) {
+			boolean isElementVisible = WebUI.verifyElementPresent(testObject, 1, FailureHandling.OPTIONAL)
+	
+			if (isElementVisible) {
+				WebUI.comment("Element '${testObjectPath}' muncul setelah ${waited}s.")
+				break
+			}
+	
+			WebUI.comment("Element '${testObjectPath}' belum muncul, cek ulang setelah ${waited}s...")
+			WebUI.delay(interval)
+			waited += interval
+		}
+	
+		if (waited >= maxWait) {
+			WebUI.comment("Element '${testObjectPath}' tidak muncul dalam ${maxWait / 60} menit.")
+		}
+	}
+	
 }

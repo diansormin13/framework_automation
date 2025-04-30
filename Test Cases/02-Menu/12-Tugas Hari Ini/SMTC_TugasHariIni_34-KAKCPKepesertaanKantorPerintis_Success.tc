@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-TDL-035</description>
+   <name>SMTC_TugasHariIni_34-KAKCPKepesertaanKantorPerintis_Success</name>
+   <tag>pelayanan,todolist</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>63c0d0fe-6e5a-496c-b745-a0e6a9e40ee9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4bf43c39-092e-4f9d-b428-87f2bf9e9a4c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>843aa270-5ba7-4e79-a2bf-bd9792d29337</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2d5bb90c-4a5b-496c-9ac1-0fdf7d435b99</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>234c4b1b-c6db-4379-a60e-9994b759be32</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>822c27c0-9f59-4c67-928b-281df06553ae</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 15)</defaultValue>
+      <description></description>
+      <id>4bf43c39-092e-4f9d-b428-87f2bf9e9a4c</id>
+      <masked>false</masked>
+      <name>inisial</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 15)</defaultValue>
+      <description></description>
+      <id>843aa270-5ba7-4e79-a2bf-bd9792d29337</id>
+      <masked>false</masked>
+      <name>role</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tugas Hari Ini'</defaultValue>
+      <description></description>
+      <id>2d5bb90c-4a5b-496c-9ac1-0fdf7d435b99</id>
+      <masked>false</masked>
+      <name>param</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.username_other</defaultValue>
+      <description></description>
+      <id>234c4b1b-c6db-4379-a60e-9994b759be32</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.password</defaultValue>
+      <description></description>
+      <id>822c27c0-9f59-4c67-928b-281df06553ae</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

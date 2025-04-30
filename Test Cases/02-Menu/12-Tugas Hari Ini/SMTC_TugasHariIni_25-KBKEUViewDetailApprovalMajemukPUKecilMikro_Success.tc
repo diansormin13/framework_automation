@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC-TDL-025</description>
+   <description>TC-TDL-026</description>
    <name>SMTC_TugasHariIni_25-KBKEUViewDetailApprovalMajemukPUKecilMikro_Success</name>
-   <tag>pelayanan</tag>
+   <tag>todolist</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>3edabeeb-20ce-4645-99a4-c03fa8d972c4</testCaseGuid>

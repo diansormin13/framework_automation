@@ -21,6 +21,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 import org.openqa.selenium.NoAlertPresentException
 
+
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.Dimension
+
 public class pilihRole {
 
 	/*
