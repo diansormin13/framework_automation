@@ -24,7 +24,6 @@ public class kn5061ApprovalTKMajemuk {
 
 	/*
 	 *  This function performs a series of actions to approve a task in the application.
-	 *
 	 *  @return void
 	 */
 	@Keyword
