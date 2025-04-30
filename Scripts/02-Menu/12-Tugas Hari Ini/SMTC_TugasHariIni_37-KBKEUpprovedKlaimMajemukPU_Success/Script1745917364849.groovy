@@ -44,6 +44,9 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
+def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("todo", (categoryId[0])['id'], (subCategoryID[0])['id'], 
+    role, category, subCategory)
+
 screenshoot.takeScreenshot('beforeApprovalDetailMajemukPU')
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
@@ -53,7 +56,10 @@ CustomKeywords.'sectionMenu.kn5061ApprovalTKMajemuk.approvalMajemukPU'()
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
-CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
+def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("approved", (categoryId[0])['id'], (subCategoryID[0])['id'], 
+    role, category, subCategory)
+
+CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo,taskApproval,typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
 	role, category, subCategory)
 
 screenshoot.takeScreenshot('afterApprovalDetailMajemukPU')

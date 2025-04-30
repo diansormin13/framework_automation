@@ -12,7 +12,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>todolist</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Chrome (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/02-Menu/12-Tugas Hari Ini/SMTS_Todolist</testSuiteEntity>

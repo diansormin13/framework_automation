@@ -335,7 +335,7 @@ public class todolist {
 	@Keyword
 	def waitForElementValueToChange(TestObject testObjectPath) {
 		int maxWait = 900   // Maksimum 900 detik (15 menit)
-		int interval = 15   // Cek setiap 15 detik
+		int interval = 1   // Cek setiap 15 detik
 		int waited = 0
 
 		String initialValue = WebUI.getText(testObjectPath).trim()
@@ -356,13 +356,11 @@ public class todolist {
 
 		if (waited >= maxWait) {
 			WebUI.comment("Nilai tidak berubah dari '${initialValue}' dalam ${maxWait / 60} menit.")
-			WebUI.takeScreenshot()
 		}
 	}
 
 	@Keyword
-	def validateChangeinValueApproval(String typeApproval, Integer categoryID, Integer subCategoryId, String Role, String inputCategory, String subCategory) {
-		// validate section todo
+	def validateChangeinValueApproval(String taskTodo, String taskApproved, String typeApproval, Integer categoryID, Integer subCategoryId, String Role, String inputCategory, String subCategory) {
 		TestObject dynamicObject = findTestObject('02-page-Menu/12-Tugas Hari Ini/dynamic_Element/button_detailApproval',
 				[('typeApproval') : typeApproval,
 					('categoryId') : categoryID,
@@ -370,10 +368,13 @@ public class todolist {
 					('role') : Role,
 					('inputCategory'): inputCategory,
 					('subCategory'): subCategory])
+		
 		WebUI.scrollToElement(dynamicObject, 2)
-		def taskBeforeApprovalTodo = getAmountTaskApproval("todo", categoryID, subCategoryId, Role, inputCategory, subCategory)
-		def taskBeforeApprovalAprroved = getAmountTaskApproval("approved", categoryID, subCategoryId, Role, inputCategory, subCategory)
-		waitForElementValueToChange(dynamicObject)
+		
+		// using getAmountTaskApproval("todo", categoryID, subCategoryId, Role, inputCategory, subCategory) in test case
+		def taskBeforeApprovalTodo = taskTodo
+		// using getAmountTaskApproval("approved", categoryID, subCategoryId, Role, inputCategory, subCategory) in test case
+		def taskBeforeApprovalAprroved = taskApproved
 
 		def taskAfterApprovaTodo = Integer.parseInt(taskBeforeApprovalTodo) - 1
 		def taskAfterApprovalApproved = Integer.parseInt(taskBeforeApprovalAprroved) + 1

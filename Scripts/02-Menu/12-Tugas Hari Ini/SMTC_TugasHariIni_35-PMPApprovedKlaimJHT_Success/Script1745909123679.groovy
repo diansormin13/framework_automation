@@ -50,6 +50,9 @@ def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVari
 
 screenshoot.takeScreenshot('beforeApprovalJHT')
 
+def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("todo", (categoryId[0])['id'], (subCategoryID[0])['id'],
+	role, category, subCategory)
+
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
@@ -59,7 +62,10 @@ CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.approvalJKKpadaPMP'('T
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
-CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
+def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("approved", (categoryId[0])['id'], (subCategoryID[0])['id'],
+	role, category, subCategory)
+
+CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo,taskApproval,typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
 	role, category, subCategory)
 
 screenshoot.takeScreenshot('afterApprovalJHT')
