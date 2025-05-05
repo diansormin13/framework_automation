@@ -29,7 +29,8 @@ public class Login {
 	@Keyword
 	def openSMILE(String url) {
 		WebUI.openBrowser(url)
-		WebUI.maximizeWindow()
+		WebUI.setViewPortSize(1920, 1080)
+		// WebUI.maximizeWindow()
 	}
 
 	@Keyword
