@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>TC-TDL-036</description>
-   <name>SMTC_TugasHariIni_35-PMPApprovedKlaimJHT_Success</name>
+   <name>SMTC_TugasHariIni_35-PMPApprovedKlaimJKK_Success</name>
    <tag>todolist</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
