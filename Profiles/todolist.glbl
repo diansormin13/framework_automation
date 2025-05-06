@@ -29,4 +29,9 @@
       <initValue>findTestData('SMDF_userSMILE').getValue('USM', 4)</initValue>
       <name>username_other</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('SMDF_userSMILE').getValue('PSW', 4)</initValue>
+      <name>password_other</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

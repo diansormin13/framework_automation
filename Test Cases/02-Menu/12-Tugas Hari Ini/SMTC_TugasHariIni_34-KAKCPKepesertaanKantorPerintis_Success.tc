@@ -65,7 +65,7 @@
       <name>username</name>
    </variable>
    <variable>
-      <defaultValue>GlobalVariable.password</defaultValue>
+      <defaultValue>GlobalVariable.password_other</defaultValue>
       <description></description>
       <id>822c27c0-9f59-4c67-928b-281df06553ae</id>
       <masked>false</masked>
