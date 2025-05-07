@@ -60,6 +60,12 @@
       <value></value>
       <variableId>9abd6f0b-51f5-44ee-8bc8-d68adca82709</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>65d00b6c-0585-43c9-846c-42f343d3ed45</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'todo'</defaultValue>
       <description></description>
@@ -110,17 +116,24 @@
       <name>param</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 6)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 19)</defaultValue>
       <description></description>
       <id>1d6f3f1e-71f0-4dde-91dc-b97d633eec04</id>
       <masked>false</masked>
       <name>inisial</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 6)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 19)</defaultValue>
       <description></description>
       <id>9abd6f0b-51f5-44ee-8bc8-d68adca82709</id>
       <masked>false</masked>
       <name>roles</name>
+   </variable>
+   <variable>
+      <defaultValue>'PN5002 - PENETAPAN KLAIM'</defaultValue>
+      <description></description>
+      <id>65d00b6c-0585-43c9-846c-42f343d3ed45</id>
+      <masked>false</masked>
+      <name>tabActive</name>
    </variable>
 </TestCaseEntity>

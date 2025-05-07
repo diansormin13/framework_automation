@@ -60,6 +60,12 @@
       <value></value>
       <variableId>53acd2aa-735c-48f0-b41d-2397dc274f95</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4532f1db-8c3d-41d1-8fd4-a33a368cd512</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'approved'</defaultValue>
       <description></description>
@@ -110,17 +116,24 @@
       <name>param</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 6)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 19)</defaultValue>
       <description></description>
       <id>249a27c4-1e45-44a5-b015-83f1c368b3b4</id>
       <masked>false</masked>
       <name>inisial</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 6)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 19)</defaultValue>
       <description></description>
       <id>53acd2aa-735c-48f0-b41d-2397dc274f95</id>
       <masked>false</masked>
       <name>roles</name>
+   </variable>
+   <variable>
+      <defaultValue>'PN5030 - DAFTAR KLAIM'</defaultValue>
+      <description></description>
+      <id>4532f1db-8c3d-41d1-8fd4-a33a368cd512</id>
+      <masked>false</masked>
+      <name>tabActive</name>
    </variable>
 </TestCaseEntity>

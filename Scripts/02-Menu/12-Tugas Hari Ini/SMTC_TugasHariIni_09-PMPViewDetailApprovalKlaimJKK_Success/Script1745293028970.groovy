@@ -39,7 +39,7 @@ CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 
 screenshoot.takeScreenshot('SuccesClickDetailActiveRoleKlaimJKK')
 
-CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
+CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
 
 WebUI.closeBrowser()
 

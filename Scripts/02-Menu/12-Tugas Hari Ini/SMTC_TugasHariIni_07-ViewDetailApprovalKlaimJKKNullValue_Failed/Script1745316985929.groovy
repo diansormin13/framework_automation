@@ -21,6 +21,8 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-008 - Sebagai user SMILE, saya tidak bisa mengakses detail persetujuan klaim jht pada salah role section JKK jika nilainya 0 pada section yang sesuai dengan role yang aktif ')
 
+CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
+
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
 
 def screenshoot = new utilityMenu()
