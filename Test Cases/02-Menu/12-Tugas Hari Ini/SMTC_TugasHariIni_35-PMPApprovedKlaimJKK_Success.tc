@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-036</description>
    <name>SMTC_TugasHariIni_35-PMPApprovedKlaimJKK_Success</name>
-   <tag>todolist</tag>
+   <tag>e2eJKK</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>2da429a4-59cf-45f6-bc2f-541df0ea68bf</testCaseGuid>

@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-015</description>
    <name>SMTC_TugasHariIni_14-ViewDetailRujukanePLKK_Failed</name>
-   <tag>todolist</tag>
+   <tag>kanal</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>6c2d98d0-63da-4177-99de-e5a02d820e2c</testCaseGuid>

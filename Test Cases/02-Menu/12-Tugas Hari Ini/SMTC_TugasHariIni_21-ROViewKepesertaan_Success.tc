@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-022</description>
    <name>SMTC_TugasHariIni_21-ROViewKepesertaan_Success</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>adb36ab7-3f06-4fd7-886e-a61b7a141a2d</testCaseGuid>

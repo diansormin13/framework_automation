@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-035</description>
    <name>SMTC_TugasHariIni_34-KAKCPKepesertaanKantorPerintis_Success</name>
-   <tag>pelayanan,todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>63c0d0fe-6e5a-496c-b745-a0e6a9e40ee9</testCaseGuid>

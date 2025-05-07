@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-011</description>
    <name>SMTC_TugasHariIni_10-KBKEUViewDetailApprovalKoreksiTKNASekunder_Success</name>
-   <tag>todolist</tag>
+   <tag>cabang</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>78f26d37-6b5b-4b76-97a3-657202b3c554</testCaseGuid>

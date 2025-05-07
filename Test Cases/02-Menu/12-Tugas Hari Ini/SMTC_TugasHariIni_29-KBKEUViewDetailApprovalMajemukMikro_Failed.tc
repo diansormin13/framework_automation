@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-030</description>
    <name>SMTC_TugasHariIni_29-KBKEUViewDetailApprovalMajemukMikro_Failed</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>f95f1f04-b0ff-4f5d-a4e9-8c63ce88e938</testCaseGuid>

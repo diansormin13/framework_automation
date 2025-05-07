@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-018</description>
    <name>SMTC_TugasHariIni_17-ViewDetailePLKKTahap2NullValue_Failed</name>
-   <tag>todolist</tag>
+   <tag>kanal</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>8c227f76-23cf-4cf8-8a0b-266239d373ac</testCaseGuid>

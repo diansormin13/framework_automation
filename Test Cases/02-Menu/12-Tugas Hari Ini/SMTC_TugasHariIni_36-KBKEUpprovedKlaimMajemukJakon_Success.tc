@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-043</description>
    <name>SMTC_TugasHariIni_36-KBKEUpprovedKlaimMajemukJakon_Success</name>
-   <tag>todolist</tag>
+   <tag>e2eJakon</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>dc07f60c-a94e-4e0e-8932-4a7e92a03949</testCaseGuid>

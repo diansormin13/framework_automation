@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-012</description>
    <name>SMTC_TugasHariIni_11-PMPViewPelayananKanal_Success</name>
-   <tag>todolist</tag>
+   <tag>kanal</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>f9d058a2-9e4f-43cc-b5d7-ce9374bd9045</testCaseGuid>

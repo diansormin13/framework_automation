@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-044</description>
    <name>SMTC_TugasHariIni_37-KBKEUpprovedKlaimMajemukPU_Success</name>
-   <tag>todolist</tag>
+   <tag>e2ePU</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>bce8efcf-4ae0-4156-a62b-53d56ff51310</testCaseGuid>

@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-027</description>
    <name>SMTC_TugasHariIni_26-KBKEUViewDetailApprovalDokJak_Failed</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>80d916a7-26b1-48d9-8653-6c875cd1fd71</testCaseGuid>

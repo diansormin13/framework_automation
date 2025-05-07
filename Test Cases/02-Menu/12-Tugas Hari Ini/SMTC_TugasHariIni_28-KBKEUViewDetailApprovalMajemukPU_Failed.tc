@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-029</description>
    <name>SMTC_TugasHariIni_28-KBKEUViewDetailApprovalMajemukPU_Failed</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>38a3930e-3352-47f1-947b-94ed876da5bf</testCaseGuid>

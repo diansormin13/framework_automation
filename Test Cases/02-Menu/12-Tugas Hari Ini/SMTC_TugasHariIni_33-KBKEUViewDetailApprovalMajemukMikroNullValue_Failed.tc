@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-034</description>
    <name>SMTC_TugasHariIni_33-KBKEUViewDetailApprovalMajemukMikroNullValue_Failed</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>5393913a-ecdf-4222-bec6-d2c349b3090a</testCaseGuid>

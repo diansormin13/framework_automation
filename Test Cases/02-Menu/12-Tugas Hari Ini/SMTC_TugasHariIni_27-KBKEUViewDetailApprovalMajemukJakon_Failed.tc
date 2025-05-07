@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-028</description>
    <name>SMTC_TugasHariIni_27-KBKEUViewDetailApprovalMajemukJakon_Failed</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>9a6a54f9-b53c-4d8f-b6cf-11565b9b6761</testCaseGuid>

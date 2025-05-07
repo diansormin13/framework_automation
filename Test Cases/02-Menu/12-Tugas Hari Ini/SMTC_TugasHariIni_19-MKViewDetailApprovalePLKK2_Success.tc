@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-020</description>
    <name>SMTC_TugasHariIni_19-MKViewDetailApprovalePLKK2_Success</name>
-   <tag>todolist</tag>
+   <tag>kanal</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>0f5f4da2-a9d6-4ad1-8a15-40d4eef65873</testCaseGuid>

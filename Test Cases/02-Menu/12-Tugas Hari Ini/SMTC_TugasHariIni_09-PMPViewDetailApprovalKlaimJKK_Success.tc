@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-010</description>
    <name>SMTC_TugasHariIni_09-PMPViewDetailApprovalKlaimJKK_Success</name>
-   <tag>todolist</tag>
+   <tag>cabang</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>4946b735-f20b-43a7-b577-08ae113b6095</testCaseGuid>

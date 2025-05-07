@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-023</description>
    <name>SMTC_TugasHariIni_22-KBPViewDetailApprovalDokJakon_Success</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>b82ce00e-6375-4ea6-9f23-4909053556ae</testCaseGuid>

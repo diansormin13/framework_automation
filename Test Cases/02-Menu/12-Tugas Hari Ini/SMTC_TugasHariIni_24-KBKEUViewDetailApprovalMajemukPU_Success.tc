@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-025</description>
    <name>SMTC_TugasHariIni_24-KBKEUViewDetailApprovalMajemukPU_Success</name>
-   <tag>todolist</tag>
+   <tag>keps</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>cde48df5-74d1-4ad7-a89f-974187e35c2f</testCaseGuid>
