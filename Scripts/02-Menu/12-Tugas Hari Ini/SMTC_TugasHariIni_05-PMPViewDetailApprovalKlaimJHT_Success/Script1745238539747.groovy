@@ -21,11 +21,6 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-006 - Sebagai PMP, saya berhasil melihat detail approval Klaim JHT pada section role yang aktif')
 
-
-def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryID)
-
-def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
-
 CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 
 // Call the test case for selecting role in SMILE
@@ -42,6 +37,10 @@ def screenshoot = new utilityMenu()
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
+
+def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryID)
+
+def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
 screenshoot.takeScreenshot('beforedetailRoleActivePMPKlaimJHT')
 
