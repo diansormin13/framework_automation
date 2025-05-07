@@ -116,14 +116,14 @@
       <name>param</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 19)</defaultValue>
+      <defaultValue>'pmp'</defaultValue>
       <description></description>
       <id>249a27c4-1e45-44a5-b015-83f1c368b3b4</id>
       <masked>false</masked>
       <name>inisial</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 19)</defaultValue>
+      <defaultValue>'PMP - Penata Madya Pelayanan ( J0P )'</defaultValue>
       <description></description>
       <id>53acd2aa-735c-48f0-b41d-2397dc274f95</id>
       <masked>false</masked>
