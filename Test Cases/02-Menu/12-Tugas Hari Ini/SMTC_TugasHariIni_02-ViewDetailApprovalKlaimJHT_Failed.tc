@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-003</description>
    <name>SMTC_TugasHariIni_02-ViewDetailApprovalKlaimJHT_Failed</name>
-   <tag>todolist</tag>
+   <tag>cabang</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>49249573-3234-4d34-8349-743f3b224dc1</testCaseGuid>

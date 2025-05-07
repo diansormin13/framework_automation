@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-007</description>
    <name>SMTC_TugasHariIni_06-ViewDetailApprovalKlaimJHTNullValue_Failed</name>
-   <tag>todolist</tag>
+   <tag>cabang</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>904b3e56-7182-455a-9343-fd340c8a403f</testCaseGuid>

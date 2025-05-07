@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>TC-TDL-005</description>
    <name>SMTC_TugasHariIni_04-ViewDetailApprovalNaSekunder_Failed</name>
-   <tag>todolist</tag>
+   <tag>cabang</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>faf99a1c-b8a3-42c8-9454-ee9721e27882</testCaseGuid>
