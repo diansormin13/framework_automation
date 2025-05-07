@@ -1,165 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>TC-TDL-043</description>
-   <name>SMTC_TugasHariIni_36-KBKEUpprovedKlaimMajemukJakon_Success</name>
-   <tag>todolist</tag>
+   <name>SMTC_TugasHariIni_38-KBPApprovedKlaimMajemukJakon_Success</name>
+   <tag>e2eJakon</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>dc07f60c-a94e-4e0e-8932-4a7e92a03949</testCaseGuid>
+   <testCaseGuid>12155d76-3217-42d5-9716-e00c8c5d6951</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>59d28f5d-9cd6-4cd9-aa8e-e631f723134f</variableId>
+      <variableId>9d12d618-c57d-4c2a-9759-1d3a83be41ce</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>76c739ce-6260-4462-a2db-23190e5fd034</variableId>
+      <variableId>94c60bf7-b7ea-4447-93f9-786011abdb15</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>4a3b592b-61fb-475d-83bd-55fef4fa61ff</variableId>
+      <variableId>a4454fb5-49d5-4d6c-a0e8-dd62705d272c</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>05dd138a-bf8c-4d23-a023-4ca7a469c035</variableId>
+      <variableId>0f3deba7-772e-460e-bb3c-25b6cef97267</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c7b90907-a013-46fc-a4f0-ff655d90d446</variableId>
+      <variableId>30e02848-3b17-4801-885b-f2d271d590a7</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>112c0eda-d50b-4e66-b259-bc2a66424532</variableId>
+      <variableId>9b6a30ff-7981-45bb-ac35-286342f9875a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>2b0ecbc7-43bd-434d-b7f6-9cb8cc17a8ab</variableId>
+      <variableId>9131f20c-99fa-43c5-a8fe-780824f5439f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>24c5bc3a-5c2d-4fa5-985b-aba71ae253de</variableId>
+      <variableId>84c0baac-194e-4933-be49-8371009a4031</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>576cda42-ddcf-4df9-95cd-4b106fa88b14</variableId>
+      <variableId>511981d6-452b-4698-ae4c-1e06c033d85f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c265e9c2-c27f-4e49-b532-a5ea4475fa69</variableId>
+      <variableId>d8540a8b-db23-43da-8865-3142ea7775c9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>88a74002-b533-44c2-9e98-061ecc3a22ce</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>e1cad55a-5353-44fd-ac12-1b0455553af1</variableId>
+      <variableId>a449f41f-b64d-4b64-bdc4-87ff74730690</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'todo'</defaultValue>
       <description></description>
-      <id>59d28f5d-9cd6-4cd9-aa8e-e631f723134f</id>
+      <id>9d12d618-c57d-4c2a-9759-1d3a83be41ce</id>
       <masked>false</masked>
       <name>typeApproval</name>
    </variable>
    <variable>
       <defaultValue>'SELECT id FROM master.categories AS c WHERE name = \'Kepesertaan\''</defaultValue>
       <description></description>
-      <id>76c739ce-6260-4462-a2db-23190e5fd034</id>
+      <id>94c60bf7-b7ea-4447-93f9-786011abdb15</id>
       <masked>false</masked>
       <name>categoryID</name>
    </variable>
    <variable>
       <defaultValue>'SELECT id FROM master.sub_categories AS sc WHERE name = \'TK Majemuk Jakon\''</defaultValue>
       <description></description>
-      <id>4a3b592b-61fb-475d-83bd-55fef4fa61ff</id>
+      <id>a4454fb5-49d5-4d6c-a0e8-dd62705d272c</id>
       <masked>false</masked>
       <name>subCategoryId</name>
    </variable>
    <variable>
       <defaultValue>'KBKEU'</defaultValue>
       <description></description>
-      <id>05dd138a-bf8c-4d23-a023-4ca7a469c035</id>
+      <id>0f3deba7-772e-460e-bb3c-25b6cef97267</id>
       <masked>false</masked>
       <name>role</name>
    </variable>
    <variable>
       <defaultValue>'Kepesertaan'</defaultValue>
       <description></description>
-      <id>c7b90907-a013-46fc-a4f0-ff655d90d446</id>
+      <id>30e02848-3b17-4801-885b-f2d271d590a7</id>
       <masked>false</masked>
       <name>category</name>
    </variable>
    <variable>
       <defaultValue>'TK Majemuk Jakon'</defaultValue>
       <description></description>
-      <id>112c0eda-d50b-4e66-b259-bc2a66424532</id>
+      <id>9b6a30ff-7981-45bb-ac35-286342f9875a</id>
       <masked>false</masked>
       <name>subCategory</name>
    </variable>
    <variable>
       <defaultValue>'Tugas Hari Ini'</defaultValue>
       <description></description>
-      <id>2b0ecbc7-43bd-434d-b7f6-9cb8cc17a8ab</id>
+      <id>9131f20c-99fa-43c5-a8fe-780824f5439f</id>
       <masked>false</masked>
       <name>param</name>
    </variable>
    <variable>
       <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 17)</defaultValue>
       <description></description>
-      <id>24c5bc3a-5c2d-4fa5-985b-aba71ae253de</id>
+      <id>84c0baac-194e-4933-be49-8371009a4031</id>
       <masked>false</masked>
       <name>inisial</name>
    </variable>
    <variable>
       <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 17)</defaultValue>
       <description></description>
-      <id>576cda42-ddcf-4df9-95cd-4b106fa88b14</id>
+      <id>511981d6-452b-4698-ae4c-1e06c033d85f</id>
       <masked>false</masked>
       <name>roles</name>
    </variable>
    <variable>
       <defaultValue>GlobalVariable.username</defaultValue>
       <description></description>
-      <id>c265e9c2-c27f-4e49-b532-a5ea4475fa69</id>
+      <id>d8540a8b-db23-43da-8865-3142ea7775c9</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>GlobalVariable.password</defaultValue>
       <description></description>
-      <id>88a74002-b533-44c2-9e98-061ecc3a22ce</id>
+      <id>a449f41f-b64d-4b64-bdc4-87ff74730690</id>
       <masked>false</masked>
       <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>'JN5019 - APPROVAL TK MAJEMUK'</defaultValue>
-      <description></description>
-      <id>e1cad55a-5353-44fd-ac12-1b0455553af1</id>
-      <masked>false</masked>
-      <name>tabActive</name>
    </variable>
 </TestCaseEntity>

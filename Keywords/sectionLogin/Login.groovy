@@ -17,20 +17,35 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 import internal.GlobalVariable
 
 public class Login {
 
 	/*
-	 *  This method accesses the specified URL and maximizes the browser window.
-	 *  @param url The URL to be accessed.
+	 * This method opens SMILE application with optimized viewport sizing
+	 * @param url The URL to be accessed
 	 */
 	@Keyword
 	def openSMILE(String url) {
 		WebUI.openBrowser(url)
-		WebUI.setViewPortSize(1920, 1080)
-		// WebUI.maximizeWindow()
+
+		// Check if running in pipeline (headless mode)
+		String browserType = DriverFactory.getExecutedBrowser().getName()
+		boolean isHeadless = browserType.toLowerCase().contains('headless')
+
+		if (isHeadless) {
+			// Set optimized viewport for pipeline/headless mode
+			// Using 1280x800 as it's a common resolution that works well for most web applications
+			// and provides good visibility of all elements without being too large
+			WebUI.setViewPortSize(1280, 800)
+		} else {
+			// Maximize window for local execution
+			WebUI.maximizeWindow()
+		}
+
+		WebUI.waitForPageLoad(30)
 	}
 
 	@Keyword
