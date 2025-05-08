@@ -41,5 +41,4 @@ screenshoot.takeScreenshot('SuccesClickDetailActiveRoleKlaimJKK')
 
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
 
-WebUI.closeBrowser()
-
+CustomKeywords.'sectionMenu.utilityMenu.logoutSMILE'()

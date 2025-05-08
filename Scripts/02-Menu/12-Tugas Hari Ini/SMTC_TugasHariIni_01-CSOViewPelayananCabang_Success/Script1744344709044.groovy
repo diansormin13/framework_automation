@@ -20,12 +20,6 @@ import com.kms.katalon.core.util.KeywordUtil
 
 KeywordUtil.logInfo("TC-TDL-001,TC-TDL-002 - Sebagai role CSO, saya ingin melihat tab navigasi  tugas hari ini khususnya untuk pelayanan cabang")
 
-// Call the test case for successful login to SMILE
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), [
-        'username': username,
-        'password'   : password
-    ]) 
-
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
     findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),

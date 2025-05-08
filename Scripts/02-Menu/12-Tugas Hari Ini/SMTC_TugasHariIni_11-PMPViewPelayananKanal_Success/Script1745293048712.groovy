@@ -20,12 +20,6 @@ import com.kms.katalon.core.util.KeywordUtil
 
 KeywordUtil.logInfo("TC-TDL-012 - Sebagai Role PMP/KAKACAB, Saya dapat melihat tab Lihat Semua, Pelayanan Cabang, dan Pelayanan Kanal")
 
-// Call the test case for successful login to SMILE
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), [
-		'username': username,
-		'password'   : password
-	])
-
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
     findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),

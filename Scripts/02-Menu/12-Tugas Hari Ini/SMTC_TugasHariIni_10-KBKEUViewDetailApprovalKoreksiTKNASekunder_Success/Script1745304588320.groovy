@@ -22,11 +22,13 @@ def screenshoot = new utilityMenu()
 
 KeywordUtil.logInfo('TC-TDL-011 - Sebagai KBKEU, saya berhasil melihat detail approval Koreksi TK NA Sekunder pada section role yang aktif')
 
-// Call the test case for successful login to SMILE
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), [
-		'username': username,
-		'password'   : password
-	])
+GlobalVariable.username = username
+GlobalVariable.password = password
+
+// Call the test case with the specified ID and pass parameters
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), 
+    [('username') : GlobalVariable.username, 
+	 ('password') : GlobalVariable.password ], FailureHandling.STOP_ON_FAILURE)
 
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
