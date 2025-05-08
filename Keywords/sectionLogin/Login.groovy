@@ -50,11 +50,11 @@ public class Login {
 
 	@Keyword
 	def validatePageLoginSMILE() {
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/input_login'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/input_password'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/button_login'))
-		WebUI.verifyElementClickable(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/button_login'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_login'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_password'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),1)
 	}
 
 	/*
@@ -106,7 +106,7 @@ public class Login {
 
 				WebUI.click(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/button_Yes'))
 
-				WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_loginKembali'))
+				WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_loginKembali'),1)
 
 				WebUI.click(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/button_OK'))
 

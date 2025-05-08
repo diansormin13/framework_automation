@@ -20,7 +20,6 @@ class TestListener {
         } else {
             WebUI.maximizeWindow()
         }
-        WebUI.waitForPageLoad(30)
     }
 
     @BeforeTestCase
@@ -35,8 +34,8 @@ class TestListener {
             } else {
                 WebUI.maximizeWindow()
             }
-            WebUI.waitForPageLoad(30)
         }
+		
         if (!isLoggedIn) {
             loginToWebsite()
             isLoggedIn = true
