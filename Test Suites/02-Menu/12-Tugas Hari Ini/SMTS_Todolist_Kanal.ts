@@ -11,5 +11,8 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>a76450df-7426-4e39-a7b0-aa698aa2bce0</testSuiteGuid>
-   <filteringText></filteringText>
+   <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
+   <filteringExtension></filteringExtension>
+   <filteringPlugin></filteringPlugin>
+   <filteringText>tag=(kanal) </filteringText>
 </FilteringTestSuiteEntity>
