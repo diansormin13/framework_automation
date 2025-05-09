@@ -5,6 +5,7 @@ import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil
 
 class TestListener {
     private static boolean isLoggedIn = false
@@ -24,7 +25,9 @@ class TestListener {
 
     @BeforeTestCase
     def beforeTestCase() {
+		KeywordUtil.logInfo("BeforeTestCase")
         if (com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver() == null) {
+			KeywordUtil.logInfo("Driver is null, reinitializing...")
             String url = GlobalVariable.baseURL
             WebUI.openBrowser(url)
             String browserType = com.kms.katalon.core.webui.driver.DriverFactory.getExecutedBrowser().getName()
