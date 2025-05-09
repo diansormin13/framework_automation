@@ -72,8 +72,8 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def clickTab(param) {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 1)
-		WebUI.verifyElementVisible(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]))
+		WebUI.waitForElementPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]),1)
 		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]))
 	}
 

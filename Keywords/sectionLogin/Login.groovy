@@ -44,17 +44,15 @@ public class Login {
 			// Maximize window for local execution
 			WebUI.maximizeWindow()
 		}
-
-		WebUI.waitForPageLoad(30)
 	}
 
 	@Keyword
 	def validatePageLoginSMILE() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_login'),1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_password'),1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'),1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_login'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_password'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),0)
 	}
 
 	/*
@@ -100,7 +98,7 @@ public class Login {
 	@Keyword
 	def activeAccount() {
 		try {
-			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_akunAktif'),2, FailureHandling.OPTIONAL)
+			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_akunAktif'),1, FailureHandling.OPTIONAL)
 
 			if (isPopupPresent) {
 
