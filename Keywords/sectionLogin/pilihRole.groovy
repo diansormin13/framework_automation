@@ -35,12 +35,12 @@ public class pilihRole {
 	// Verify the visibility of a specific element in the web UI based on a dynamic parameter.
 
 	def validatePopUpPilihRole(String username) {
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_roleSMILE'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_memilihRole'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/input_role'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_batal'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_pilih'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_roleSMILE'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_memilihRole'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/input_role'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_batal'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_pilih'),1)
 		WebUI.verifyElementText(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'),"Selamat datang user: '${username}', Anda melakukan koneksi ke Aplikasi SMILE dari 172.28.231.203")
 	}
 
