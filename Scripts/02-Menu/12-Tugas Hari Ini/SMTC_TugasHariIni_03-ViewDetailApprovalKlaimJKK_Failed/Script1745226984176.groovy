@@ -21,6 +21,17 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-004 - Sebagai user SMILE, saya tidak bisa mengakses detail approval jika role tidak sesuai dengan role yang dipilih user SMILE pada transaksi Klaim JKK dengan nilai selain 0 ')
 
+// Call the test case for selecting role in SMILE
+WebUI.callTestCase(
+	findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
+	[
+		'inisial': inisial,
+		'role'   : roles
+	]
+)
+
+CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
+
 def screenshoot = new utilityMenu()
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()

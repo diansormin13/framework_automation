@@ -48,6 +48,18 @@
       <value></value>
       <variableId>0d3492d8-8249-45c7-83c1-80e1d0a5c770</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>72b6403a-f038-42e9-8bdc-9ae5a61e44ed</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2ccb6a36-453e-45ea-9f9d-ed6cb804c29f</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'todo'</defaultValue>
       <description></description>
@@ -96,5 +108,19 @@
       <id>0d3492d8-8249-45c7-83c1-80e1d0a5c770</id>
       <masked>false</masked>
       <name>param</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 5)</defaultValue>
+      <description></description>
+      <id>72b6403a-f038-42e9-8bdc-9ae5a61e44ed</id>
+      <masked>false</masked>
+      <name>inisial</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 5)</defaultValue>
+      <description></description>
+      <id>2ccb6a36-453e-45ea-9f9d-ed6cb804c29f</id>
+      <masked>false</masked>
+      <name>roles</name>
    </variable>
 </TestCaseEntity>

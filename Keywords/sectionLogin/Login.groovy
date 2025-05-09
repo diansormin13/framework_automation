@@ -86,7 +86,6 @@ public class Login {
 
 	/*
 	 *  This function clicks the reset password button after verifying it is clickable.
-	 *
 	 *  @return void
 	 */
 	@Keyword
@@ -98,7 +97,7 @@ public class Login {
 	@Keyword
 	def activeAccount() {
 		try {
-			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_akunAktif'),1, FailureHandling.OPTIONAL)
+			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_akunAktif'),1)
 
 			if (isPopupPresent) {
 
