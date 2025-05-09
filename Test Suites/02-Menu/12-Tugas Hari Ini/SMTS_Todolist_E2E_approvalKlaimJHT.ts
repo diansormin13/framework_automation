@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FilteringTestSuiteEntity>
    <description></description>
-   <name>SMTS_Todolist_E2E_MajemukJakon</name>
+   <name>SMTS_Todolist_E2E_approvalKlaimJHT</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,6 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>5a709216-f540-4ed9-8d72-46f30969ec22</testSuiteGuid>
-   <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
-   <filteringExtension></filteringExtension>
-   <filteringPlugin></filteringPlugin>
-   <filteringText>tag=(e2eJakon) </filteringText>
+   <testSuiteGuid>61aa5337-6ea3-4cc6-8b94-eb1faefb9538</testSuiteGuid>
+   <filteringText></filteringText>
 </FilteringTestSuiteEntity>
