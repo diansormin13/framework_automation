@@ -77,7 +77,7 @@ public class pilihRole {
 	@Keyword
 	def handleAlerts() {
 		try {
-			WebUI.waitForAlert(4)
+			WebUI.waitForAlert(3)
 			WebUI.acceptAlert(FailureHandling.OPTIONAL)
 		} catch (NoAlertPresentException e) {
 			WebUI.comment("Tidak ada alert yang muncul")

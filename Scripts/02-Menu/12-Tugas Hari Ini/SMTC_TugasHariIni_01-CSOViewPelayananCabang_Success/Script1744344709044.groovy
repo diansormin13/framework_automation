@@ -33,7 +33,6 @@ CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 CustomKeywords.'sectionMenu.utilityMenu.waitForSpinnerToDisappear'()
 
-
 CustomKeywords.'sectionMenu.todolist.verifyPageTodolist'(inisial, 'Pelayanan Cabang')
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
