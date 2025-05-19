@@ -195,6 +195,79 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>7dccf754-61d7-48c1-a93c-bd1bbf22b6c4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Menu/12-Tugas Hari Ini/SMTC_TugasHariIni_10-KBKEUViewDetailApprovalKoreksiTKNASekunder_Success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8c203c8f-f039-462d-a63d-30fcdf04cae8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d94b819c-5534-4393-b120-d62c9282f2d4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d41d2bd5-dc65-45f1-b45a-b0996d626249</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b8941bea-5457-49ce-8699-5ff73ee6ae51</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f423142f-985e-40ad-b0eb-970db2815557</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bd196737-7c8c-4a5c-a423-7325b80bd9a4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>275fed77-092e-4187-9532-e6b1759c425d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7599141a-66f6-4d69-83cb-16bd7d714b5d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7955a670-375c-4b4a-9f69-59ffe685eb8c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0a846a51-56c2-4414-9c03-bcdc9a18e934</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f4bb0842-c58e-422e-a8c6-f2267a12f0ed</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>ff476ab9-e260-4e6d-a365-04bc6c880589</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -360,6 +433,73 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>c3cfdbc9-c5f7-424d-be98-082fdc858bcd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Menu/12-Tugas Hari Ini/SMTC_TugasHariIni_09-PMPViewDetailApprovalKlaimJKK_Success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a9f02371-cb6f-47e0-b2bf-b1dc92e1100e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b7715249-6a16-4719-872b-fe1c470c3c77</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>73d83e93-565d-4e73-bed5-c5778024513d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>829e5778-dc1a-4641-83cb-f1ca06d770c7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1c24835f-08f7-484f-adcd-6be21117140a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2a5f4592-d729-4c89-a907-32872672b81c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1c4cf624-e6de-40ea-9942-0ddd019cecbe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1d6f3f1e-71f0-4dde-91dc-b97d633eec04</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9abd6f0b-51f5-44ee-8bc8-d68adca82709</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>65d00b6c-0585-43c9-846c-42f343d3ed45</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>274e347d-856d-4565-acd6-83d91e1e0a5c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -406,6 +546,55 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>34441a04-29fa-4d86-9fee-ed6fa41800b8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cef7b28a-ee4f-4c6b-98e9-e6021dca64f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Menu/12-Tugas Hari Ini/SMTC_TugasHariIni_08-ViewDetailApprovalNASekunderNullValue_Failed</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cc7c9104-8d93-47e3-ab56-dbea503305f0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>75311851-8fcd-482c-815f-71742a85b803</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>653f05eb-f75b-4fa7-8206-1f2b2f2d08d3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>30cd1285-c398-405b-afc3-5fd536731047</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>434e50a8-f524-45c9-b7b0-f43f26ace2b6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e1170821-7092-41f8-934d-a78c02f7d559</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d1a25701-b9a9-42ed-8cf0-e8724c827ae2</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
