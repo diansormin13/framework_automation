@@ -18,17 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import sectionMenu.utilityMenu as utilityMenu
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-def screenshoot = new utilityMenu()
 
 KeywordUtil.logInfo('TC-TDL-011 - Sebagai KBKEU, saya berhasil melihat detail approval Koreksi TK NA Sekunder pada section role yang aktif')
 
-GlobalVariable.username = username
-GlobalVariable.password = password
-
-// Call the test case with the specified ID and pass parameters
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), 
-    [('username') : GlobalVariable.username, 
-	 ('password') : GlobalVariable.password ], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
@@ -47,15 +40,13 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('beforedetailRoleActivePMPKlaimJKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforedetailRoleActivePMPKlaimJKK')
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
 CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 
-screenshoot.takeScreenshot('SuccesClickDetailActiveRoleKlaimJKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforedetailRoleActivePMPKlaimJKK')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
-
-WebUI.closeBrowser()

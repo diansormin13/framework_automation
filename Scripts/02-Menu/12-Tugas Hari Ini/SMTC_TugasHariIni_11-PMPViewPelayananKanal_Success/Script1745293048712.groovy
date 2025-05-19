@@ -20,6 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil
 
 KeywordUtil.logInfo("TC-TDL-012 - Sebagai Role PMP/KAKACAB, Saya dapat melihat tab Lihat Semua, Pelayanan Cabang, dan Pelayanan Kanal")
 
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
     findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
@@ -38,3 +39,5 @@ CustomKeywords.'sectionMenu.todolist.verifyPageTodolist'(inisial, 'Pelayanan Kan
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananKanal'()
+
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','viewPelayananKanal')

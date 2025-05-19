@@ -40,5 +40,3 @@ CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','SuccesClickDetailActiveRoleKlaimJKK')
 
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
-
-CustomKeywords.'sectionMenu.utilityMenu.logoutSMILE'()
