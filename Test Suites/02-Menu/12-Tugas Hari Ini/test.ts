@@ -525,7 +525,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>b5ef1da0-1bc6-4ae0-9485-d53c42d5cc14</guid>
+      <guid>28a1a640-b178-46ad-b5ef-53856eca572e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/02-Menu/12-Tugas Hari Ini/SMTC_TugasHariIni_10-KBKEUViewDetailApprovalKoreksiTKNASekunder_Success</testCaseId>
