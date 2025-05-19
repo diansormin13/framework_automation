@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.configuration.RunConfiguration
 import internal.GlobalVariable
+import java.nio.file.Files
+import java.nio.file.Paths
 
 public class utilityMenu {
 
@@ -59,10 +61,11 @@ public class utilityMenu {
 	 *  @param fileName The name of the file to save the screenshot as.
 	 */
 	@Keyword
-	def takeScreenshot(String fileName) {
+	def takeScreenshot(String project, String fileName) {
 		String baseDir = RunConfiguration.getProjectDir()
-		String folderPath = baseDir + '/Screenshots/'
+		String folderPath = baseDir + "/Screenshots/${project}/"
 		String fullPath = folderPath + fileName + '.png'
+		Files.createDirectories(Paths.get(folderPath))
 		WebUI.takeScreenshot(fullPath) // Capture the screenshot and save it to the full path
 	}
 

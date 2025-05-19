@@ -15,7 +15,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import sectionMenu.utilityMenu as utilityMenu
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
@@ -23,18 +22,16 @@ KeywordUtil.logInfo('TC-TDL-003 - Sebagai user SMILE, saya tidak bisa mengakses 
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
-def screenshoot = new utilityMenu()
-
 def categoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryId)
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('CSOShowKlaimJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('CSOShowKlaimJHT')
 
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval, (categoryID[0])['id'], (subCategoryID[
     0])['id'], role, category, subCategory)
 
-screenshoot.takeScreenshot('FailedCSOClickDetailApprovalJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','FailedCSOClickDetailApprovalJHT')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 

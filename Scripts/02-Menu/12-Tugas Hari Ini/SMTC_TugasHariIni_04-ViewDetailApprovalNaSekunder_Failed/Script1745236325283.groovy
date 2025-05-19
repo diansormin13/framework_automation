@@ -16,14 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import sectionMenu.utilityMenu as utilityMenu
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-005 - Sebagai user SMILE, saya tidak bisa mengakses detail approval jika role tidak sesuai dengan role yang dipilih user SMILE pada transaksi Koreksi TK NA Sekunder dengan nilai selain 0 ')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
-
-def screenshoot = new utilityMenu()
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
 
@@ -31,12 +28,12 @@ def categoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('CSOShowNASkunder')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','CSOShowNASkunder')
 
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval, (categoryID[0])['id'], (subCategoryID[
     0])['id'], role, category, subCategory)
 
-screenshoot.takeScreenshot('FailedCSOClickDetailApprovalNASekunder')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','FailedCSOClickDetailApprovalNASekunder')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 

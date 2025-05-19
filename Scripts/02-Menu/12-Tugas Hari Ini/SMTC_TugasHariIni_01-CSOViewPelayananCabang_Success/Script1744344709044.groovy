@@ -42,4 +42,6 @@ CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
 
 CustomKeywords.'sectionMenu.todolist.verifyPageTodolist'(inisial, 'Pelayanan Cabang')
 
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','SuccesClickDetailActiveRoleKlaimJHT')
+
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)

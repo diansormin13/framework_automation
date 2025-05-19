@@ -23,8 +23,6 @@ KeywordUtil.logInfo('TC-TDL-008 - Sebagai user SMILE, saya tidak bisa mengakses 
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
-CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
-
 def screenshoot = new utilityMenu()
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
@@ -33,12 +31,12 @@ def categoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('CSOShowKlaimJKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','CSOShowKlaimJKK')
 
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval, (categoryID[0])['id'], (subCategoryID[
     0])['id'], role, category, subCategory)
 
-screenshoot.takeScreenshot('FailedCSOClickDetailApprovalJKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','FailedCSOClickDetailApprovalJKK')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 

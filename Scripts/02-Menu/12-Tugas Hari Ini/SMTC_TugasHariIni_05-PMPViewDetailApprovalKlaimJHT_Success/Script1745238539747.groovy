@@ -16,7 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import sectionMenu.utilityMenu as utilityMenu
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-006 - Sebagai PMP, saya berhasil melihat detail approval Klaim JHT pada section role yang aktif')
@@ -32,8 +31,6 @@ WebUI.callTestCase(
 	]
 )
 
-def screenshoot = new utilityMenu()
-
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
@@ -42,14 +39,14 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('beforedetailRoleActivePMPKlaimJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforedetailRoleActivePMPKlaimJHT')
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
 CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 
-screenshoot.takeScreenshot('SuccesClickDetailActiveRoleKlaimJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','SuccesClickDetailActiveRoleKlaimJHT')
 
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
 
