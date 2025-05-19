@@ -40,3 +40,5 @@ CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','SuccesClickDetailActiveRoleKlaimJKK')
 
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
+
+WebUI.closeBrowser()

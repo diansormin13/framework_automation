@@ -73,7 +73,7 @@
       <variableId>f4bb0842-c58e-422e-a8c6-f2267a12f0ed</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'todo'</defaultValue>
+      <defaultValue>'approved'</defaultValue>
       <description></description>
       <id>8c203c8f-f039-462d-a63d-30fcdf04cae8</id>
       <masked>false</masked>
