@@ -20,6 +20,17 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-026 - Sebagai role KBKEU Kantor Cabang utama, saya ingin melihat detail persetujuan Approval Majemuk PU-Mikro sesuai dengan section rolenya ')
 
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
+
+// Call the test case for selecting role in SMILE
+WebUI.callTestCase(
+	findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
+	[
+		'inisial': inisial,
+		'role'   : roles
+	]
+)
+
 CustomKeywords.'sectionMenu.todolist.viewKepesertaan'()
 
 CustomKeywords.'sectionMenu.utilityMenu.waitForSpinnerToDisappear'()

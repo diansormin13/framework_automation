@@ -82,7 +82,7 @@
       <name>subCategoryId</name>
    </variable>
    <variable>
-      <defaultValue>'KBKEU'</defaultValue>
+      <defaultValue>'KBP'</defaultValue>
       <description></description>
       <id>deec5028-ca29-4306-a0e3-38c6a19a365c</id>
       <masked>false</masked>
@@ -110,14 +110,14 @@
       <name>param</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 13)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 17)</defaultValue>
       <description></description>
       <id>c1b83b88-e913-4dda-98ef-c04c2809b35f</id>
       <masked>false</masked>
       <name>inisial</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 13)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 17)</defaultValue>
       <description></description>
       <id>cf1a74dc-8c77-4adc-ba4d-22c61a28d7bf</id>
       <masked>false</masked>

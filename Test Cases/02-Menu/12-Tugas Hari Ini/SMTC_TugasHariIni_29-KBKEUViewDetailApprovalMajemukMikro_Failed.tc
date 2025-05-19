@@ -75,14 +75,14 @@
       <name>categoryID</name>
    </variable>
    <variable>
-      <defaultValue>'SELECT id FROM master.sub_categories AS sc WHERE name = \'TK Majemuk PU\''</defaultValue>
+      <defaultValue>'SELECT id FROM master.sub_categories AS sc WHERE name = \'Majemuk PU Kecil-Mikro\''</defaultValue>
       <description></description>
       <id>71efa6bf-a0f5-4081-a38e-fe8f922695ed</id>
       <masked>false</masked>
       <name>subCategoryId</name>
    </variable>
    <variable>
-      <defaultValue>'KBKEU'</defaultValue>
+      <defaultValue>'KBPBPU'</defaultValue>
       <description></description>
       <id>d6273fbc-9b3b-4bc1-aa5e-d33a1e3b01ee</id>
       <masked>false</masked>
@@ -96,7 +96,7 @@
       <name>category</name>
    </variable>
    <variable>
-      <defaultValue>'TK Majemuk PU'</defaultValue>
+      <defaultValue>'Majemuk PU Kecil-Mikro'</defaultValue>
       <description></description>
       <id>ea707ed9-a437-4c03-8584-bad8e90badd8</id>
       <masked>false</masked>
@@ -110,14 +110,14 @@
       <name>param</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 13)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 20)</defaultValue>
       <description></description>
       <id>5f6c94eb-275d-496a-aa2c-af35568f8fd2</id>
       <masked>false</masked>
       <name>inisial</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 13)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 20)</defaultValue>
       <description></description>
       <id>c9b91e38-bb94-44a6-a960-b234ab6d4cef</id>
       <masked>false</masked>

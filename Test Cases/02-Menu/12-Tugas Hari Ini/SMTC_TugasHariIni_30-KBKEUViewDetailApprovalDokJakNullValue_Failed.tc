@@ -75,14 +75,14 @@
       <name>categoryID</name>
    </variable>
    <variable>
-      <defaultValue>'SELECT id FROM master.sub_categories AS sc WHERE name = \'TK Majemuk PU\''</defaultValue>
+      <defaultValue>'SELECT id FROM master.sub_categories AS sc WHERE name = \'Approval Dokumen Jakon\''</defaultValue>
       <description></description>
       <id>fdbc6701-4eef-4d3d-a09e-ad33e8393415</id>
       <masked>false</masked>
       <name>subCategoryId</name>
    </variable>
    <variable>
-      <defaultValue>'KBKEU'</defaultValue>
+      <defaultValue>'KBP'</defaultValue>
       <description></description>
       <id>bfa52080-3863-4def-9220-36c70c9c3f44</id>
       <masked>false</masked>
@@ -96,7 +96,7 @@
       <name>category</name>
    </variable>
    <variable>
-      <defaultValue>'TK Majemuk PU'</defaultValue>
+      <defaultValue>'Approval Dokumen Jakon'</defaultValue>
       <description></description>
       <id>11f4866c-d551-4323-a7ed-2cf628997711</id>
       <masked>false</masked>

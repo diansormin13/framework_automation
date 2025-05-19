@@ -20,6 +20,16 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-029 - Sebagai role KBP Kantor Cabang utama, saya tidak bisa melihat detail approval Tk Majemuk PU pada salah satu section role KBKEU ')
 
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
+
+WebUI.callTestCase(
+	findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
+	[
+		'inisial': inisial,
+		'role'   : roles
+	]
+)
+
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 CustomKeywords.'sectionMenu.todolist.viewKepesertaan'()
@@ -31,8 +41,6 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforeClickDetaileMajemukPUNegative')
-
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterViewDetailMajemukPU')
 
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval,categoryId[0]['id'],subCategoryID[0]['id'], role, category, subCategory)
 
