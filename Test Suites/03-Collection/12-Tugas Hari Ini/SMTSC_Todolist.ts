@@ -37,5 +37,15 @@
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/02-Menu/12-Tugas Hari Ini/SMTS_Todolist_Kepesertaan</testSuiteEntity>
       </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>todolist</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/02-Menu/12-Tugas Hari Ini/SMTS_Todolist_ApprovedTodolistPelayanan</testSuiteEntity>
+      </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

@@ -16,7 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import sectionMenu.utilityMenu as utilityMenu
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL- 043 - Sebagai Role Smile, Saya ingin melakukan approval TK Majemuk Jakon  pada salah satu approval untuk melihat adanya perubahan jumlah nilai task di section todo dan section approved')
@@ -40,8 +39,6 @@ WebUI.callTestCase(
     ]
 )
 
-def screenshoot = new utilityMenu()
-
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 CustomKeywords.'sectionMenu.utilityMenu.waitForSpinnerToDisappear'()
@@ -51,7 +48,7 @@ CustomKeywords.'sectionMenu.todolist.viewKepesertaan'()
 def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("todo", (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
-screenshoot.takeScreenshot('beforeApprovalJakon')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforeApprovalJakon')
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
@@ -66,6 +63,6 @@ def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("
 CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo,taskApproval,typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
 	role, category, subCategory)
 
-screenshoot.takeScreenshot('afterApprovalJakon')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterApprovalJakon')
 
 WebUI.closeBrowser()

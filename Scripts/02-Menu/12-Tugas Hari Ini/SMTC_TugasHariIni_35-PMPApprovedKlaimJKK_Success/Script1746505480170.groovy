@@ -16,16 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import sectionMenu.utilityMenu as utilityMenu
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-036 - Sebagai PMP, Sebagai Role Smile, Saya ingin melakukan approval Klaim JHT pada salah satu approval JHT untuk melihat adanya perubahan jumlah nilai task di section todo dan section approved')
-
-// Call the test case for successful login to SMILE
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), [
-        'username': username,
-        'password'   : password
-    ]) 
 
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
@@ -35,8 +28,6 @@ WebUI.callTestCase(
         'role'   : roles
     ]
 )
-
-def screenshoot = new utilityMenu()
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
@@ -48,7 +39,7 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('beforeApprovalJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforeApprovalJHT')
 
 def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("todo", (categoryId[0])['id'], (subCategoryID[0])['id'],
 	role, category, subCategory)
@@ -68,6 +59,6 @@ def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("
 CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo,taskApproval,typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
 	role, category, subCategory)
 
-screenshoot.takeScreenshot('afterApprovalJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterApprovalJHT')
 
 WebUI.closeBrowser()
