@@ -21,6 +21,8 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-005 - Sebagai user SMILE, saya tidak bisa mengakses detail approval jika role tidak sesuai dengan role yang dipilih user SMILE pada transaksi Koreksi TK NA Sekunder dengan nilai selain 0 ')
 
+CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
+
 def screenshoot = new utilityMenu()
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()

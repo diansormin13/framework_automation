@@ -60,6 +60,18 @@
       <value></value>
       <variableId>2ccb6a36-453e-45ea-9f9d-ed6cb804c29f</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7f62fcb7-24cf-45d9-a65a-e2d2613d81ef</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7a28dd36-5dba-4dbd-933d-e6c05c2dbc58</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'todo'</defaultValue>
       <description></description>
@@ -122,5 +134,19 @@
       <id>2ccb6a36-453e-45ea-9f9d-ed6cb804c29f</id>
       <masked>false</masked>
       <name>roles</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.username</defaultValue>
+      <description></description>
+      <id>7f62fcb7-24cf-45d9-a65a-e2d2613d81ef</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.password</defaultValue>
+      <description></description>
+      <id>7a28dd36-5dba-4dbd-933d-e6c05c2dbc58</id>
+      <masked>false</masked>
+      <name>password</name>
    </variable>
 </TestCaseEntity>
