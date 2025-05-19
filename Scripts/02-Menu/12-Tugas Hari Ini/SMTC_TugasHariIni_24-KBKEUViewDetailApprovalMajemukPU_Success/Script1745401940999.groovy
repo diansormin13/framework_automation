@@ -15,7 +15,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import sectionMenu.utilityMenu as utilityMenu
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
@@ -25,19 +24,17 @@ CustomKeywords.'sectionMenu.todolist.viewKepesertaan'()
 
 CustomKeywords.'sectionMenu.utilityMenu.waitForSpinnerToDisappear'()
 
-def screenshoot = new utilityMenu()
-
 def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryID)
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('beforDetailMajemukPU')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforDetailMajemukPU')
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
 	role, category, subCategory)
 
 CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 
-screenshoot.takeScreenshot('afterViewDetailMajemukPU')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterViewDetailMajemukPU')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)

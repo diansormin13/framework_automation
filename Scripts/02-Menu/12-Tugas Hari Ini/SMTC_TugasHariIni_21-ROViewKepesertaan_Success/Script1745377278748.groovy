@@ -21,8 +21,6 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL-022 - Sebagai Role RO, saya dapat melihat halaman todolist kepesertaan ')
 
-CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
-
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
 	findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
@@ -39,3 +37,7 @@ CustomKeywords.'sectionMenu.todolist.viewKepesertaan'()
 CustomKeywords.'sectionMenu.utilityMenu.waitForSpinnerToDisappear'()
 
 CustomKeywords.'sectionMenu.todolist.verifyPageTodolist'(inisial, 'Kepesertaan')
+
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','viewPageKepesertaan')
+
+CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)

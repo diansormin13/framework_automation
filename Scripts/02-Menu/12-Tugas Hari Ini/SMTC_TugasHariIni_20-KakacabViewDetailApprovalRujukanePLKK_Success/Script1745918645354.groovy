@@ -37,8 +37,6 @@ CustomKeywords.'sectionMenu.utilityMenu.waitForSpinnerToDisappear'()
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananKanal'()
 
-def screenshoot = new utilityMenu()
-
 def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryID)
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
