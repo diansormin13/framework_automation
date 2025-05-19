@@ -597,4 +597,47 @@
          <variableId>f4bb0842-c58e-422e-a8c6-f2267a12f0ed</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>70405668-b750-43fe-a678-413f3cacfceb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-Menu/12-Tugas Hari Ini/SMTC_TugasHariIni_11-PMPViewPelayananKanal_Success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1c875bb9-5e51-4efc-8abb-d503da0d08bc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f0b40f94-049c-4d63-9b94-dc6d9e62d38d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d042a306-139e-472d-92f6-bd2b69e6ffe6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5e1c48c0-4b9f-4108-95a4-d9e687213f6d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>817d87e4-dec9-4819-976c-490ee8dfe827</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>13e51886-1cfd-4b98-9fdf-e7738778878b</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
