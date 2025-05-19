@@ -23,8 +23,6 @@ KeywordUtil.logInfo('TC-TDL-008 - Sebagai user SMILE, saya tidak bisa mengakses 
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
-def screenshoot = new utilityMenu()
-
 CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
 
 def categoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryId)

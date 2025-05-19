@@ -30,14 +30,14 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('beforedetailRoleActivePMPKlaimJKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforedetailRoleActivePMPKlaimJKK')
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
 CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 
-screenshoot.takeScreenshot('SuccesClickDetailActiveRoleKlaimJKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','SuccesClickDetailActiveRoleKlaimJKK')
 
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
 
