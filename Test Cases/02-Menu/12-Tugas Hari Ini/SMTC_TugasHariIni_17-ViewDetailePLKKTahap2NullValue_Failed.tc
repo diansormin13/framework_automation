@@ -42,6 +42,12 @@
       <value></value>
       <variableId>c6025914-55ce-4ccd-a2b5-68ee3ef7688f</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5ce1a4d3-de32-4374-b6f7-2bf0dca2b63c</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'rejected'</defaultValue>
       <description></description>
@@ -83,5 +89,12 @@
       <id>c6025914-55ce-4ccd-a2b5-68ee3ef7688f</id>
       <masked>false</masked>
       <name>subCategory</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tugas Hari Ini'</defaultValue>
+      <description></description>
+      <id>5ce1a4d3-de32-4374-b6f7-2bf0dca2b63c</id>
+      <masked>false</masked>
+      <name>param</name>
    </variable>
 </TestCaseEntity>

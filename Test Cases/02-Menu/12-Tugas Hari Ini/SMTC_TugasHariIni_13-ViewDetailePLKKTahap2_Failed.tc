@@ -42,6 +42,12 @@
       <value></value>
       <variableId>a2476743-afde-4528-8413-f4671aa8173f</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>422d1448-cb7b-4ae4-8608-bce851457895</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'todo'</defaultValue>
       <description></description>
@@ -83,5 +89,12 @@
       <id>a2476743-afde-4528-8413-f4671aa8173f</id>
       <masked>false</masked>
       <name>subCategory</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tugas Hari Ini'</defaultValue>
+      <description></description>
+      <id>422d1448-cb7b-4ae4-8608-bce851457895</id>
+      <masked>false</masked>
+      <name>param</name>
    </variable>
 </TestCaseEntity>
