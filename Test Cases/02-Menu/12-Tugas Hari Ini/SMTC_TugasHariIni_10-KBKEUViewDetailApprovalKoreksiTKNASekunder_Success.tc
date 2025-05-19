@@ -122,14 +122,14 @@
       <name>param</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 8)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 17)</defaultValue>
       <description></description>
       <id>7599141a-66f6-4d69-83cb-16bd7d714b5d</id>
       <masked>false</masked>
       <name>inisial</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 8)</defaultValue>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 17)</defaultValue>
       <description></description>
       <id>7955a670-375c-4b4a-9f69-59ffe685eb8c</id>
       <masked>false</masked>
