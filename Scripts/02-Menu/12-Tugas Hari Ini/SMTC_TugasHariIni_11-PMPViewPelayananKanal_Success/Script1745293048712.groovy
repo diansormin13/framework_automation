@@ -41,3 +41,5 @@ CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
 CustomKeywords.'sectionMenu.todolist.viewPelayananKanal'()
 
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','viewPelayananKanal')
+
+CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)

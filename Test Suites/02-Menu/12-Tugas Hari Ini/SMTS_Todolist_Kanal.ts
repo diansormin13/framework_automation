@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FilteringTestSuiteEntity>
+<TestSuiteEntity>
    <description></description>
    <name>SMTS_Todolist_Kanal</name>
    <tag></tag>
@@ -10,9 +10,5 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>a76450df-7426-4e39-a7b0-aa698aa2bce0</testSuiteGuid>
-   <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
-   <filteringExtension></filteringExtension>
-   <filteringPlugin></filteringPlugin>
-   <filteringText>tag=(kanal) </filteringText>
-</FilteringTestSuiteEntity>
+   <testSuiteGuid>af4cfc6f-fff0-450f-94cd-ec6e377ef237</testSuiteGuid>
+</TestSuiteEntity>

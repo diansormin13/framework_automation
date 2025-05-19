@@ -15,7 +15,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import sectionMenu.utilityMenu as utilityMenu
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
@@ -44,14 +43,14 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('beforDetailRujukanePLKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforDetailRujukanePLKK')
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
 CustomKeywords.'sectionMenu.todolist.validateAfterClickDatailApproval'()
 
-screenshoot.takeScreenshot('afterViewDetailApprovalRujukanePLKK')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterViewDetailApprovalRujukanePLKK')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 

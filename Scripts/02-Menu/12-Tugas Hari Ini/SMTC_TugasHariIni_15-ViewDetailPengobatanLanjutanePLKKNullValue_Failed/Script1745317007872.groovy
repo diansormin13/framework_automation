@@ -22,15 +22,15 @@ import sectionMenu.utilityMenu
 
 KeywordUtil.logInfo("TC-TDL-016 - Sebagai Role PMP, saya tidak bisa  melihat detail Approval pada salah satu approval Pengobatan Lanjutan ePLKK pada salah satu section role yang bernilai 0")
 
-def screenshoot = new utilityMenu()
+CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 CustomKeywords.'sectionMenu.todolist.viewPelayananKanal'()
 
 def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryID)
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-screenshoot.takeScreenshot('beforeClickDetailPengobatanePLKKNullValue')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforeClickDetailPengobatanePLKKNullValue')
 
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval,categoryId[0]['id'],subCategoryID[0]['id'], role, category, subCategory)
 
-screenshoot.takeScreenshot('unableClickDetailPengobatanePLKKNullValue')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','unableClickDetailPengobatanePLKKNullValue')
