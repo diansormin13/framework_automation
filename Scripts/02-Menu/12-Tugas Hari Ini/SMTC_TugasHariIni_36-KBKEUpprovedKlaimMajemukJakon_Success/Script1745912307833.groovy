@@ -24,11 +24,7 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-// Call the test case for successful login to SMILE
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), [
-        'username': username,
-        'password'   : password
-    ]) 
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
