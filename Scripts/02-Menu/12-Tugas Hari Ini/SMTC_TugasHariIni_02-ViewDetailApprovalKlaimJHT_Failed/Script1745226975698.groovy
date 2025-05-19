@@ -26,7 +26,7 @@ def categoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('CSOShowKlaimJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','CSOShowKlaimJHT')
 
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval, (categoryID[0])['id'], (subCategoryID[
     0])['id'], role, category, subCategory)
