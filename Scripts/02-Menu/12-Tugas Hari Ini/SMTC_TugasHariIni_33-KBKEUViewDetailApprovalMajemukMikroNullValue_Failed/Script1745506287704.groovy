@@ -33,10 +33,10 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforeClickDetaileMajemukMikroNullValue')
 screenshoot.takeScreenshot('beforeClickDetaileMajemukPU')
 
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval,categoryId[0]['id'],subCategoryID[0]['id'], role, category, subCategory)
 
-screenshoot.takeScreenshot('unableClickDetailMajemukPU')
-
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','unableClickDetailMajemukMikroNullValue')
 WebUI.closeBrowser()

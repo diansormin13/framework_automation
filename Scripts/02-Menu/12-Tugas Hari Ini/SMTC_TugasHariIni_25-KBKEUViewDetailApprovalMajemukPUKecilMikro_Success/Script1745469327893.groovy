@@ -30,6 +30,7 @@ WebUI.callTestCase(
 		'role'   : roles
 	]
 )
+CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 CustomKeywords.'sectionMenu.todolist.viewKepesertaan'()
 

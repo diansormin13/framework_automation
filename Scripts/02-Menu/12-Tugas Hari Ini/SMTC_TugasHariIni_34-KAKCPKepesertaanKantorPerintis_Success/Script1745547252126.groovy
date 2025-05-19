@@ -20,6 +20,8 @@ import com.kms.katalon.core.util.KeywordUtil
 
 KeywordUtil.logInfo("TC-TDL-035 - Sebagai Role KAKCP Kantor Perintis, saya ingin melihat halaman kepesertaan ")
 
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
+
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
     findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
