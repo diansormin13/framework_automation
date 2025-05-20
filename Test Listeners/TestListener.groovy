@@ -37,7 +37,9 @@ class TestListener {
             } else {
                 WebUI.maximizeWindow()
             }
-        }
+        }else {
+			KeywordUtil.logInfo("WebDriver is still active")
+		}
 		
         if (!isLoggedIn) {
             loginToWebsite()
