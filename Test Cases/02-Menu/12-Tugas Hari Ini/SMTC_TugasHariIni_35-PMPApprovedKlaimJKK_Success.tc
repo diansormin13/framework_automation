@@ -72,6 +72,12 @@
       <value></value>
       <variableId>74713d18-a8bc-4e0f-8418-4cbbd17f25e6</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9c36f675-5a87-4a98-bc1d-da72166999df</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'todo'</defaultValue>
       <description></description>
@@ -148,5 +154,12 @@
       <id>74713d18-a8bc-4e0f-8418-4cbbd17f25e6</id>
       <masked>false</masked>
       <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'PN5002 - PENETAPAN KLAIM'</defaultValue>
+      <description></description>
+      <id>9c36f675-5a87-4a98-bc1d-da72166999df</id>
+      <masked>false</masked>
+      <name>tabActive</name>
    </variable>
 </TestCaseEntity>
