@@ -81,9 +81,9 @@ class TestListener {
                 [
                     'username': usernameValue,
                     'password': passwordValue
-                ],
-                FailureHandling.STOP_ON_FAILURE
-            )
+                ],)
+			
+			CustomKeywords.'sectionLogin.Login.activeAccount'()
             println("Login berhasil via test case dengan user: " + usernameValue)
         } catch (Exception e) {
             println('Error saat login: ' + e.getMessage())

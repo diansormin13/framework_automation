@@ -22,5 +22,3 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'sectionLogin.Login.validatePageLoginSMILE'()
 
 CustomKeywords.'sectionLogin.Login.loginToSMILE'(username, password)
-
-CustomKeywords.'sectionLogin.Login.activeAccount'()
