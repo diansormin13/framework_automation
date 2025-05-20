@@ -51,6 +51,8 @@ CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categor
 
 CustomKeywords.'sectionMenu.jn5019ApprovalTKMajemuk.approvalMajemuk'()
 
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','processApprovalJKKbyPMP')
+
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
 
 def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("approved", (categoryId[0])['id'], (subCategoryID[0])['id'], 

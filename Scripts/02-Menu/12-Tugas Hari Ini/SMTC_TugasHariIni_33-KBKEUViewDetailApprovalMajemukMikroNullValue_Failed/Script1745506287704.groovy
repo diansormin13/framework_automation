@@ -35,4 +35,3 @@ CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforeClickD
 CustomKeywords.'sectionMenu.todolist.negativeUnableClickDatailApproval'(typeApproval,categoryId[0]['id'],subCategoryID[0]['id'], role, category, subCategory)
 
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','unableClickDetailMajemukMikroNullValue')
-WebUI.closeBrowser()
