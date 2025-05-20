@@ -53,6 +53,8 @@ CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.clickPengajuanTahapI'(
 
 CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.approvalJKKpadaPMP'('TERBENTUR', 'PESAWAT ANGKUT', 'MATA', 'LUKA-LUKA', 'KLINIK RAHAYU')
 
+CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
+
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
 def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("approved", (categoryId[0])['id'], (subCategoryID[0])['id'],
@@ -62,5 +64,3 @@ CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo,tas
 	role, category, subCategory)
 
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterApprovalJHT')
-
-WebUI.closeBrowser()
