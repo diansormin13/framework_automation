@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>proses approval klaim JKK</description>
+   <name>SMTC_KlaimJKK_Approval</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>78866225-fc68-4045-890a-0199a5422335</testCaseGuid>
+</TestCaseEntity>

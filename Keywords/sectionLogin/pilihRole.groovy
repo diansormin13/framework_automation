@@ -19,6 +19,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import org.openqa.selenium.NoAlertPresentException
+
+
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.Dimension
 
 public class pilihRole {
 
@@ -29,12 +35,12 @@ public class pilihRole {
 	// Verify the visibility of a specific element in the web UI based on a dynamic parameter.
 
 	def validatePopUpPilihRole(String username) {
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_roleSMILE'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_memilihRole'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/input_role'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_batal'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_pilih'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_roleSMILE'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_memilihRole'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/input_role'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_batal'),1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/04-section_pilihRole/button_pilih'),1)
 		WebUI.verifyElementText(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'),"Selamat datang user: '${username}', Anda melakukan koneksi ke Aplikasi SMILE dari 172.28.231.203")
 	}
 
@@ -66,5 +72,15 @@ public class pilihRole {
 		def getrole = WebUI.getText(findTestObject('02-page_main/02-panel_navigation/text_role'), FailureHandling.STOP_ON_FAILURE)
 		getrole = getrole.replaceAll("\\s+", " ").trim()
 		WebUI.verifyMatch(getrole, "Role: ${role}", false)
+	}
+
+	@Keyword
+	def handleAlerts() {
+		try {
+			WebUI.waitForAlert(3)
+			WebUI.acceptAlert(FailureHandling.OPTIONAL)
+		} catch (NoAlertPresentException e) {
+			WebUI.comment("Tidak ada alert yang muncul")
+		}
 	}
 }

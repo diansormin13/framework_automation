@@ -4,4 +4,34 @@
    <name>todolist</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>environtment Testing</description>
+      <initValue>'http://172.28.108.49:5248/smile/main.bpjs'</initValue>
+      <name>baseURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('SMDF_userSMILE').getValue('USM', 2)</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('SMDF_userSMILE').getValue('PSW', 2)</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>config db for todolist</description>
+      <initValue>[('dbName') : 'todolist', ('username') : 'todolist', ('password') : 'welcome1']</initValue>
+      <name>configDB</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('SMDF_userSMILE').getValue('USM', 4)</initValue>
+      <name>username_other</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('SMDF_userSMILE').getValue('PSW', 4)</initValue>
+      <name>password_other</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>arrow_transaction</name>
+   <tag></tag>
+   <elementGuidId>130f1041-8621-4acb-9c55-e3ad8dab136f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//h1[normalize-space(text())=&quot;${inputCategory}&quot;]/ancestor::div[@class=&quot;category-table&quot;]//div[contains(@class,&quot;whitespace-normal&quot;)][normalize-space(text())=&quot;category&quot;]//following-sibling::div[contains(@class,&quot;cursor-pointer&quot;)]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

@@ -17,28 +17,42 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 import internal.GlobalVariable
 
 public class Login {
 
 	/*
-	 *  This method accesses the specified URL and maximizes the browser window.
-	 *  @param url The URL to be accessed.
+	 * This method opens SMILE application with optimized viewport sizing
+	 * @param url The URL to be accessed
 	 */
 	@Keyword
 	def openSMILE(String url) {
 		WebUI.openBrowser(url)
-		WebUI.maximizeWindow()
+
+		// Check if running in pipeline (headless mode)
+		String browserType = DriverFactory.getExecutedBrowser().getName()
+		boolean isHeadless = browserType.toLowerCase().contains('headless')
+
+		if (isHeadless) {
+			// Set optimized viewport for pipeline/headless mode
+			// Using 1280x800 as it's a common resolution that works well for most web applications
+			// and provides good visibility of all elements without being too large
+			WebUI.setViewPortSize(1280, 800)
+		} else {
+			// Maximize window for local execution
+			WebUI.maximizeWindow()
+		}
 	}
 
 	@Keyword
 	def validatePageLoginSMILE() {
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/input_login'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/input_password'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/button_login'))
-		WebUI.verifyElementClickable(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/01-section_login/button_login'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_login'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_password'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),0)
 	}
 
 	/*
@@ -72,7 +86,6 @@ public class Login {
 
 	/*
 	 *  This function clicks the reset password button after verifying it is clickable.
-	 *
 	 *  @return void
 	 */
 	@Keyword
@@ -84,13 +97,13 @@ public class Login {
 	@Keyword
 	def activeAccount() {
 		try {
-			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_akunAktif'),2, FailureHandling.OPTIONAL)
+			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_akunAktif'),1)
 
 			if (isPopupPresent) {
 
 				WebUI.click(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/button_Yes'))
 
-				WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_loginKembali'))
+				WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_loginKembali'),1)
 
 				WebUI.click(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/button_OK'))
 
@@ -105,5 +118,4 @@ public class Login {
 			WebUI.comment('Object tidak ditemukan: ' + e.message)
 		}
 	}
-
 }

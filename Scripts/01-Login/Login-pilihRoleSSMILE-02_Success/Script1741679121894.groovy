@@ -29,3 +29,6 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'sectionLogin.pilihRole.pilihRoleSMILE'(inisial, role)
 
+// allert notification
+CustomKeywords.'sectionLogin.pilihRole.handleAlerts'()
+

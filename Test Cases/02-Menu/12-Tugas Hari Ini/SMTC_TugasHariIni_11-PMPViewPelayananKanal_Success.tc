@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-TDL-012</description>
+   <name>SMTC_TugasHariIni_11-PMPViewPelayananKanal_Success</name>
+   <tag>kanal</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f9d058a2-9e4f-43cc-b5d7-ce9374bd9045</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1c875bb9-5e51-4efc-8abb-d503da0d08bc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f0b40f94-049c-4d63-9b94-dc6d9e62d38d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d042a306-139e-472d-92f6-bd2b69e6ffe6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5e1c48c0-4b9f-4108-95a4-d9e687213f6d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>817d87e4-dec9-4819-976c-490ee8dfe827</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>13e51886-1cfd-4b98-9fdf-e7738778878b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('inisial', 6)</defaultValue>
+      <description></description>
+      <id>1c875bb9-5e51-4efc-8abb-d503da0d08bc</id>
+      <masked>false</masked>
+      <name>inisial</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_roleSMILE').getValue('role', 6)</defaultValue>
+      <description></description>
+      <id>f0b40f94-049c-4d63-9b94-dc6d9e62d38d</id>
+      <masked>false</masked>
+      <name>role</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tugas Hari Ini'</defaultValue>
+      <description></description>
+      <id>d042a306-139e-472d-92f6-bd2b69e6ffe6</id>
+      <masked>false</masked>
+      <name>param</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pelayanan Kanal'</defaultValue>
+      <description></description>
+      <id>5e1c48c0-4b9f-4108-95a4-d9e687213f6d</id>
+      <masked>false</masked>
+      <name>kanal</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.username</defaultValue>
+      <description></description>
+      <id>817d87e4-dec9-4819-976c-490ee8dfe827</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.password</defaultValue>
+      <description></description>
+      <id>13e51886-1cfd-4b98-9fdf-e7738778878b</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
