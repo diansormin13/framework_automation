@@ -24,8 +24,6 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
-
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
     findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
@@ -51,7 +49,7 @@ CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categor
 
 CustomKeywords.'sectionMenu.jn5019ApprovalTKMajemuk.approvalMajemuk'()
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','processApprovalJKKbyPMP')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','processApprovalJakonbyKBKEU')
 
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
 

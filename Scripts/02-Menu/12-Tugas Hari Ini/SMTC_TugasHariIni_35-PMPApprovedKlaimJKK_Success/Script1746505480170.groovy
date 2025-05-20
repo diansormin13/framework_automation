@@ -47,6 +47,8 @@ def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("todo
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','processApprovalJKKbyPMP')
+
 CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.clickPengajuanTahapI'('KODE_4')	
 
 CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.approvalJKKpadaPMP'('TERBENTUR', 'PESAWAT ANGKUT', 'MATA', 'LUKA-LUKA', 'KLINIK RAHAYU')
