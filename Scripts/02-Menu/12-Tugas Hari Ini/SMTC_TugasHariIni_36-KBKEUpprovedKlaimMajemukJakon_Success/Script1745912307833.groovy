@@ -62,5 +62,3 @@ CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo,tas
 	role, category, subCategory)
 
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterApprovalJakon')
-
-WebUI.closeBrowser()
