@@ -20,6 +20,8 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL- 044 - Sebagai Role Smile, Saya ingin melakukan approval TK Majemuk PU  pada salah satu approval untuk melihat adanya perubahan jumlah nilai task di section todo dan section approved')
 
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
+
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
     findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),

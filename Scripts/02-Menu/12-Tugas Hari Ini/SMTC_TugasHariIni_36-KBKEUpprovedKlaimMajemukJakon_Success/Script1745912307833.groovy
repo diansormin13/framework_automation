@@ -20,9 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo('TC-TDL- 043 - Sebagai Role Smile, Saya ingin melakukan approval TK Majemuk Jakon  pada salah satu approval untuk melihat adanya perubahan jumlah nilai task di section todo dan section approved')
 
-def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryID)
-
-def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
@@ -38,6 +36,10 @@ CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 CustomKeywords.'sectionMenu.utilityMenu.waitForSpinnerToDisappear'()
 
 CustomKeywords.'sectionMenu.todolist.viewKepesertaan'()
+
+def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, categoryID)
+
+def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
 def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("todo", (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
