@@ -1,4 +1,5 @@
 import com.kms.katalon.core.annotation.BeforeTestSuite
+import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.annotation.AfterTestCase
@@ -6,6 +7,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 class TestListener {
     private static boolean isLoggedIn = false
@@ -25,22 +27,29 @@ class TestListener {
 
     @BeforeTestCase
     def beforeTestCase() {
-		KeywordUtil.logInfo("BeforeTestCase")
-        if (com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver() == null) {
-			KeywordUtil.logInfo("Driver is null, reinitializing...")
+        KeywordUtil.logInfo("BeforeTestCase")
+
+        def driver = null
+        try {
+            driver = DriverFactory.getWebDriver()
+            KeywordUtil.logInfo("WebDriver is still active")
+        } catch (com.kms.katalon.core.webui.exception.BrowserNotOpenedException e) {
+            KeywordUtil.logInfo("Browser not opened, opening browser now...")
             String url = GlobalVariable.baseURL
             WebUI.openBrowser(url)
-            String browserType = com.kms.katalon.core.webui.driver.DriverFactory.getExecutedBrowser().getName()
+            String browserType = DriverFactory.getExecutedBrowser().getName()
             boolean isHeadless = browserType.toLowerCase().contains('headless')
             if (isHeadless) {
                 WebUI.setViewPortSize(1280, 800)
             } else {
                 WebUI.maximizeWindow()
             }
-        }else {
-			KeywordUtil.logInfo("WebDriver is still active")
-		}
-		
+        } catch (Exception e) {
+            // Tangani error lain jika perlu
+            KeywordUtil.logInfo("Error lain di beforeTestCase: " + e.getMessage())
+            throw e
+        }
+
         if (!isLoggedIn) {
             loginToWebsite()
             isLoggedIn = true

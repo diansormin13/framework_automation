@@ -3,6 +3,16 @@
    <description>TC-TDL-001,TC-TDL-002</description>
    <name>SMTC_TugasHariIni_01-CSOViewPelayananCabang_Success</name>
    <tag>cabang</tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value></value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>28fee7d9-fbcd-4337-b1c1-532de5d4ecee</testCaseGuid>
