@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_KPI_08-Overview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b2ec02bf-bde5-488b-98bf-9f028b86f62b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4e83861c-dbef-482a-901a-888d11f5bbd5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>efa68227-afc5-47ca-b713-868838e1e0c0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7eef1063-46f7-4a6a-8a3e-f349125b56e5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'OVERVIEW'</defaultValue>
+      <description></description>
+      <id>4e83861c-dbef-482a-901a-888d11f5bbd5</id>
+      <masked>false</masked>
+      <name>jenisPerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'OVERVIEW'</defaultValue>
+      <description></description>
+      <id>efa68227-afc5-47ca-b713-868838e1e0c0</id>
+      <masked>false</masked>
+      <name>valuePerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>901-KANWIL SUMBAGUT</description>
+      <id>7eef1063-46f7-4a6a-8a3e-f349125b56e5</id>
+      <masked>false</masked>
+      <name>kanwil</name>
+   </variable>
+</TestCaseEntity>

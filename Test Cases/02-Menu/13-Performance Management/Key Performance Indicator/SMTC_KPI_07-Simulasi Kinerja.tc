@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_KPI_07-Simulasi Kinerja</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c7abd8d1-c9d4-442b-818c-045df17f3ec0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eb9882f2-57d8-442e-961a-0d5236d779f2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>80f7891d-7b09-4c35-bd81-14922d361ad4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>26561f76-9b94-4a05-a45e-054ed2683f2e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'SIMULASI KINERJA'</defaultValue>
+      <description></description>
+      <id>eb9882f2-57d8-442e-961a-0d5236d779f2</id>
+      <masked>false</masked>
+      <name>jenisPerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'SIMULASI_KINERJA'</defaultValue>
+      <description></description>
+      <id>80f7891d-7b09-4c35-bd81-14922d361ad4</id>
+      <masked>false</masked>
+      <name>valuePerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'901'</defaultValue>
+      <description></description>
+      <id>26561f76-9b94-4a05-a45e-054ed2683f2e</id>
+      <masked>false</masked>
+      <name>kantor</name>
+   </variable>
+</TestCaseEntity>

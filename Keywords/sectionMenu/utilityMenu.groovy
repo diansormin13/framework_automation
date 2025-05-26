@@ -33,9 +33,7 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def selectMenu(String menuName) {
-		// Clicks on the main menu button with the dynamic parameter
 		WebUI.scrollToElement(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]),2)
-		//WebUI.verifyElementVisible(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]))
 		WebUI.doubleClick(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]))
 	}
 

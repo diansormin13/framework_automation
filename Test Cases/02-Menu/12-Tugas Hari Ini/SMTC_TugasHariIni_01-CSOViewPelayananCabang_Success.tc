@@ -8,7 +8,6 @@
       <properties>
          <entry>
             <key>testRail.testcase.id</key>
-            <value></value>
          </entry>
       </properties>
       <type>TESTCASE</type>
