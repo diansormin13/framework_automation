@@ -10,10 +10,16 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 class TestListener {
+	
+	private static boolean isActive() {
+		return GlobalVariable.ENABLE_MAIN_LISTENER
+	}
+	
     private static boolean isLoggedIn = false
 
     @BeforeTestSuite
     def beforeTestSuite() {
+		if (!isActive()) return
         String url = GlobalVariable.baseURL
         WebUI.openBrowser(url)
         String browserType = com.kms.katalon.core.webui.driver.DriverFactory.getExecutedBrowser().getName()
@@ -27,8 +33,18 @@ class TestListener {
 
     @BeforeTestCase
     def beforeTestCase() {
+		if (!isActive()) return
         KeywordUtil.logInfo("BeforeTestCase")
 
+		// Cek GlobalVariable.AUTO_LOGIN, default true kalau belum diset
+		boolean autoLogin = true
+		try {
+			autoLogin = GlobalVariable.AUTO_LOGIN
+		} catch (Exception e) {
+			// kalau belum ada global variablenya, anggap true
+			autoLogin = true
+		}
+		
         def driver = null
         try {
             driver = DriverFactory.getWebDriver()
@@ -45,10 +61,14 @@ class TestListener {
                 WebUI.maximizeWindow()
             }
         } catch (Exception e) {
-            // Tangani error lain jika perlu
             KeywordUtil.logInfo("Error lain di beforeTestCase: " + e.getMessage())
             throw e
         }
+		
+		if (!autoLogin) {
+			KeywordUtil.logInfo("Auto login dinonaktifkan untuk testcase ini via GlobalVariable.AUTO_LOGIN=false")
+			return
+		}
 
         if (!isLoggedIn) {
             loginToWebsite()
@@ -58,12 +78,14 @@ class TestListener {
 
     @AfterTestSuite
     def afterTestSuite() {
+		if (!isActive()) return
         // Bisa tambahkan logika jika perlu
         isLoggedIn = false
     }
 
     @AfterTestCase
     def afterTestCase() {
+		if (!isActive()) return
         // your code
     }
 
