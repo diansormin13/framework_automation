@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Call the test case for selecting role successfully
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/SMTC_Login_01-LoginToSMILE_Success'), [:])
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/02-Login and Role/SMTC_Login_01-LoginToSMILE_Success'), [:])
 
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/SMTC_Login_02-pilihRoleSSMILE_Success'), [:])
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/02-Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'), [:])
 
 CustomKeywords.'sectionMenu.utilityMenu.selectMenu'('Open Tracking Keuangan')
 
@@ -32,6 +32,6 @@ CustomKeywords.'sectionMenu.utilityMenu.selectMenu'('KPI2903-Setup Sasaran')
 
 CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/SMTC_Login_02-pilihRoleSSMILE_Success'), [:])
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/02-Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'), [:])
 
 WebUI.closeBrowser()

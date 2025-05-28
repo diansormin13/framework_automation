@@ -21,7 +21,7 @@ def month = CustomKeywords.'utility.commonUtility.getDates'("MM", "ID", true,-14
 def year = CustomKeywords.'utility.commonUtility.getDates'("YYYY", "ID", false,0,-12)
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
-    findTestCase('Test Cases/01-Login/SMTC_Login_02-pilihRoleSSMILE_Success'),
+    findTestCase('Test Cases/01-Login/02-Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'),
     [
         'inisial': inisial,
         'role'   : role
