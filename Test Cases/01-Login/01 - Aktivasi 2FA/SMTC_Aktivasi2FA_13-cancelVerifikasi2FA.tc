@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_13-cancelVerifikasi2FA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b5055044-38b4-4d9e-b22e-c9d1e4944119</testCaseGuid>
+</TestCaseEntity>

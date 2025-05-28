@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_15-kodeUserNotFound</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66dc0d88-d85d-4ff0-b231-7050f2fda0c2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d28abb9e-4795-44ae-9b07-2e9407d584ec</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cd84cd21-f6e5-4e1b-9541-9e36f6e803fe</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'SE165581'</defaultValue>
+      <description></description>
+      <id>d28abb9e-4795-44ae-9b07-2e9407d584ec</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'dian.samuel@adidata.co.id'</defaultValue>
+      <description></description>
+      <id>cd84cd21-f6e5-4e1b-9541-9e36f6e803fe</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

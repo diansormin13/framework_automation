@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_05-aktivasi2FAonlyUsername_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>49a35a5b-b498-485d-a13a-659e605d5c69</testCaseGuid>
+</TestCaseEntity>

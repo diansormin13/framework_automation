@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_10-Aktivasi2FA-Success</name>
+   <tag>GenAI</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a71b6423-1f1f-4ca4-ac29-0e59146c49f6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cb384342-e7bd-4faa-bac1-a2186852ff16</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'SE165580'</defaultValue>
+      <description></description>
+      <id>cb384342-e7bd-4faa-bac1-a2186852ff16</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

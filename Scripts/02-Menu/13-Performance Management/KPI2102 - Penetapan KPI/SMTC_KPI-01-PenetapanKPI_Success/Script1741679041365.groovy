@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-LoginToSMILE-01_Success'), [:]) 
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/SMTC_Login_01-LoginToSMILE_Success'), [:]) 
 WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'), 
     [('inisial') : inisial, ('role') : role]) 
 CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Performance Management")

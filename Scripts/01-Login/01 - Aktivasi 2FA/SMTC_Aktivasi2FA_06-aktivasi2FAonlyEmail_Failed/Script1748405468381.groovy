@@ -10,24 +10,18 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/SMTC_Login_01-LoginToSMILE_Success'), [:])
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
-	[('inisial') : inisial, ('role') : role])
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Performance Management")
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("KPI Unit")
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Penetapan dan Assesmen")
+KeywordUtil.logInfo("TC-2FA-06 - Sebagai User SMILE, saya ingin melanjutkan aktivasi 2FA dengan hanya mengisi email saja")
 
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("KPI2106-Verifikasi KPI")
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_04-filledAktivasi2FA_Success'), [:], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'sectionMenu.kpi2106VerifikasiKPI.verifyVerifikasiKPU'()
+CustomKeywords.'sectionLogin.Aktivasi2FA.negativeVerifyAktivasi2FAonlyUsername'()
 
-CustomKeywords.'sectionMenu.kpi2104AssesmenKPI.selectKantor'('43A')
-
-CustomKeywords.'sectionMenu.kpi2104AssesmenKPI.navigateToDetailSetUpAssesmenKPI'()
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("User-2FA", "onlyUsername")

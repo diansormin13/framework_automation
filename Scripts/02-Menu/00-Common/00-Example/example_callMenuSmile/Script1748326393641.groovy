@@ -17,17 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Call the test case for selecting role successfully
 WebUI.callTestCase(findTestCase('Test Cases/01-Login/SMTC_Login_01-LoginToSMILE_Success'), [:])
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
-	[('inisial') : inisial, ('role') : role])
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Performance Management")
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("KPI Unit")
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Penetapan dan Assesmen")
 
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("KPI2106-Verifikasi KPI")
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'), [:])
 
-CustomKeywords.'sectionMenu.kpi2106VerifikasiKPI.verifyVerifikasiKPU'()
+CustomKeywords.'sectionMenu.utilityMenu.selectMenu'('Open Tracking Keuangan')
 
-CustomKeywords.'sectionMenu.kpi2104AssesmenKPI.selectKantor'('43A')
+CustomKeywords.'sectionMenu.utilityMenu.selectMenu'('KPI Unit')
 
-CustomKeywords.'sectionMenu.kpi2104AssesmenKPI.navigateToDetailSetUpAssesmenKPI'()
+CustomKeywords.'sectionMenu.utilityMenu.selectMenu'('Setup')
+
+CustomKeywords.'sectionMenu.utilityMenu.selectMenu'('KPI2903-Setup Sasaran')
+
+CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
+
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'), [:])
+
+WebUI.closeBrowser()

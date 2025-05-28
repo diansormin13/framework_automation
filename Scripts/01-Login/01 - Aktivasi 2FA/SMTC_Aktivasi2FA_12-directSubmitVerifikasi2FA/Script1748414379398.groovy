@@ -16,18 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/SMTC_Login_01-LoginToSMILE_Success'), [:])
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
-	[('inisial') : inisial, ('role') : role])
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Performance Management")
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("KPI Unit")
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Penetapan dan Assesmen")
+KeywordUtil.logInfo("TC-2FA-12 - Sebagai User SMILE, saya ingin submit tanpa harus input kode verifikasi 2FA")
 
-CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("KPI2106-Verifikasi KPI")
+WebUI.refresh()
 
-CustomKeywords.'sectionMenu.kpi2106VerifikasiKPI.verifyVerifikasiKPU'()
+CustomKeywords.'sectionLogin.Aktivasi2FA.clickButtonVerifikasi2FA'()
 
-CustomKeywords.'sectionMenu.kpi2104AssesmenKPI.selectKantor'('43A')
+CustomKeywords.'sectionLogin.Aktivasi2FA.inputFieldAktivasi2FA'(username, email)
 
-CustomKeywords.'sectionMenu.kpi2104AssesmenKPI.navigateToDetailSetUpAssesmenKPI'()
+CustomKeywords.'sectionLogin.Aktivasi2FA.sendQRtoEmail'()
+
+CustomKeywords.'sectionLogin.Aktivasi2FA.negativeValidateDirectSubmitVerifikasi2FA'()
+
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("User-2FA", "directVerifisikasiWithoutCode")
+

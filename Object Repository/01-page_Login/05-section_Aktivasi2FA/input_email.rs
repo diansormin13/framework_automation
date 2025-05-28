@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_email</name>
+   <tag></tag>
+   <elementGuidId>5ad54fc2-0667-42b0-9319-a92438799723</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id=&quot;window-1027&quot;]//input[@name=&quot;email&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//input[@name=&quot;email&quot; and contains(@class,&quot;x-form-invalid-field&quot;)]</value>
+      <webElementGuid>1fee1a30-f5ed-4dfa-b224-a402a280e7f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//div[@id=&quot;window-1027&quot;]//input[@name=&quot;email&quot;]</value>
+      <webElementGuid>69d5906d-537e-4389-87b3-23ae086a4fef</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

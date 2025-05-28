@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_11-checkEmail_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af4dc3de-7bd4-4101-af97-405b6073af05</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4eecbc1b-e378-4af3-a13b-6d3607a812b0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>70d49da1-6a07-443b-a18c-bc0d868ade58</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'septa.ringgadaniarta@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description></description>
+      <id>4eecbc1b-e378-4af3-a13b-6d3607a812b0</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'lmjcslptjgkqfgop'</defaultValue>
+      <description></description>
+      <id>70d49da1-6a07-443b-a18c-bc0d868ade58</id>
+      <masked>false</masked>
+      <name>psw</name>
+   </variable>
+</TestCaseEntity>

@@ -20,6 +20,12 @@ class TestListener {
     @BeforeTestSuite
     def beforeTestSuite() {
 		if (!isActive()) return
+		boolean autoLogin = true
+		try {
+			autoLogin = GlobalVariable.AUTO_LOGIN
+		} catch (Exception e) {
+			autoLogin = true
+		}
         String url = GlobalVariable.baseURL
         WebUI.openBrowser(url)
         String browserType = com.kms.katalon.core.webui.driver.DriverFactory.getExecutedBrowser().getName()
@@ -35,13 +41,10 @@ class TestListener {
     def beforeTestCase() {
 		if (!isActive()) return
         KeywordUtil.logInfo("BeforeTestCase")
-
-		// Cek GlobalVariable.AUTO_LOGIN, default true kalau belum diset
 		boolean autoLogin = true
 		try {
 			autoLogin = GlobalVariable.AUTO_LOGIN
 		} catch (Exception e) {
-			// kalau belum ada global variablenya, anggap true
 			autoLogin = true
 		}
 		
@@ -108,7 +111,7 @@ class TestListener {
             }
 
             WebUI.callTestCase(
-                findTestCase('01-Login/Login-LoginToSMILE-01_Success'),
+                findTestCase('01-Login/SMTC_Login_01-LoginToSMILE_Success'),
                 [
                     'username': usernameValue,
                     'password': passwordValue

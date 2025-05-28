@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_14-verifikasi2FA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>59058a9f-53f1-4e03-99d4-34e7ffb0499f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6453c92a-7623-4ae9-a0f3-79d6b82bb099</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>20db5773-8c08-4784-beb9-f4a1cbe351a8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'septa.ringgadaniarta@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description></description>
+      <id>6453c92a-7623-4ae9-a0f3-79d6b82bb099</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'lmjcslptjgkqfgop'</defaultValue>
+      <description></description>
+      <id>20db5773-8c08-4784-beb9-f4a1cbe351a8</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

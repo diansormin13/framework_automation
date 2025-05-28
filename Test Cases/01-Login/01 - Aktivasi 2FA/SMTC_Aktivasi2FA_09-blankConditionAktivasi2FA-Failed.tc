@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_09-blankConditionAktivasi2FA-Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a30d2c38-adfd-40c6-b326-0fd2fe97d203</testCaseGuid>
+</TestCaseEntity>

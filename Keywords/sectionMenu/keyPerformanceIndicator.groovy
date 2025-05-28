@@ -66,10 +66,9 @@ public class keyPerformanceIndicator {
 		WebUI.click(findTestObject('02-page-Menu/13-Performance Management/02 - Key Performance Indikator/01 - Papan Kinerja/input_tahun'))
 		WebUI.clearText(findTestObject('02-page-Menu/13-Performance Management/02 - Key Performance Indikator/01 - Papan Kinerja/input_tahun'))
 		WebUI.setText(findTestObject('02-page-Menu/13-Performance Management/02 - Key Performance Indikator/01 - Papan Kinerja/input_tahun'), year)
-		
 	}
-	
-	@Keyword 
+
+	@Keyword
 	def clickButtonCariPapanKinerja() {
 		TestObject btn = findTestObject('02-page-Menu/13-Performance Management/02 - Key Performance Indikator/01 - Papan Kinerja/button_cariData')
 		WebUI.click(btn)
@@ -117,7 +116,7 @@ public class keyPerformanceIndicator {
 		WebUI.clearText(findTestObject('02-page-Menu/13-Performance Management/02 - Key Performance Indikator/02 - Peringkat/input_tahun'))
 		WebUI.setText(findTestObject('02-page-Menu/13-Performance Management/02 - Key Performance Indikator/02 - Peringkat/input_tahun'), year)
 	}
-	
+
 	@Keyword
 	def clickButtonCariPeriodePeringkat() {
 		TestObject btn = findTestObject('02-page-Menu/13-Performance Management/02 - Key Performance Indikator/02 - Peringkat/button_cariData')
