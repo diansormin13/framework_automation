@@ -23,7 +23,7 @@ KeywordUtil.logInfo('TC-TDL-029 - Sebagai role KBP Kantor Cabang utama, saya tid
 CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 
 WebUI.callTestCase(
-	findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
+	findTestCase('Test Cases/01-Login/SMTC_Login_02-pilihRoleSSMILE_Success'),
 	[
 		'inisial': inisial,
 		'role'   : roles

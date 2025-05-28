@@ -22,7 +22,7 @@ KeywordUtil.logInfo("TC-TDL-001,TC-TDL-002 - Sebagai role CSO, saya ingin meliha
 
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
-    findTestCase('Test Cases/01-Login/Login-pilihRoleSSMILE-02_Success'),
+    findTestCase('Test Cases/01-Login/SMTC_Login_02-pilihRoleSSMILE_Success'),
     [
         'inisial': inisial,
         'role'   : role
