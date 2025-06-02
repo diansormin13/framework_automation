@@ -20,7 +20,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
-@Grab('com.eatthepath:java-otp:0.4.0')
 import javax.mail.*
 import javax.mail.internet.MimeBodyPart
 import javax.mail.internet.MimeMultipart
@@ -214,7 +213,7 @@ public class Aktivasi2FA {
 		WebUI.verifyElementVisible(txtSuccesVer)
 		WebUI.verifyElementText(txtSuccesVer, "Aktivasi 2FA Berhasil. Silakan gunakan 2FA pada saat login.")
 	}
-	
+
 	@Keyword
 	def clickButtonOK() {
 		WebUI.click(btnOkUnMatch)
