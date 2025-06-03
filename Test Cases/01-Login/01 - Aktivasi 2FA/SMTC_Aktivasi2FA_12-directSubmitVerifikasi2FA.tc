@@ -3,6 +3,16 @@
    <description></description>
    <name>SMTC_Aktivasi2FA_12-directSubmitVerifikasi2FA</name>
    <tag>GenAI</tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>33</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>e91216a2-8735-498f-a765-67bdc32a2998</testCaseGuid>

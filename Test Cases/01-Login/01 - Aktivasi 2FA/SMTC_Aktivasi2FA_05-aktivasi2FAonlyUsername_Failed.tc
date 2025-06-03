@@ -3,6 +3,16 @@
    <description></description>
    <name>SMTC_Aktivasi2FA_05-aktivasi2FAonlyUsername_Failed</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>26</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>49a35a5b-b498-485d-a13a-659e605d5c69</testCaseGuid>

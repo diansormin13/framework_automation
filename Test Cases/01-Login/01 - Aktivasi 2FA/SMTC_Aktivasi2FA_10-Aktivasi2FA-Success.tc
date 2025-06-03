@@ -3,6 +3,16 @@
    <description></description>
    <name>SMTC_Aktivasi2FA_10-Aktivasi2FA-Success</name>
    <tag>GenAI</tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>31</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>a71b6423-1f1f-4ca4-ac29-0e59146c49f6</testCaseGuid>

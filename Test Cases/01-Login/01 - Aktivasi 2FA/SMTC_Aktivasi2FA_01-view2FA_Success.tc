@@ -3,6 +3,16 @@
    <description></description>
    <name>SMTC_Aktivasi2FA_01-view2FA_Success</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>22</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>28871ec0-672f-49c8-90e9-25973d761a60</testCaseGuid>

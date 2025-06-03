@@ -22,6 +22,8 @@ KeywordUtil.logInfo("TC-2FA-11 - Sebagai User SMILE, saya dapat cek email bahwa 
 
 def kodeVer = CustomKeywords.'sectionLogin.Aktivasi2FA.getOTPFromEmail'(email, psw)
 
+KeywordUtil.logInfo("kode Verifikasi dari Email" + kodeVer)
+
 CustomKeywords.'sectionLogin.Aktivasi2FA.filledKodeVerifikasiAfterSendQRToEmail'(kodeVer)
 
 CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("User-2FA", "gotVerKode")

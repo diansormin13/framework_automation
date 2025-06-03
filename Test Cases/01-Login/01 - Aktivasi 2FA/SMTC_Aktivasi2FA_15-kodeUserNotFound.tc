@@ -3,6 +3,16 @@
    <description></description>
    <name>SMTC_Aktivasi2FA_15-kodeUserNotFound</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>36</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>66dc0d88-d85d-4ff0-b231-7050f2fda0c2</testCaseGuid>

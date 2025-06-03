@@ -221,17 +221,15 @@ public class Aktivasi2FA {
 
 	@Keyword
 	static String getOTPFromEmail(String email, String appPassword) {
-		// Step 1: Connect to Gmail IMAP
 		Properties props = new Properties()
-		props.put("mail.store.protocol", "imaps")
+		props.put("mail.store.protocol", "pop3s")
 		Session session = Session.getDefaultInstance(props, null)
-		Store store = session.getStore("imaps")
-		store.connect("imap.gmail.com", email, appPassword)
+		Store store = session.getStore("pop3s")
+		store.connect("pop.gmail.com", email, appPassword)
 
 		Folder inbox = store.getFolder("INBOX")
 		inbox.open(Folder.READ_ONLY)
 
-		// Ambil 50 email terakhir (atau kurang kalau inboxnya sedikit)
 		int messageCount = inbox.getMessageCount()
 		int start = Math.max(1, messageCount - 49)
 		Message[] messages = inbox.getMessages(start, messageCount)
@@ -252,10 +250,11 @@ public class Aktivasi2FA {
 		}
 
 		if (targetMessage == null) {
+			inbox.close(false)
+			store.close()
 			throw new Exception("Email 2FA tidak ditemukan di inbox.")
 		}
 
-		// Step 2: Cari dan simpan QR code sebagai file
 		File qrImage = null
 		if (targetMessage.isMimeType("multipart/*")) {
 			Multipart multipart = (Multipart) targetMessage.getContent()
@@ -265,7 +264,7 @@ public class Aktivasi2FA {
 				String contentType = part.getContentType().toLowerCase()
 				println("Part ke-${i} disposition: ${disposition}, contentType: ${contentType}")
 				if ((disposition != null && Part.ATTACHMENT.equalsIgnoreCase(disposition)) || contentType.startsWith("image/")) {
-					qrImage = new File("QRCode2FA.png")
+					qrImage = new File("QRCode2FA_${System.currentTimeMillis()}.png")
 					((MimeBodyPart) part).saveFile(qrImage)
 					println("QR code image disimpan di ${qrImage.getAbsolutePath()}")
 					break
@@ -274,10 +273,11 @@ public class Aktivasi2FA {
 		}
 
 		if (qrImage == null || !qrImage.exists()) {
+			inbox.close(false)
+			store.close()
 			throw new Exception("QR code tidak ditemukan di email.")
 		}
 
-		// Step 3: Decode QR code
 		BufferedImage bufferedImage = ImageIO.read(qrImage)
 		LuminanceSource source = new BufferedImageLuminanceSource(bufferedImage)
 		BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source))
@@ -285,15 +285,15 @@ public class Aktivasi2FA {
 		String otpauthURI = result.getText()
 		println("Hasil decode QR code: ${otpauthURI}")
 
-		// Step 4: Ambil secret dari URI
 		def matcher = (otpauthURI =~ /secret=([^&]+)/)
 		if (!matcher) {
+			inbox.close(false)
+			store.close()
 			throw new Exception("Secret key tidak ditemukan dalam QR.")
 		}
 		String secret = matcher[0][1]
 		println("Secret key: ${secret}")
 
-		// Step 5: Hasilkan OTP
 		Base32 base32 = new Base32()
 		byte[] decodedKey = base32.decode(secret)
 		Key key = new SecretKeySpec(decodedKey, "HmacSHA1")
@@ -302,6 +302,9 @@ public class Aktivasi2FA {
 		Instant now = Instant.now()
 		String otp = String.format("%06d", totp.generateOneTimePassword(key, now))
 		println("OTP yang dihasilkan: ${otp}")
+
+		inbox.close(false)
+		store.close()
 
 		return otp
 	}

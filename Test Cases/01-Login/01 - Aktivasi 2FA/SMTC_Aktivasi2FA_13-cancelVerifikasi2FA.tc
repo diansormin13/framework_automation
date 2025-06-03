@@ -3,6 +3,16 @@
    <description></description>
    <name>SMTC_Aktivasi2FA_13-cancelVerifikasi2FA</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>34</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>b5055044-38b4-4d9e-b22e-c9d1e4944119</testCaseGuid>
