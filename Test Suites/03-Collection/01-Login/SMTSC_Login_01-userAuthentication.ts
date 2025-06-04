@@ -12,7 +12,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>user-authentication</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Chrome (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/01-Login/SMTS_Login_01-Aktivasi2FA</testSuiteEntity>
