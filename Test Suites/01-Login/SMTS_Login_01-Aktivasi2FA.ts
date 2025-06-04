@@ -119,7 +119,7 @@
       <guid>5647ce12-7e10-4056-bb2a-b28d4d1959f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_15-kodeUserNotFound</testCaseId>
+      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_15-kodeUserNotFound_Failed</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -174,10 +174,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>2118cd5b-6129-446b-b2bc-87103c894eb7</guid>
+      <guid>db05ec90-b829-4552-b027-635ec272f090</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_14-verifikasi2FA</testCaseId>
+      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_14-verifikasi2FA_Success</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -196,7 +196,7 @@
       <guid>934c6e02-786e-415b-9321-cf07a1c6dc54</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_12-directSubmitVerifikasi2FA</testCaseId>
+      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_12-directSubmitVerifikasi2FA_Failed</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -212,10 +212,36 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>48320315-c3d8-4bff-be74-7ce3016cceef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_16-invalidKode2FA_Failed</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a8960287-f320-4233-a8cb-173b792629fa</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e374a893-fe60-47c6-85d1-4dda5a2b1248</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_17-lenghtOTPInvalid_Failed</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>be6c5c53-2692-47e6-a0c4-c7ae813fbb31</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>59efbeed-a8a1-4a1b-8547-d97625def472</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_13-cancelVerifikasi2FA</testCaseId>
+      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_13-cancelVerifikasi2FA_Failed</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

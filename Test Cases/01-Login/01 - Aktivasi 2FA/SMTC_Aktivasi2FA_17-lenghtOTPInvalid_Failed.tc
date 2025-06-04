@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_17-lenghtOTPInvalid_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2e37e2a1-6cf2-4a52-bf20-98525a19c72d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>be6c5c53-2692-47e6-a0c4-c7ae813fbb31</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description></description>
+      <id>be6c5c53-2692-47e6-a0c4-c7ae813fbb31</id>
+      <masked>false</masked>
+      <name>kodeOtp</name>
+   </variable>
+</TestCaseEntity>

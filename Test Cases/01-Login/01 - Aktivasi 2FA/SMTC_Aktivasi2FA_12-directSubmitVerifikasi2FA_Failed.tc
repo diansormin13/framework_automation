@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SMTC_Aktivasi2FA_12-directSubmitVerifikasi2FA</name>
+   <name>SMTC_Aktivasi2FA_12-directSubmitVerifikasi2FA_Failed</name>
    <tag>GenAI</tag>
    <integratedEntity>
       <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>

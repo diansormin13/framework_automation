@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
 
-KeywordUtil.logInfo("TC-2FA-14 - sebagai User SMILE, saya ingin melakukan verifikasi 2FA pada SMILE")
+KeywordUtil.logInfo("TC-2FA-15 - Sebagai User, saya ingin melalukan aktivasi 2FA pada SMILE dengan username dan email yang tidak terdaftar")
 
 CustomKeywords.'sectionLogin.Aktivasi2FA.negativeValidateKodeUserNotFound'(username,email)
 

@@ -57,6 +57,7 @@ public class Aktivasi2FA {
 	static final TestObject buttonSubmit = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/button_submit')
 	static final TestObject notFound = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_kodeUserNotFound')
 	static final TestObject txtSuccesVer = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_successVer')
+	static final TestObject invalidOTP = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_invalidOTP')
 	@Keyword
 	def validate2FASMILE() {
 		WebUI.verifyElementPresent(buttonAktivasi2FA, 2)
@@ -177,6 +178,21 @@ public class Aktivasi2FA {
 
 	@Keyword
 	def negativeValidateDirectSubmitVerifikasi2FA() {
+		WebUI.click(buttonSubmit)
+		String classAttrEmail = WebUI.getAttribute(kodeVer, 'class')
+		WebUI.verifyMatch(classAttrEmail.contains('x-form-invalid-field').toString(), 'true', true)
+	}
+
+	@Keyword
+	def negativeValidateKode2FAInvalid(kodeTOP) {
+		WebUI.setText(kodeVer, kodeTOP)
+		WebUI.click(buttonSubmit)
+		WebUI.verifyElementText(invalidOTP, "Kode digit Google Authenticator Anda sudah tidak valid. Masukkan kembali digit yang terbaru.")
+	}
+	
+	def negativeValidateLengthKode2FAInvalid(kodeTOP) {
+		WebUI.setText(kodeVer, kodeTOP)
+		WebUI.comment("Kode Verifikasi 2FA dibawah 6 digit")
 		WebUI.click(buttonSubmit)
 		String classAttrEmail = WebUI.getAttribute(kodeVer, 'class')
 		WebUI.verifyMatch(classAttrEmail.contains('x-form-invalid-field').toString(), 'true', true)
