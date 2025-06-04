@@ -189,7 +189,7 @@ public class Aktivasi2FA {
 		WebUI.click(buttonSubmit)
 		WebUI.verifyElementText(invalidOTP, "Kode digit Google Authenticator Anda sudah tidak valid. Masukkan kembali digit yang terbaru.")
 	}
-	
+
 	def negativeValidateLengthKode2FAInvalid(kodeTOP) {
 		WebUI.setText(kodeVer, kodeTOP)
 		WebUI.comment("Kode Verifikasi 2FA dibawah 6 digit")
