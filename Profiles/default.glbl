@@ -8,15 +8,18 @@
       <description></description>
       <initValue>'http://172.28.108.49:5248/smile/login.bpjs'</initValue>
       <name>baseURL</name>
+      <protected>false</protected>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'ZI123'</initValue>
       <name>username</name>
+      <protected>false</protected>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'BPJSTK1'</initValue>
       <name>password</name>
+      <protected>false</protected>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

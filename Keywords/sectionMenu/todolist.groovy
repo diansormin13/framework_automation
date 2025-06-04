@@ -92,19 +92,19 @@ public class todolist {
 			//				KeywordUtil.logInfo("ePLKK Tahap 1")
 			//				screenshoot.takeScreenshot('epLKKatPMP')
 
-				// ePLKK tahap 2
+			// ePLKK tahap 2
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'ePLKK Tahap II'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'ePLKK Tahap II', ('role'): 'MK/PMP'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'ePLKK Tahap II', ('role'): 'PMP'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'ePLKK Tahap II', ('role'): 'KBL'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'ePLKK Tahap II', ('role'): 'KAKACAB'] ), 1)
-				// Rujukan ePLKK
+			// Rujukan ePLKK
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'Rujukan ePLKK'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'Rujukan ePLKK'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'Rujukan ePLKK', ('role'): 'MK'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'Rujukan ePLKK', ('role'): 'KBL'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'Rujukan ePLKK', ('role'): 'KAKACAB'] ), 1)
-				// pengobatan lanjutan ePLKK
+			// pengobatan lanjutan ePLKK
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'Pengobatan Lanjutan ePLKK'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'Pengobatan Lanjutan ePLKK'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : category, ('subCategory') : 'Pengobatan Lanjutan ePLKK', ('role'): 'MK'] ), 1)
@@ -119,19 +119,19 @@ public class todolist {
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : 'Kepesertaan',('subCategory') : 'Approval Dokumen Jakon'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'Approval Dokumen Jakon', ('role'): 'Maker'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'Approval Dokumen Jakon', ('role'): 'KBP'] ), 1)
-				//TK Majemuk PU
+			//TK Majemuk PU
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'TK Majemuk PU'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : 'Kepesertaan',('subCategory') : 'TK Majemuk PU'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk PU', ('role'): 'Maker'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk PU', ('role'): 'KBKEU'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk PU', ('role'): 'KBP'] ), 1)
-				// tk majemuk jakon
+			// tk majemuk jakon
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'TK Majemuk Jakon'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : 'Kepesertaan',('subCategory') : 'TK Majemuk Jakon'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk Jakon', ('role'): 'Maker'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk Jakon', ('role'): 'KBKEU'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk Jakon', ('role'): 'KBP'] ), 1)
-				// Majemuk PU-Kecil Mikro
+			// Majemuk PU-Kecil Mikro
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'Majemuk PU Kecil-Mikro'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : 'Kepesertaan',('subCategory') : 'Majemuk PU Kecil-Mikro'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'Majemuk PU Kecil-Mikro', ('role'): 'Maker'] ), 1)
@@ -142,18 +142,18 @@ public class todolist {
 				WebUI.verifyElementPresent(findTestObject('02-page-Menu/12-Tugas Hari Ini/button_kepesertaan'), 1)
 				WebUI.verifyElementPresent(findTestObject("02-page-Menu/12-Tugas Hari Ini/dynamic_Element/ddl_transaksi", [('inputCategory') : 'Kepesertaan']), 1)
 
-				// Approval Dokumen Jakon
+			// Approval Dokumen Jakon
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'Approval Dokumen Jakon'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : 'Kepesertaan',('subCategory') : 'Approval Dokumen Jakon'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'Approval Dokumen Jakon', ('role'): 'Maker'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'Approval Dokumen Jakon', ('role'): 'KAKCP'] ), 1)
-				// TK Majemuk PU
+			// TK Majemuk PU
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'TK Majemuk PU'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : 'Kepesertaan',('subCategory') : 'TK Majemuk PU'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk PU', ('role'): 'Maker'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk PU', ('role'): 'KBKEU'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk PU', ('role'): 'KAKCP'] ), 1)
-				// tk majemuk jakon
+			// tk majemuk jakon
 				WebUI.scrollToElement(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : category,('subCategory') : 'TK Majemuk Jakon'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_Category", [('inputCategory') : 'Kepesertaan',('subCategory') : 'TK Majemuk Jakon'] ), 1)
 				WebUI.verifyElementPresent(findTestObject("Object Repository/02-page-Menu/12-Tugas Hari Ini/dynamic_Element/txt_subCategory", [('inputCategory') : 'Kepesertaan', ('subCategory') : 'TK Majemuk Jakon', ('role'): 'Maker'] ), 1)
@@ -246,7 +246,7 @@ public class todolist {
 	 */
 	@Keyword
 	def validateAfterClickDatailApproval() {
-		assert !WebUI.getAttribute(findTestObject('02-page-Menu/14-Default Menu/button_dynamic', [('param') : 'Tugas Hari Ini']), 'class').contains('x-top-active')
+		assert !WebUI.getAttribute(findTestObject('02-page-Menu/00-Common Menu/button_dynamic', [('param') : 'Tugas Hari Ini']), 'class').contains('x-top-active')
 	}
 
 	@Keyword
@@ -258,7 +258,7 @@ public class todolist {
 					('role') : Role,
 					('inputCategory'): inputCategory,
 					('subCategory'): subCategory]),2)
-		assert WebUI.getAttribute(findTestObject('02-page-Menu/14-Default Menu/button_dynamic', [('param') : 'Tugas Hari Ini']), 'class').contains('x-top-active')
+		assert WebUI.getAttribute(findTestObject('02-page-Menu/00-Common Menu/button_dynamic', [('param') : 'Tugas Hari Ini']), 'class').contains('x-top-active')
 	}
 
 	@Keyword
@@ -326,9 +326,9 @@ public class todolist {
 					('role') : Role,
 					('inputCategory'): inputCategory,
 					('subCategory'): subCategory])
-		
+
 		WebUI.scrollToElement(dynamicObject, 2)
-		
+
 		// using getAmountTaskApproval("todo", categoryID, subCategoryId, Role, inputCategory, subCategory) in test case
 		def taskBeforeApprovalTodo = taskTodo
 		// using getAmountTaskApproval("approved", categoryID, subCategoryId, Role, inputCategory, subCategory) in test case

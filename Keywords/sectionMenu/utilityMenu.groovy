@@ -33,8 +33,8 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def selectMenu(String menuName) {
-		WebUI.scrollToElement(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]),2)
-		WebUI.doubleClick(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]))
+		WebUI.scrollToElement(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_mainMenu', [('yourMenu') : menuName]),2)
+		WebUI.doubleClick(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_mainMenu', [('yourMenu') : menuName]))
 	}
 
 	/*
@@ -42,8 +42,8 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def logoutSMILE() {
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_logOut'))
-		WebUI.verifyElementNotPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_logOut'), 3)
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_logOut'))
+		WebUI.verifyElementNotPresent(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_logOut'), 3)
 	}
 
 	/*
@@ -51,8 +51,8 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def changeRoleSMILE() {
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_gantiRole'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'))
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_gantiRole'))
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/04-section_pilihRole/txt_selamatDatang'))
 	}
 
 	/*
@@ -73,9 +73,9 @@ public class utilityMenu {
 	 */
 	@Keyword
 	def clickTab(param) {
-		WebUI.waitForElementPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]),1)
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]))
+		WebUI.waitForElementPresent(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]), 1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]),1)
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]))
 	}
 
 	/*
@@ -86,8 +86,8 @@ public class utilityMenu {
 	@Keyword
 	def closeTabActive(param) {
 		// Clicks the close tab button using the provided dynamic parameter
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_closeTab', [('param') : param]))
-		WebUI.verifyElementNotPresent(findTestObject('02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 2)
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_closeTab', [('param') : param]))
+		WebUI.verifyElementNotPresent(findTestObject('02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]), 2)
 	}
 
 	@Keyword

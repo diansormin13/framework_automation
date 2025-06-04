@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_username</name>
+   <tag></tag>
+   <elementGuidId>2f57ce8d-5fd7-4675-b1ed-268fc0dd3466</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id=&quot;window-1027&quot;]//input[@name=&quot;userName&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//input[@name=&quot;userName&quot; and contains(@class,&quot;x-form-invalid-field&quot;)]</value>
+      <webElementGuid>4eb1c79c-c3a3-45e0-a228-18415fea361d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//div[@id=&quot;window-1027&quot;]//input[@name=&quot;userName&quot;]</value>
+      <webElementGuid>2ad6e8dc-f392-40a3-b9cc-6d83aa6c25b5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
