@@ -6,12 +6,11 @@
    <elementGuidId>2f57ce8d-5fd7-4675-b1ed-268fc0dd3466</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id=&quot;window-1027&quot;]//input[@name=&quot;userName&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;x-window x-layer x-window-default x-closable x-window-closable x-window-default-closable x-border-box&quot;]//input[@name=&quot;userName&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,13 +21,13 @@
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//input[@name=&quot;userName&quot; and contains(@class,&quot;x-form-invalid-field&quot;)]</value>
-      <webElementGuid>4eb1c79c-c3a3-45e0-a228-18415fea361d</webElementGuid>
+      <webElementGuid>401d426c-bf9b-4c6a-804d-7fa5eeed5b45</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//div[@id=&quot;window-1027&quot;]//input[@name=&quot;userName&quot;]</value>
-      <webElementGuid>2ad6e8dc-f392-40a3-b9cc-6d83aa6c25b5</webElementGuid>
+      <webElementGuid>c28efe67-e944-458d-9a76-68f55ae174bb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

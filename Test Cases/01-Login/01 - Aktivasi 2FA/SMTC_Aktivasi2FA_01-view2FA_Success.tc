@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>SMTC_Aktivasi2FA_01-view2FA_Success</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <integratedEntity>
       <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
       <properties>

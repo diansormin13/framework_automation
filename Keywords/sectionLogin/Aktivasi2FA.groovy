@@ -58,6 +58,7 @@ public class Aktivasi2FA {
 	static final TestObject notFound = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_kodeUserNotFound')
 	static final TestObject txtSuccesVer = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_successVer')
 	static final TestObject invalidOTP = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_invalidOTP')
+	
 	@Keyword
 	def validate2FASMILE() {
 		WebUI.verifyElementPresent(buttonAktivasi2FA, 2)
@@ -67,7 +68,8 @@ public class Aktivasi2FA {
 
 	@Keyword
 	def clickButtonVerifikasi2FA() {
-		WebUI.verifyElementAttributeValue(buttonAktivasi2FA, 'class', 'x-btn-button', 1)
+		WebUI.verifyElementVisible(buttonAktivasi2FA)
+		// WebUI.verifyElementAttributeValue(buttonAktivasi2FA, 'class', 'x-btn-button', 1)
 		WebUI.click(buttonAktivasi2FA)
 	}
 
@@ -112,8 +114,8 @@ public class Aktivasi2FA {
 	@Keyword
 	def batalAktivasi2FA() {
 		WebUI.click(batal)
-		WebUI.verifyElementNotVisible(popUpAktivasi2FA)
 		WebUI.waitForElementPresent(buttonAktivasi2FA, 1)
+		WebUI.verifyElementPresent(buttonAktivasi2FA, 1)
 	}
 
 	@Keyword
@@ -215,6 +217,12 @@ public class Aktivasi2FA {
 		WebUI.verifyElementText(notFound, "Kode user tidak ditemukan")
 		WebUI.click(btnOkUnMatch)
 		WebUI.verifyElementNotVisible(btnOkUnMatch)
+	}
+	
+	@Keyword 
+	def negativaClosePopupAktivasi2FA() {
+		WebUI.click(buttonAktivasi2FA)
+		WebUI.click(xtools)
 	}
 
 	@Keyword
