@@ -31,6 +31,13 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>d2d449fb-734c-469d-8190-dcb7de092ca0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/01-Login/01 - Aktivasi 2FA/SMTC_Aktivasi2FA_18-closePopUpAktivasi2FA_Failed</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>093ba557-0aed-4776-a684-71fdd6053c0d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

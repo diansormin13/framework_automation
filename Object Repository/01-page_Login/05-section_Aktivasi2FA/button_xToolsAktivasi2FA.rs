@@ -6,12 +6,11 @@
    <elementGuidId>60ad1332-1c6d-4db5-951b-7b3a8cf55af8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;x-tool x-box-item x-tool-default x-tool-after-title x-tool-pressed&quot;]//img[@class=&quot;x-tool-img x-tool-close&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//img[@class = 'x-tool-img x-tool-close' and @src = 'data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

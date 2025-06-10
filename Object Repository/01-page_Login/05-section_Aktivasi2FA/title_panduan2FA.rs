@@ -6,12 +6,11 @@
    <elementGuidId>49a8e0ca-1dcb-4fab-90c0-ce74496b410c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;x-component x-box-item x-component-default&quot;]//h4[text()=&quot;Panduan Aktivasi 2FA&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;x-window x-layer x-window-default x-closable x-window-closable x-window-default-closable x-border-box&quot;]//div[@class=&quot;x-component x-box-item x-component-default&quot;]//h4[text()=&quot;Panduan Aktivasi 2FA&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
