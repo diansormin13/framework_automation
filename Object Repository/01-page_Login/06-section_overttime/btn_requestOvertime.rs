@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>#overtimeBtn</value>
+         <value>//button[@id=&quot;overtimeBtn&quot; and normalize-space(text())=&quot;Pengajuan Akses di Luar Jam Kerja&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Overtime_20-pengajuanwithFileXlxsUpto2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>69e40426-0462-4493-92e6-3f316d0f063e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>71a86905-9dec-47fb-8963-99a86dac16b8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'sample_large_excel.xlsx'</defaultValue>
+      <description></description>
+      <id>71a86905-9dec-47fb-8963-99a86dac16b8</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+</TestCaseEntity>

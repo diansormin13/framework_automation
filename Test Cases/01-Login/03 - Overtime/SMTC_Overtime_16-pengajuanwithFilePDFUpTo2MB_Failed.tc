@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Overtime_16-pengajuanwithFilePDFUpTo2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>feb32107-013a-4622-9b2f-fc5f2f2e2555</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5500c505-ad1e-4c01-8e99-d560aeee8c91</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'sample_above_2mb.pdf'</defaultValue>
+      <description></description>
+      <id>5500c505-ad1e-4c01-8e99-d560aeee8c91</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Overtime_07-pengajuanOnlyReason_Failed</name>
+   <tag>GenAI</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>26dc5f6e-2dae-4387-aced-6624719dc4db</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a9924e87-00e0-466a-992b-d3c1363b50fc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'alasan aja'</defaultValue>
+      <description></description>
+      <id>a9924e87-00e0-466a-992b-d3c1363b50fc</id>
+      <masked>false</masked>
+      <name>reason</name>
+   </variable>
+</TestCaseEntity>

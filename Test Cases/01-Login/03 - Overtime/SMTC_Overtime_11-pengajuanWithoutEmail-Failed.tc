@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Overtime_11-pengajuanWithoutEmail-Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a48bc5b-767d-416c-a387-1e347602e987</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7205e90b-293b-4749-92f2-c452f7994f69</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>604f02b2-5031-406a-90a2-dd9576d8fe2e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fb21034d-fbe1-40e1-be84-6a0ef50b399c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'SE165580'</defaultValue>
+      <description></description>
+      <id>7205e90b-293b-4749-92f2-c452f7994f69</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'alasan aja'</defaultValue>
+      <description></description>
+      <id>604f02b2-5031-406a-90a2-dd9576d8fe2e</id>
+      <masked>false</masked>
+      <name>reason</name>
+   </variable>
+   <variable>
+      <defaultValue>'sample_below_2mb.pdf'</defaultValue>
+      <description></description>
+      <id>fb21034d-fbe1-40e1-be84-6a0ef50b399c</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+</TestCaseEntity>

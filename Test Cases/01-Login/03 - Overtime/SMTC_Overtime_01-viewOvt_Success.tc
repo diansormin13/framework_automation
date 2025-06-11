@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Overtime_01-viewOvt_Success</name>
+   <tag>GenAI</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ae62c60e-a98e-4b46-afe4-f20b2e4e2b16</testCaseGuid>
+</TestCaseEntity>

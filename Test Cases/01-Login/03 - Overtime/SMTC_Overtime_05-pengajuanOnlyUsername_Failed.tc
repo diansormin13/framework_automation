@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Overtime_05-pengajuanOnlyUsername_Failed</name>
+   <tag>GenAI</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bd542fcd-d0a9-4451-8886-40db72517873</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>482ac56c-81a3-41d8-b4f2-b204783dcf4d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'SE165580'</defaultValue>
+      <description></description>
+      <id>482ac56c-81a3-41d8-b4f2-b204783dcf4d</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>
