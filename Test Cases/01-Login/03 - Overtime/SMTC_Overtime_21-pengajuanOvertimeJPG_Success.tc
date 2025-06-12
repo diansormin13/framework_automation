@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
-   <name>SMTC_Overtime_21-pengajuanOvertime_Success</name>
+   <description>TC-OVT-14, TC-OVT-15, TC-OVT-23 </description>
+   <name>SMTC_Overtime_21-pengajuanOvertimeJPG_Success</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

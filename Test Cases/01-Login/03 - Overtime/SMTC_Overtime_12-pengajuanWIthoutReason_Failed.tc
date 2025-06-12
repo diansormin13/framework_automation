@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC-OVT-16</description>
    <name>SMTC_Overtime_12-pengajuanWIthoutReason_Failed</name>
    <tag></tag>
    <comment></comment>

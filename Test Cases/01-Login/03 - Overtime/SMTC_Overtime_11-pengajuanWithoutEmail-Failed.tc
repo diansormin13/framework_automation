@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC-OVT-13</description>
    <name>SMTC_Overtime_11-pengajuanWithoutEmail-Failed</name>
    <tag></tag>
    <comment></comment>

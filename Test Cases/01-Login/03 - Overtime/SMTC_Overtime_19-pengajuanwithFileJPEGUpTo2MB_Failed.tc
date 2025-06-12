@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC-OVT-34</description>
    <name>SMTC_Overtime_19-pengajuanwithFileJPEGUpTo2MB_Failed</name>
    <tag></tag>
    <comment></comment>

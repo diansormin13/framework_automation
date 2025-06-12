@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC-OVT-20</description>
    <name>SMTC_Overtime_14-pengajuanWithInvalidEmail_Failed</name>
    <tag></tag>
    <comment></comment>

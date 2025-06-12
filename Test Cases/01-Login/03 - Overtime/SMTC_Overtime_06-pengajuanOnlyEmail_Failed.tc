@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC-OVT-06</description>
    <name>SMTC_Overtime_06-pengajuanOnlyEmail_Failed</name>
    <tag>GenAI</tag>
    <comment></comment>
