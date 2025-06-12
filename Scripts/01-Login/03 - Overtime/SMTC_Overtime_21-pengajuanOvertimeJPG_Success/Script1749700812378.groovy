@@ -10,13 +10,16 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import sectionLogin.Overtime as overtime
+
+KeywordUtil.logInfo("TC-OVT-14, TC-OVT-15, TC-OVT-23 > Sebagai User Aplikasi, saya ingin melakukan pengajuan smile untuk hari ini dengan melampirkan jenis file jpg")
 
 overtime.batalPengajuan()
 
@@ -25,3 +28,5 @@ WebUI.callTestCase(findTestCase('Test Cases/01-Login/03 - Overtime/SMTC_Overtime
 overtime.submitOvertimeRequestAndVerifySuccess(username, email, reason, file)
 
 overtime.processOvertimeApprovalEmails(email, password, approval)
+
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime", "success_request")
