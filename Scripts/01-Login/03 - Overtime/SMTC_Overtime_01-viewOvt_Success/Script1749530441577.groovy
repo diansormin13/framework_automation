@@ -70,3 +70,7 @@ WebUI.callTestCase(findTestCase('01-Login/03 - Overtime/SMTC_Overtime_19-pengaju
 WebUI.callTestCase(findTestCase('01-Login/03 - Overtime/SMTC_Overtime_20-pengajuanwithFileXlxsUpto2MB_Failed'), [('file') : 'sample_large_excel.xlsx'], 
     FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('01-Login/03 - Overtime/SMTC_Overtime_21-pengajuanOvertime_Success'), [('username') : 'SE165580'
+        , ('email') : 'septa.ringgadaniarta@bpjsketenagakerjaan.go.id', ('reason') : 'approval', ('file') : 'sample_below_2mb.jpg'
+        , ('password') : 'lmjcslptjgkqfgop', ('approval') : 'setuju'], FailureHandling.STOP_ON_FAILURE)
+

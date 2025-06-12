@@ -22,6 +22,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import CustomKeywords
 import internal.GlobalVariable
 
+import javax.mail.*
+import java.util.Properties
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+import java.net.HttpURLConnection
+import java.net.URL
+
 public class Overtime {
 
 	static final TestObject alert_email = findTestObject('Object Repository/01-page_Login/06-section_overttime/alert_email')
@@ -54,7 +61,8 @@ public class Overtime {
 	static final TestObject alert_file = findTestObject('Object Repository/01-page_Login/06-section_overttime/alert_invalidFile')
 	static final TestObject alert_2MB = findTestObject('Object Repository/01-page_Login/06-section_overttime/alert_error2MB')
 	static final TestObject btn_okInvalidFile = findTestObject('Object Repository/01-page_Login/06-section_overttime/btn_OKInvalidFile')
-	
+	static final TestObject txt_sukses = findTestObject('Object Repository/01-page_Login/06-section_overttime/txt_sukses')
+
 	@Keyword
 	static def verifyOvertimeSMIlE() {
 		WebUI.waitForElementPresent(btn_requestOvertime,1)
@@ -118,9 +126,9 @@ public class Overtime {
 		WebUI.verifyElementVisible(popup_overtime)
 		String tooltip_email = WebUI.getAttribute(alert_email, 'data-errorqtip')
 		tooltip_email = tooltip_email
-		.replaceAll('&lt;', '<')
-		.replaceAll('&gt;', '>')
-		.replaceAll('&quot;', '"')
+				.replaceAll('&lt;', '<')
+				.replaceAll('&gt;', '>')
+				.replaceAll('&quot;', '"')
 		assert tooltip_email.contains('Hanya email @bpjsketenagakerjaan.go.id yang diizinkan')
 		assert tooltip_email.contains('Email tidak boleh kosong')
 		String tooltip_lampiran = WebUI.getAttribute(alert_lampiran, 'data-errorqtip')
@@ -182,9 +190,9 @@ public class Overtime {
 		WebUI.verifyElementVisible(alert_lampiran)
 		String tooltip_email = WebUI.getAttribute(alert_email, 'data-errorqtip')
 		tooltip_email = tooltip_email
-		.replaceAll('&lt;', '<')
-		.replaceAll('&gt;', '>')
-		.replaceAll('&quot;', '"')
+				.replaceAll('&lt;', '<')
+				.replaceAll('&gt;', '>')
+				.replaceAll('&quot;', '"')
 		assert tooltip_email.contains('Hanya email @bpjsketenagakerjaan.go.id yang diizinkan')
 		assert tooltip_email.contains('Email tidak boleh kosong')
 		String tooltip_lampiran = WebUI.getAttribute(alert_lampiran, 'data-errorqtip')
@@ -219,9 +227,9 @@ public class Overtime {
 		assert tooltip_kodeuser.contains('Username tidak boleh kosong')
 		String tooltip_email = WebUI.getAttribute(alert_email, 'data-errorqtip')
 		tooltip_email = tooltip_email
-		.replaceAll('&lt;', '<')
-		.replaceAll('&gt;', '>')
-		.replaceAll('&quot;', '"')
+				.replaceAll('&lt;', '<')
+				.replaceAll('&gt;', '>')
+				.replaceAll('&quot;', '"')
 		assert tooltip_email.contains('Hanya email @bpjsketenagakerjaan.go.id yang diizinkan')
 		assert tooltip_email.contains('Email tidak boleh kosong')
 		String tooltip_lampiran = WebUI.getAttribute(alert_lampiran, 'data-errorqtip')
@@ -252,9 +260,9 @@ public class Overtime {
 		assert tooltip_kodeuser.contains('Username tidak boleh kosong')
 		String tooltip_email = WebUI.getAttribute(alert_email, 'data-errorqtip')
 		tooltip_email = tooltip_email
-		.replaceAll('&lt;', '<')
-		.replaceAll('&gt;', '>')
-		.replaceAll('&quot;', '"')
+				.replaceAll('&lt;', '<')
+				.replaceAll('&gt;', '>')
+				.replaceAll('&quot;', '"')
 		assert tooltip_email.contains('Hanya email @bpjsketenagakerjaan.go.id yang diizinkan')
 		assert tooltip_email.contains('Email tidak boleh kosong')
 		String tooltip_reason = WebUI.getAttribute(alert_reason, 'data-errorqtip')
@@ -270,7 +278,6 @@ public class Overtime {
 		WebUI.verifyElementVisible(alert_kodeUser)
 		String tooltip = WebUI.getAttribute(alert_kodeUser, 'data-errorqtip')
 		assert tooltip.contains('Username tidak boleh kosong')
-		
 	}
 
 	@Keyword
@@ -282,9 +289,9 @@ public class Overtime {
 		WebUI.verifyElementVisible(alert_email)
 		String tooltip_email = WebUI.getAttribute(alert_email, 'data-errorqtip')
 		tooltip_email = tooltip_email
-		.replaceAll('&lt;', '<')
-		.replaceAll('&gt;', '>')
-		.replaceAll('&quot;', '"')
+				.replaceAll('&lt;', '<')
+				.replaceAll('&gt;', '>')
+				.replaceAll('&quot;', '"')
 		assert tooltip_email.contains('Hanya email @bpjsketenagakerjaan.go.id yang diizinkan')
 		assert tooltip_email.contains('Email tidak boleh kosong')
 	}
@@ -309,7 +316,6 @@ public class Overtime {
 		WebUI.verifyElementVisible(alert_lampiran)
 		String tooltip = WebUI.getAttribute(alert_lampiran, 'data-errorqtip')
 		assert tooltip.contains('Lampiran tidak boleh kosong')
-		
 	}
 
 	@Keyword
@@ -332,7 +338,7 @@ public class Overtime {
 		assert tooltip.contains('Hanya PDF, JPEG, dan JPG yang diperbolehkan')
 		WebUI.click(btn_okInvalidFile)
 	}
-	
+
 	@Keyword
 	static def negativePengajuanWithFileUp2MB(String invalidFilePath) {
 		uploadFile(invalidFilePath)
@@ -340,5 +346,138 @@ public class Overtime {
 		String tooltip = WebUI.getText(alert_2MB)
 		assert tooltip.contains('Ukuran file harus kurang dari 2MB')
 		WebUI.click(btn_okInvalidFile)
+	}
+
+	@Keyword
+	static def submitOvertimeRequestAndVerifySuccess(String username, String email, String reason, String fileName) {
+		fillUsername(username)
+		fillEmail(email)
+		fillReason(reason)
+		uploadFile(fileName)
+		lakukanPengajuan()
+		WebUI.verifyElementVisible(txt_sukses)
+		WebUI.click(btn_okInvalidFile)
+	}
+
+	@Keyword
+	static def getEmail(String user, String password) {
+		Properties properties = new Properties()
+		properties.put("mail.store.protocol", "pop3s")
+		properties.put("mail.pop3.host", "pop.gmail.com")
+		properties.put("mail.pop3.port", "995")
+		properties.put("mail.pop3.starttls.enable", "true")
+		Session emailSession = Session.getDefaultInstance(properties)
+		Store store = emailSession.getStore("pop3s")
+		store.connect("pop.gmail.com", user, password)
+
+		Folder emailFolder = store.getFolder("INBOX")
+		emailFolder.open(Folder.READ_ONLY)
+
+		int messageCount = emailFolder.getMessageCount()
+		int start = Math.max(1, messageCount - 49)
+		Message[] messages = emailFolder.getMessages(start, messageCount)
+
+		Message targetEmail = null
+		WebUI.comment("Mengecek email dari indeks " + start + " sampai " + messageCount)
+		for (int i = messages.length - 1; i >= 0; i--) {
+			Message message = messages[i]
+			String subject = message.getSubject()
+			WebUI.comment("Subjek email ke-" + i + ": " + subject)
+			if (subject != null && subject.contains("Permintaan Persetujuan Lembur")) {
+				targetEmail = message
+				WebUI.comment("Ditemukan email persetujuan lembur dengan subjek: " + subject)
+				break
+			}
+		}
+		emailFolder.close(false)
+		store.close()
+		return targetEmail
+	}
+
+	@Keyword
+	static def processOvertimeApprovalEmails(String user, String password, String action) {
+		Message approvalEmail = getEmail(user, password)
+
+		if (approvalEmail != null) {
+			String content = getTextFromMessage(approvalEmail)
+			if (content.contains("SETUJU") && content.contains("TOLAK")) {
+				String approveLink = extractLink(content, 'setuju')
+				String rejectLink = extractLink(content, 'tolak')
+				switch(action?.toLowerCase()) {
+					case 'setuju':
+						WebUI.comment("Aksi: SETUJU")
+						if (approveLink) {
+							WebUI.comment("Request ke: " + approveLink)
+							int responseCode = sendHttpGet(approveLink)
+							WebUI.comment("Response code: " + responseCode)
+						} else {
+							WebUI.comment("Link SETUJU tidak ditemukan.")
+						}
+						break
+					case 'tolak':
+						WebUI.comment("Aksi: TOLAK")
+						if (rejectLink) {
+							WebUI.comment("Request ke: " + rejectLink)
+							int responseCode = sendHttpGet(rejectLink)
+							WebUI.comment("Response code: " + responseCode)
+						} else {
+							WebUI.comment("Link TOLAK tidak ditemukan.")
+						}
+						break
+					default:
+						WebUI.comment("Aksi tidak dikenali: " + action)
+				}
+			} else {
+				WebUI.comment("Email persetujuan lembur ditemukan, tetapi tidak ada tombol SETUJU atau TOLAK.")
+			}
+		} else {
+			WebUI.comment("Email persetujuan lembur tidak ditemukan.")
+		}
+	}
+
+	// Helper untuk ambil isi email (text/html)
+	static def getTextFromMessage(Message message) {
+		if (message.isMimeType("text/plain")) {
+			return message.getContent().toString()
+		} else if (message.isMimeType("multipart/*")) {
+			Multipart multipart = (Multipart) message.getContent()
+			for (int i = 0; i < multipart.getCount(); i++) {
+				BodyPart part = multipart.getBodyPart(i)
+				if (part.isMimeType("text/plain")) {
+					return part.getContent().toString()
+				} else if (part.isMimeType("text/html")) {
+					return part.getContent().toString()
+				}
+			}
+		}
+		return ""
+	}
+
+	// Helper untuk parsing link berdasarkan keyword (setuju/tolak)
+	static def extractLink(String content, String keyword) {
+		// Regex cari href yang mengandung keyword
+		Pattern pattern = Pattern.compile('href=["\']([^"\']*' + keyword + '[^"\']*)["\']', Pattern.CASE_INSENSITIVE)
+		Matcher matcher = pattern.matcher(content)
+		if (matcher.find()) {
+			return matcher.group(1)
+		}
+		return null
+	}
+
+	// Helper untuk HTTP GET request
+	static def sendHttpGet(String urlStr) {
+		try {
+			URL url = new URL(urlStr)
+			HttpURLConnection con = (HttpURLConnection) url.openConnection()
+			con.setRequestMethod("GET")
+			con.setConnectTimeout(10000)
+			con.setReadTimeout(10000)
+			int responseCode = con.getResponseCode()
+			con.disconnect()
+			return responseCode
+		} catch (Exception e) {
+			println("HTTP request error: " + e.getMessage())
+			return -1
+		}
 	}
 }
