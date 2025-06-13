@@ -58,7 +58,7 @@ public class Aktivasi2FA {
 	static final TestObject notFound = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_kodeUserNotFound')
 	static final TestObject txtSuccesVer = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_successVer')
 	static final TestObject invalidOTP = findTestObject('Object Repository/01-page_Login/05-section_Aktivasi2FA/txt_invalidOTP')
-	
+
 	@Keyword
 	def validate2FASMILE() {
 		WebUI.verifyElementPresent(buttonAktivasi2FA, 2)
@@ -218,8 +218,8 @@ public class Aktivasi2FA {
 		WebUI.click(btnOkUnMatch)
 		WebUI.verifyElementNotVisible(btnOkUnMatch)
 	}
-	
-	@Keyword 
+
+	@Keyword
 	def negativaClosePopupAktivasi2FA() {
 		WebUI.click(buttonAktivasi2FA)
 		WebUI.click(xtools)

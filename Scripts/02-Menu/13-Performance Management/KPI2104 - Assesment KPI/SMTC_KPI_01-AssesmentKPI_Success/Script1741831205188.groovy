@@ -17,8 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//WebUI.callTestCase(findTestCase('Test Cases/01-Login/02-Login and Role/SMTC_Login_01-LoginToSMILE_Success'), [:])
-//WebUI.callTestCase(findTestCase('Test Cases/01-Login/02-Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'),
+//WebUI.callTestCase(findTestCase('Test Cases/01-Login/02 - Login and Role/SMTC_Login_01-LoginToSMILE_Success'), [:])
+//WebUI.callTestCase(findTestCase('Test Cases/01-Login/02 - Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'),
 //	[('inisial') : inisial, ('role') : role])
 //CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("Performance Management")
 //CustomKeywords.'sectionMenu.utilityMenu.selectMenu'("KPI Unit")

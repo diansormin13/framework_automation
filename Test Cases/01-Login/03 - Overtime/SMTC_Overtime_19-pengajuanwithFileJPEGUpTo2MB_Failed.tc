@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-34</description>
+   <name>SMTC_Overtime_19-pengajuanwithFileJPEGUpTo2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a44b4c61-baef-41a3-a02f-e80fb46eef58</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>833b5e0c-77cf-4705-8ae5-8e8de063c66a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'sample_above_2mb.jpeg'</defaultValue>
+      <description></description>
+      <id>833b5e0c-77cf-4705-8ae5-8e8de063c66a</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+</TestCaseEntity>

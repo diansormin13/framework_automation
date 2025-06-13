@@ -111,7 +111,7 @@ class TestListener {
             }
 
             WebUI.callTestCase(
-                findTestCase('01-Login/02-Login and Role/SMTC_Login_01-LoginToSMILE_Success'),
+                findTestCase('01-Login/02 - Login and Role/SMTC_Login_01-LoginToSMILE_Success'),
                 [
                     'username': usernameValue,
                     'password': passwordValue

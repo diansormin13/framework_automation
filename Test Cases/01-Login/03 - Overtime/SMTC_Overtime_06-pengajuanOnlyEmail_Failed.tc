@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-06</description>
+   <name>SMTC_Overtime_06-pengajuanOnlyEmail_Failed</name>
+   <tag>GenAI</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1b3b4d8b-2eea-4a79-816e-3d76cda95f7b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>213b17d8-f0e7-441d-b463-6d409be5015f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'septa.ringgadaniarta@bpjsketenagakerjaan.go.id\r\n'</defaultValue>
+      <description></description>
+      <id>213b17d8-f0e7-441d-b463-6d409be5015f</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

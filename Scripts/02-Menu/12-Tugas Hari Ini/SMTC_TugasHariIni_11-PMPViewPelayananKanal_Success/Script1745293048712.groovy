@@ -23,7 +23,7 @@ KeywordUtil.logInfo("TC-TDL-012 - Sebagai Role PMP/KAKACAB, Saya dapat melihat t
 // CustomKeywords.'sectionMenu.utilityMenu.changeRoleSMILE'()
 // Call the test case for selecting role in SMILE
 WebUI.callTestCase(
-    findTestCase('Test Cases/01-Login/02-Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'),
+    findTestCase('Test Cases/01-Login/02 - Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'),
     [
         'inisial': inisial,
         'role'   : role
