@@ -136,6 +136,33 @@ GlobalVariable.AUTO_LOGIN = true
 Kode lengkap dapat dicek di folder:
 `Test Listeners/TestListener.groovy`
 
+## 🔑 Penggunaan Keywords
+
+### 📝 Membuat Keyword
+- Buat class baru di folder Keywords
+- Gunakan anotasi `@Keyword`
+- Definisikan method dengan parameter yang diperlukan
+
+```groovy
+class Login {
+    @Keyword
+    def login(String username, String password) {
+        WebUI.setText(findTestObject('Login/txtUsername'), username)
+        WebUI.click(findTestObject('Login/btnLogin'))
+    }
+}
+```
+
+### 📋 Menggunakan Keyword dalam Test Case
+- Panggil keyword menggunakan `CustomKeywords`
+- Berikan parameter sesuai kebutuhan
+- Gunakan untuk aksi yang sering diulang
+
+```groovy
+// Dalam test case
+CustomKeywords.'Login.login'('admin', 'password123')
+```
+
 ## 📁 Test Suites dan Test Collection
 - Folder Test Suites: `Test Suites/Menu Utama SMILE/Sub Menu Langsung sesuai Project`
 - Test Suites: `SMTS_Nama Project_XX-fitur'
