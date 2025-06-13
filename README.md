@@ -19,7 +19,7 @@ Pastikan plugin berikut sudah terpasang:
 ### 📁 Langkah Instalasi & Jalankan
 1. Clone repository ke lokal:
 ```bash
-git clone https://github.com/namamu/SMILE-Automation.git
+git clone https://git.bpjsketenagakerjaan.go.id/pti/smile/devsecops/automation/web-application.git
 ```
 
 2. Buka project di Katalon Studio:
