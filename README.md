@@ -1,7 +1,7 @@
 # SMILE - Katalon Studio Test Automation Project
 
 ## 🧾 Overview
-SMILE adalah proyek otomatisasi pengujian end-to-end berbasis Katalon Studio yang digunakan untuk menguji aplikasi web secara dinamis dan efisien. Proyek ini mendukung login berdasarkan role, profile switching, test listener otomatis, serta pengelolaan data berbasis .profile.
+Ini adalah Katalon Stuido test automation framework untuk Aplikasi SMILE BPJS Ketenagakerjaan
 
 ## 🚀 Setup & Requirements
 
