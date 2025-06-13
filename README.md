@@ -57,15 +57,39 @@ git push origin feat/test-nama-branch
 ## 🗂️ Project Structure
 ```
 SMILE/
-├── Test Cases/
-│   ├── 01-Login/
-│   └── 02-Menu/
-├── Profiles/
-├── Test Suites/
-├── Object Repository/
-├── Keywords/
-├── Reports/
-├── settings/, lib/, build.gradle, README.md, etc.
+├── .git/                      # Git repository files
+├── .gradle/                   # Gradle build system files
+├── .settings/                 # Project settings
+├── .vscode/                   # VS Code settings
+├── .cache/                    # Cache files
+├── bin/                       # Compiled files
+├── build/                     # Build output directory
+├── Checkpoints/              # Test checkpoints
+├── Data Files/               # Test data files
+├── Drivers/                  # WebDriver executables
+├── Include/                  # Include files
+├── Keywords/                 # Custom keywords and functions
+├── Libs/                     # External libraries
+├── Object Repository/        # Page objects and elements
+├── Plugins/                  # Katalon plugins
+├── Profiles/                 # Environment profiles
+├── Reports/                  # Test execution reports
+├── Screenshots/             # Test execution screenshots
+├── Scripts/                  # Utility scripts
+├── settings/                 # Project settings
+├── Test Cases/              # Test case files
+│   ├── 01-Login/           # Login test cases
+│   └── 02-Menu/            # Menu test cases
+├── Test Listeners/          # Test listeners
+├── Test Suites/             # Test suites
+│   └── 03-Collection/      # Test collections
+├── .classpath               # Classpath configuration
+├── .gitignore              # Git ignore rules
+├── .project                # Project configuration
+├── build.gradle            # Gradle build configuration
+├── console.properties      # Console properties
+├── README.md               # Project documentation
+└── SMILE.prj               # Katalon project file
 ```
 
 ## 📚 Struktur & Penamaan
@@ -78,13 +102,7 @@ Contoh:
 - `01-Login/` → `SMTC_Login_01-LoginValidUser_Success`
 
 ### 🔹 Struktur Test Case
-Karena login dilakukan otomatis melalui Test Listener, maka test case tidak perlu memanggil ulang login.
-
-```groovy
-WebUI.click(findTestObject('Menu/btnDashboard'))
-WebUI.verifyElementPresent(findTestObject('Dashboard/lblWelcome'), 10)
-```
-
+Karena login dilakukan otomatis melalui Test Listener, test case tidak perlu memanggil ulang login.
 🎯 Jika ingin ganti user, cukup ubah `GlobalVariable.username` dan `GlobalVariable.password` di test case.
 
 ### 🔹 Cara Menjalankan Test Case
