@@ -18,7 +18,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://172.28.108.49:5297/smile/login.bpjs'</initValue>
+      <initValue>'http://172.28.108.49:5296/smile/login.bpjs'</initValue>
       <name>baseURL</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
