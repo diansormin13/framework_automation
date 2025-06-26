@@ -9,9 +9,9 @@
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>10.2.1</modifiedVersion>
+   <modifiedVersion>10.1.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\Admin\Desktop\SMILE\SMILE.prj</projectFileLocation>
+   <projectFileLocation>/Users/mrifqi.habibi/Documents/Habibi-Kantor/GITLAB/Katalon/smile-automation/SMILE.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
