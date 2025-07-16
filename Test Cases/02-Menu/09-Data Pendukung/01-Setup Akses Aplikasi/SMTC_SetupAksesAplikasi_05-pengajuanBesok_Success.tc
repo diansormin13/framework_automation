@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-05</description>
+   <name>SMTC_SetupAksesAplikasi_05-pengajuanBesok_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f2246429-2a2d-41e8-b5e4-0b2370d1484a</testCaseGuid>
+</TestCaseEntity>

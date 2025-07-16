@@ -22,4 +22,4 @@ KeywordUtil.logInfo("TC-OVT-03 > Sebagai User Aplikasi, saya ingin langsung mela
 
 CustomKeywords.'sectionLogin.Overtime.negativeVerifyLakukanPengajuan'()
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime", "directly_pengajuan")
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime/individu", "directly_pengajuan")

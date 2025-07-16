@@ -6,12 +6,11 @@
    <elementGuidId>d3e3d462-2464-46d2-9a13-de6b18c59a5d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@name=&quot;attachment&quot;]//ancestor::tbody//div[@role=&quot;alert&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

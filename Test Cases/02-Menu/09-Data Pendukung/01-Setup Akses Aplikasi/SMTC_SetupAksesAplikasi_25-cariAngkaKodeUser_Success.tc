@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-25</description>
+   <name>SMTC_SetupAksesAplikasi_25-cariAngkaKodeUser_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f3df110e-e4ff-4b7d-9dc4-05a51e0e072b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>10056c2b-2b81-4ed4-bfef-e69d675e7ea3</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'112228'</defaultValue>
+      <description></description>
+      <id>10056c2b-2b81-4ed4-bfef-e69d675e7ea3</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

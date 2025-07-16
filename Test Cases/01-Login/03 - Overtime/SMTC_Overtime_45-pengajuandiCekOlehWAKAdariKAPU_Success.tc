@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-45</description>
+   <name>SMTC_Overtime_45-pengajuandiCekOlehWAKAdariKAPU_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2c3e8034-6daa-437d-9479-b53342f96e59</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>30c7a7c3-79d2-4ab1-b08b-b9ca1fc4c0f4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33280bc3-1daf-4a5c-b92c-9a78a2dc6ba3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6f8b579f-606b-4e97-ba91-bfe45da10008</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0a4ef3bd-f471-4fa4-a18b-eddd2435063c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>287ddc9d-c7ec-419a-9081-643a3cc9403d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'pti-dev02@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description>WAKA DHCA </description>
+      <id>30c7a7c3-79d2-4ab1-b08b-b9ca1fc4c0f4</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+   <variable>
+      <defaultValue>'xktogshdnvjeqdwv'</defaultValue>
+      <description></description>
+      <id>33280bc3-1daf-4a5c-b92c-9a78a2dc6ba3</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'SE165580'</defaultValue>
+      <description>STaff KAPU</description>
+      <id>6f8b579f-606b-4e97-ba91-bfe45da10008</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'pengajuan oleh staff KAPU'</defaultValue>
+      <description></description>
+      <id>0a4ef3bd-f471-4fa4-a18b-eddd2435063c</id>
+      <masked>false</masked>
+      <name>reason</name>
+   </variable>
+   <variable>
+      <defaultValue>'septa.ringgadaniarta@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description></description>
+      <id>287ddc9d-c7ec-419a-9081-643a3cc9403d</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

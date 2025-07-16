@@ -25,5 +25,5 @@ overtime.deletefieldExisting(overtime.input_kodeUser)
 
 overtime.negativePengajuanOnlyByEmail(email)
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime", "pengajuan_only_email")
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime/individu", "pengajuan_only_email")
 

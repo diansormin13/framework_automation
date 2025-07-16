@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-04</description>
+   <name>SMTC_SetupAksesAplikasi_04-pengajuanBatal_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>188280f6-a6f7-4ab3-af42-5e53f9de5201</testCaseGuid>
+</TestCaseEntity>

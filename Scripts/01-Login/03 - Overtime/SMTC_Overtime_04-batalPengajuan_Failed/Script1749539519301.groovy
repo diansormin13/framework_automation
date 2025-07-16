@@ -22,4 +22,4 @@ KeywordUtil.logInfo("TC-OVT-04 > Sebagai User Aplikasi, saya ingin membatalkan p
 
 CustomKeywords.'sectionLogin.Overtime.negativeVerifyBatalPengajuan'()
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime", "batal_pengajuan")
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime/individu", "batal_pengajuan")

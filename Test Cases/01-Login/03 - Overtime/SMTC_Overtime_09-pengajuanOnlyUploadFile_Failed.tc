@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-09</description>
+   <name>SMTC_Overtime_09-pengajuanOnlyUploadFile_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1fa63dfa-eea3-4429-97b3-16023ede39ca</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c8e337d4-e598-4754-9801-495c76eecff8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'sample_below_2mb.pdf'</defaultValue>
+      <description></description>
+      <id>c8e337d4-e598-4754-9801-495c76eecff8</id>
+      <masked>false</masked>
+      <name>filePdf</name>
+   </variable>
+</TestCaseEntity>

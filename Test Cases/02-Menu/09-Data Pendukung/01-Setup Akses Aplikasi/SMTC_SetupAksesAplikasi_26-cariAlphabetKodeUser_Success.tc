@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-26</description>
+   <name>SMTC_SetupAksesAplikasi_26-cariAlphabetKodeUser_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>77bf8341-880d-447d-b5c2-97973e7d83c2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>06597094-e519-4daa-be6b-f74c2ba8591b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'MS'</defaultValue>
+      <description></description>
+      <id>06597094-e519-4daa-be6b-f74c2ba8591b</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

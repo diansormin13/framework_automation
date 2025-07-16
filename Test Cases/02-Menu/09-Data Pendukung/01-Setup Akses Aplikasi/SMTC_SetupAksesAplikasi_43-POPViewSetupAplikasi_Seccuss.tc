@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-44</description>
+   <name>SMTC_SetupAksesAplikasi_43-POPViewSetupAplikasi_Seccuss</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f1162b6f-68df-4abf-85dc-ed49504d9cba</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>10e785de-d931-43de-ae60-465225cefdda</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>abfa5d93-db0a-4a6f-8df0-b8f1fb1b19f5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('SMDF_userSMILE').getValue('USM', 6)</defaultValue>
+      <description></description>
+      <id>ae146267-f095-42b4-8b8b-6768a026df3d</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_userSMILE').getValue('PSW', 6)</defaultValue>
+      <description></description>
+      <id>d6b3c6bc-8154-4d09-a401-b5d377d9faa8</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

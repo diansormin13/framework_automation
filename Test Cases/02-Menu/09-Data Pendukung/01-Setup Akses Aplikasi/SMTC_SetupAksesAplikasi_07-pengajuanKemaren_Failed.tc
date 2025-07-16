@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-07</description>
+   <name>SMTC_SetupAksesAplikasi_07-pengajuanKemaren_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7943bc49-2d4b-41e9-a4d2-9da79cfcaafc</testCaseGuid>
+</TestCaseEntity>

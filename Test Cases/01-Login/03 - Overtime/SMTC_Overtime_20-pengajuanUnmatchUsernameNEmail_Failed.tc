@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-20</description>
+   <name>SMTC_Overtime_20-pengajuanUnmatchUsernameNEmail_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2f1cfd9b-6035-4b55-a16d-27d936917910</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>27e68974-1a98-428c-84c5-95ed7a3f04c1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b89fccd3-b261-48be-b665-d97793beb164</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>50d4b913-a1be-4dfe-93a3-743efd53acdd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ca71ee43-7e12-409f-bd77-c80794dd1fe2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'SE165580'</defaultValue>
+      <description>username mas septa</description>
+      <id>27e68974-1a98-428c-84c5-95ed7a3f04c1</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'ramdan.agung@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description>email pak ramdan</description>
+      <id>b89fccd3-b261-48be-b665-d97793beb164</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'username mas septa dan email pak ramdan'</defaultValue>
+      <description></description>
+      <id>50d4b913-a1be-4dfe-93a3-743efd53acdd</id>
+      <masked>false</masked>
+      <name>reason</name>
+   </variable>
+   <variable>
+      <defaultValue>'sample_below_2mb.jpg'</defaultValue>
+      <description></description>
+      <id>ca71ee43-7e12-409f-bd77-c80794dd1fe2</id>
+      <masked>false</masked>
+      <name>lampiran</name>
+   </variable>
+</TestCaseEntity>

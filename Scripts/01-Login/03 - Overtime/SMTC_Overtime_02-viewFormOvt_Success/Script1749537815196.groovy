@@ -18,10 +18,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-KeywordUtil.logInfo("TC-OVT-02, TC-OVT-07, TC-OVT-08 > Sebagai User Aplikasi, saya dapat melihat detail pengajuan akses aplikasi SMILE diluar jam kerja")
+KeywordUtil.logInfo("TC-OVT-02 > Sebagai User Aplikasi, saya dapat melihat detail pengajuan akses aplikasi SMILE diluar jam kerja")
 
 CustomKeywords.'sectionLogin.Overtime.clickBtnOvertime'()
 
 CustomKeywords.'sectionLogin.Overtime.verifyFormOvertime'()
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime", "viewOVT")
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime/individu", "viewFormOVT")

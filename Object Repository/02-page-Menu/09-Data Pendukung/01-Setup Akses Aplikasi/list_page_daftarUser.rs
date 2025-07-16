@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>list_page_daftarUser</name>
+   <tag></tag>
+   <elementGuidId>6a8b8759-4741-4255-b419-564ddbf69d57</elementGuidId>
+   <imagePath></imagePath>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/02-page-Menu/09-Data Pendukung/01-Setup Akses Aplikasi/iframe_aksesSMILE']</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@class=&quot;pagination&quot;]//a[text()=&quot;${param}&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value></value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-page-Menu/09-Data Pendukung/01-Setup Akses Aplikasi/iframe_aksesSMILE</value>
+      <webElementGuid>832a22e3-3eeb-42dd-b5a6-6f7a94f84b0e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

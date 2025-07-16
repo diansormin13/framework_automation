@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-14</description>
+   <name>SMTC_SetupAksesAplikasi_14-uploadJPG2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>12d309be-f5a2-4206-ae5d-e32bcd3aa7c0</testCaseGuid>
+</TestCaseEntity>

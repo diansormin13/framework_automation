@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-09</description>
+   <name>SMTC_SetupAksesAplikasi_09-pengajuanSatuBulan_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c6b1b8b1-67bb-41fa-981d-555b7961b70d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-13</description>
+   <name>SMTC_SetupAksesAplikasi_13-uploadExcelLebih2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dd61e933-ff3c-4caa-8262-97be07b09394</testCaseGuid>
+</TestCaseEntity>

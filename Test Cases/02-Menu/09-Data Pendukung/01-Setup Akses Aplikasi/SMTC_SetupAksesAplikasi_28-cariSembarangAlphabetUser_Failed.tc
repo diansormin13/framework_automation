@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-28</description>
+   <name>SMTC_SetupAksesAplikasi_28-cariSembarangAlphabetUser_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>970478d6-4532-4079-abc5-883f0483aba5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2601b10a-b9f9-47ac-8a0a-eaf31a102c3f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'abc'</defaultValue>
+      <description></description>
+      <id>2601b10a-b9f9-47ac-8a0a-eaf31a102c3f</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

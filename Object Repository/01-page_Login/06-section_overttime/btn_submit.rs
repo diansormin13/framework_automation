@@ -6,12 +6,11 @@
    <elementGuidId>4e2eccdd-2887-4fd5-bfb3-5847d926064b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[@class=&quot;x-btn-button&quot; and .//span[text()=&quot;Ajukan&quot;]]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@class=&quot;x-btn-button&quot;][.=&quot;Ajukan&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
