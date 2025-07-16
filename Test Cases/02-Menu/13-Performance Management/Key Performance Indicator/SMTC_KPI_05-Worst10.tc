@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_KPI_05-Worst10</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>44f1059c-d1e9-4c81-bf2d-85818dd572a8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6826d1aa-614e-4b37-8c9f-eaba024d65c3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5c75e030-09fa-4921-8b1a-088eb8795784</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'WORST 10'</defaultValue>
+      <description></description>
+      <id>6826d1aa-614e-4b37-8c9f-eaba024d65c3</id>
+      <masked>false</masked>
+      <name>jenisPerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'WORST10'</defaultValue>
+      <description></description>
+      <id>5c75e030-09fa-4921-8b1a-088eb8795784</id>
+      <masked>false</masked>
+      <name>valuePerformance</name>
+   </variable>
+</TestCaseEntity>

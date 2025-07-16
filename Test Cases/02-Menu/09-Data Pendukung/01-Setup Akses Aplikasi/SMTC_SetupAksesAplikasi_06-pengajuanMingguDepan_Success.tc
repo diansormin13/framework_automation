@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-06</description>
+   <name>SMTC_SetupAksesAplikasi_06-pengajuanMingguDepan_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>92d7582e-fbb4-4021-84fa-71ca8c7fe5f9</testCaseGuid>
+</TestCaseEntity>

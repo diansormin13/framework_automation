@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-11</description>
+   <name>SMTC_SetupAksesAplikasi_11-keteranganPengajuan_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e0932203-8e05-40ec-bbbb-492b7c452b18</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6a75aae3-2fc5-47a7-8394-5fae69617cfa</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'isi keterangan berhasil'</defaultValue>
+      <description></description>
+      <id>6a75aae3-2fc5-47a7-8394-5fae69617cfa</id>
+      <masked>false</masked>
+      <name>param</name>
+   </variable>
+</TestCaseEntity>

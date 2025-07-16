@@ -48,11 +48,11 @@ public class Login {
 
 	@Keyword
 	def validatePageLoginSMILE() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_login'),0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/input_password'),0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'),0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/01-section_login/button_login'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_Login/01-section_login/input_login'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_Login/01-section_login/input_password'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_Login/01-section_login/button_login'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/button_lupaPassword'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_Login/01-section_login/button_login'),0)
 	}
 
 	/*
@@ -62,9 +62,9 @@ public class Login {
 	 */
 	@Keyword
 	def loginToSMILE(String username, String password) {
-		WebUI.setText(findTestObject('Object Repository/01-page_login/01-section_login/input_login'), username)
-		WebUI.setText(findTestObject('Object Repository/01-page_login/01-section_login/input_password'), password)
-		WebUI.click(findTestObject('Object Repository/01-page_login/01-section_login/button_login'))
+		WebUI.setText(findTestObject('Object Repository/01-page_Login/01-section_login/input_login'), username)
+		WebUI.setText(findTestObject('Object Repository/01-page_Login/01-section_login/input_password'), password)
+		WebUI.click(findTestObject('Object Repository/01-page_Login/01-section_login/button_login'))
 	}
 
 	/*
@@ -74,14 +74,14 @@ public class Login {
 	 */
 	def userLupaPassword(String username, String email) {
 		// Clicks the "Lupa Password" button
-		WebUI.click(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_lupaPassword'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/txt_popupLupaPassword'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/input_email'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/input_username'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_reset'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_batal'))
-		WebUI.setText(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/input_username'), username)
-		WebUI.setText(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/input_email'), email)
+		WebUI.click(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/button_lupaPassword'))
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/txt_popupLupaPassword'))
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/input_email'))
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/input_username'))
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/button_reset'))
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/button_batal'))
+		WebUI.setText(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/input_username'), username)
+		WebUI.setText(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/input_email'), email)
 	}
 
 	/*
@@ -90,24 +90,24 @@ public class Login {
 	 */
 	@Keyword
 	def clickButtonResetPassword() {
-		WebUI.verifyElementClickable(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_reset'))
-		WebUI.click(findTestObject('Object Repository/01-page_login/02-section_lupaPassword/button_reset'))
+		WebUI.verifyElementClickable(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/button_reset'))
+		WebUI.click(findTestObject('Object Repository/01-page_Login/02-section_lupaPassword/button_reset'))
 	}
 
 	@Keyword
 	def activeAccount() {
 		try {
-			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_akunAktif'),1)
+			boolean isPopupPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_Login/03-section_konfirmasiUlang/txt_akunAktif'),1)
 
 			if (isPopupPresent) {
 
-				WebUI.click(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/button_Yes'))
+				WebUI.click(findTestObject('Object Repository/01-page_Login/03-section_konfirmasiUlang/button_Yes'))
 
-				WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/txt_loginKembali'),1)
+				WebUI.verifyElementPresent(findTestObject('Object Repository/01-page_Login/03-section_konfirmasiUlang/txt_loginKembali'),1)
 
-				WebUI.click(findTestObject('Object Repository/01-page_login/03-section_konfirmasiUlang/button_OK'))
+				WebUI.click(findTestObject('Object Repository/01-page_Login/03-section_konfirmasiUlang/button_OK'))
 
-				WebUI.click(findTestObject('Object Repository/01-page_login/01-section_login/button_login'))
+				WebUI.click(findTestObject('Object Repository/01-page_Login/01-section_login/button_login'))
 			}  else {
 
 				throw new Exception("Gagal login dan popup tidak ditemukan.") // Force gagal jika tidak ada popup
@@ -117,5 +117,12 @@ public class Login {
 
 			WebUI.comment('Object tidak ditemukan: ' + e.message)
 		}
+	}
+
+	@Keyword
+	static def negativeVerifyLoginWithoutPengajuanOvertime() {
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/01-section_login/alert_overtime'))
+		WebUI.verifyElementText(findTestObject('Object Repository/01-page_Login/01-section_login/alert_overtime'), "Akses aplikasi SMILE terbatas pada pukul 00:00-12:00 sesuai zona waktu setempat. Jika memerlukan akses di luar waktu tersebut, harap ajukan permintaan melalui SIMFONI. Terima kasih.")
+		WebUI.click(findTestObject('Object Repository/01-page_Login/06-section_overttime/btn_popUPOK'))
 	}
 }

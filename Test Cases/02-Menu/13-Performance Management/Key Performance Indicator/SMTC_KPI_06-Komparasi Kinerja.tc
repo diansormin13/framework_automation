@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_KPI_06-Komparasi Kinerja</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1264a37-fe0f-4c10-978e-53caa43c0a1a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f9e68887-949c-4571-847c-6462c2f72139</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3503e6e5-6566-4efc-9ad1-2ad412fbb3fb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>edb4c3b3-84e1-4101-97ea-8642c7853cc0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b82cff17-1732-4a0c-b1a6-2e09c6a8216a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>04c476e0-f696-4822-803a-6956d4dc4fc3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d4c304b1-50ba-46a6-95c0-cd15b8f8249e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'KOMPARASI KINERJA'</defaultValue>
+      <description></description>
+      <id>f9e68887-949c-4571-847c-6462c2f72139</id>
+      <masked>false</masked>
+      <name>jenisPerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'KOMPARASI'</defaultValue>
+      <description></description>
+      <id>3503e6e5-6566-4efc-9ad1-2ad412fbb3fb</id>
+      <masked>false</masked>
+      <name>valuePerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kantor Asal'</defaultValue>
+      <description></description>
+      <id>edb4c3b3-84e1-4101-97ea-8642c7853cc0</id>
+      <masked>false</masked>
+      <name>windowAsal</name>
+   </variable>
+   <variable>
+      <defaultValue>'901'</defaultValue>
+      <description></description>
+      <id>b82cff17-1732-4a0c-b1a6-2e09c6a8216a</id>
+      <masked>false</masked>
+      <name>kantorAsal</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kantor Komparasi'</defaultValue>
+      <description></description>
+      <id>04c476e0-f696-4822-803a-6956d4dc4fc3</id>
+      <masked>false</masked>
+      <name>windowKomparasi</name>
+   </variable>
+   <variable>
+      <defaultValue>'A00'</defaultValue>
+      <description></description>
+      <id>d4c304b1-50ba-46a6-95c0-cd15b8f8249e</id>
+      <masked>false</masked>
+      <name>kantorKomparasi</name>
+   </variable>
+</TestCaseEntity>

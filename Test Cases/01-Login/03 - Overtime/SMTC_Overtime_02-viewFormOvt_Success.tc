@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-02</description>
+   <name>SMTC_Overtime_02-viewFormOvt_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>91c5802c-16c4-4243-b0f1-60953d6f1ec4</testCaseGuid>
+</TestCaseEntity>

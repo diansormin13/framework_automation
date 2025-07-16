@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_Aktivasi2FA_04-filledAktivasi2FA_Success</name>
+   <tag>GenAI</tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>25</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a12d8b9b-2e1e-4d30-9692-f03912c1d79a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9cb559f9-c343-4a42-900e-39a757abb721</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>84a6ad64-d7c7-4378-b7e1-402ecd82fe09</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'SE165580'</defaultValue>
+      <description></description>
+      <id>9cb559f9-c343-4a42-900e-39a757abb721</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'septa.ringgadaniarta@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description></description>
+      <id>84a6ad64-d7c7-4378-b7e1-402ecd82fe09</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

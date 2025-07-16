@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMTC_KPI_03-PeringkatbyIndikator</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a80e1e13-c84b-4706-9836-7ca9e5dc60aa</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f4ccdf12-acf0-46a3-bdbe-e94f2cf69c1f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fce897a8-d7d5-4ecb-b38e-48aadcb47aeb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>56824d5b-c45d-4010-8f75-2168644e7209</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>076bb14a-1437-4965-83f8-37e1c53fd3f7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>76869b85-b305-435e-bdcd-4dcb90efec31</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>280e1b9c-22f8-46c5-9382-13fcc9dd4895</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'PERINGKAT BY INDIKATOR'</defaultValue>
+      <description></description>
+      <id>f4ccdf12-acf0-46a3-bdbe-e94f2cf69c1f</id>
+      <masked>false</masked>
+      <name>jenisPerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'PERINGKAT_INDIKATOR'</defaultValue>
+      <description></description>
+      <id>fce897a8-d7d5-4ecb-b38e-48aadcb47aeb</id>
+      <masked>false</masked>
+      <name>valuePerformance</name>
+   </variable>
+   <variable>
+      <defaultValue>'Peserta Pembiayaan MLT'</defaultValue>
+      <description></description>
+      <id>56824d5b-c45d-4010-8f75-2168644e7209</id>
+      <masked>false</masked>
+      <name>jenisIndikator</name>
+   </variable>
+   <variable>
+      <defaultValue>'3'</defaultValue>
+      <description>903-KANWIL DKI JAKARTA</description>
+      <id>076bb14a-1437-4965-83f8-37e1c53fd3f7</id>
+      <masked>false</masked>
+      <name>kantorWilayah</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kantor Cabang'</defaultValue>
+      <description></description>
+      <id>76869b85-b305-435e-bdcd-4dcb90efec31</id>
+      <masked>false</masked>
+      <name>tipeKantorWilayah</name>
+   </variable>
+   <variable>
+      <defaultValue>'KELAS 1'</defaultValue>
+      <description></description>
+      <id>280e1b9c-22f8-46c5-9382-13fcc9dd4895</id>
+      <masked>false</masked>
+      <name>kelasKantorWilayah</name>
+   </variable>
+</TestCaseEntity>

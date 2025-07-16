@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-04</description>
+   <name>SMTC_Overtime_04-batalPengajuan_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>37493607-a007-454d-9a8e-1f1b0b90289e</testCaseGuid>
+</TestCaseEntity>

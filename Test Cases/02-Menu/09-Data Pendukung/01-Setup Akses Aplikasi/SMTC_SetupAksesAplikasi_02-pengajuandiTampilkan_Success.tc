@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-02</description>
+   <name>SMTC_SetupAksesAplikasi_02-pengajuandiTampilkan_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4ee2d4ea-69b3-4d6b-a2c3-5c22f642b778</testCaseGuid>
+</TestCaseEntity>

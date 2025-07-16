@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>approval-overtime</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>true</initValue>
+      <name>ENABLE_MAIN_LISTENER</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>false</initValue>
+      <name>AUTO_LOGIN</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://172.28.108.49:5297/smile/login.bpjs'</initValue>
+      <name>baseURL</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AH177000'</initValue>
+      <name>username</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bpjstk456!'</initValue>
+      <name>password</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Pengajuan Kolektif Akses di Luar Jam Kerja Aplikasi SMILE'</initValue>
+      <name>SUBJECT_COLLECTIVE</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Pengajuan Akses di Luar Jam Kerja Aplikasi SMILE'</initValue>
+      <name>SUBJECT</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>untuk kolektif maupun individu</description>
+      <initValue>'Status Pengajuan Akses di Luar Jam Kerja Aplikasi SMILE'</initValue>
+      <name>SUBJECT_STATUS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

@@ -32,36 +32,34 @@ public class utilityMenu {
 	 *  example : Pelayanan -> Klaim -> PN5001-Agenda Klaim 
 	 */
 	@Keyword
-	def selectMenu(String menuName) {
-		// Clicks on the main menu button with the dynamic parameter
-		WebUI.scrollToElement(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]),2)
-		//WebUI.verifyElementVisible(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]))
-		WebUI.doubleClick(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_mainMenu', [('yourMenu') : menuName]))
+	static def selectMenu(String menuName) {
+		WebUI.scrollToElement(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_mainMenu', [('yourMenu') : menuName]),2)
+		WebUI.doubleClick(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_mainMenu', [('yourMenu') : menuName]))
 	}
 
 	/*
 	 *  This function logs out from the SMILE application by clicking the logout button
 	 */
 	@Keyword
-	def logoutSMILE() {
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_logOut'))
-		WebUI.verifyElementNotPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_logOut'), 3)
+	static def logoutSMILE() {
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_logOut'))
+		WebUI.verifyElementNotPresent(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_logOut'), 3)
 	}
 
 	/*
 	 *  This function changes the role by clicking a button
 	 */
 	@Keyword
-	def changeRoleSMILE() {
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_gantiRole'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_login/04-section_pilihRole/txt_selamatDatang'))
+	static def changeRoleSMILE() {
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_gantiRole'))
+		WebUI.verifyElementVisible(findTestObject('Object Repository/01-page_Login/04-section_pilihRole/txt_selamatDatang'))
 	}
 
 	/*
 	 *  @param fileName The name of the file to save the screenshot as.
 	 */
 	@Keyword
-	def takeScreenshot(String project, String fileName) {
+	static def takeScreenshot(String project, String fileName) {
 		String baseDir = RunConfiguration.getProjectDir()
 		String folderPath = baseDir + "/Screenshots/${project}/"
 		String fullPath = folderPath + fileName + '.png'
@@ -74,10 +72,10 @@ public class utilityMenu {
 	 *  @return void
 	 */
 	@Keyword
-	def clickTab(param) {
-		WebUI.waitForElementPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]),1)
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]))
+	static def clickTab(param) {
+		WebUI.waitForElementPresent(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]), 1)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]),1)
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]))
 	}
 
 	/*
@@ -86,14 +84,14 @@ public class utilityMenu {
 	 *  @param param The dynamic parameter used to identify the specific tab to close.
 	 */
 	@Keyword
-	def closeTabActive(param) {
+	static def closeTabActive(param) {
 		// Clicks the close tab button using the provided dynamic parameter
-		WebUI.click(findTestObject('Object Repository/02-page-Menu/14-Default Menu/button_closeTab', [('param') : param]))
-		WebUI.verifyElementNotPresent(findTestObject('02-page-Menu/14-Default Menu/button_dynamic', [('param') : param]), 2)
+		WebUI.click(findTestObject('Object Repository/02-page-Menu/00-Common Menu/button_closeTab', [('param') : param]))
+		WebUI.verifyElementNotPresent(findTestObject('02-page-Menu/00-Common Menu/button_dynamic', [('param') : param]), 2)
 	}
 
 	@Keyword
-	def waitForSpinnerToDisappear() {
+	static def waitForSpinnerToDisappear() {
 		int maxWait = 900  // set timeout 15 menit
 		int interval = 15  // cek setiap 15 detik
 		int waited = 0
@@ -132,7 +130,7 @@ public class utilityMenu {
 	 *          6. If the maximum wait time is reached without the element appearing, log a message indicating the failure.
 	 */
 	@Keyword
-	def waitForElementToAppear(String testObjectPath) {
+	static def waitForElementToAppear(String testObjectPath) {
 		int maxWait = 900   // Maksimal 900 detik = 15 menit
 		int interval = 15   // Cek setiap 15 detik
 		int waited = 0

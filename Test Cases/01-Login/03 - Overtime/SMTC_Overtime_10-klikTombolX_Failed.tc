@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-10</description>
+   <name>SMTC_Overtime_10-klikTombolX_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>32ec6e7b-81f5-4d8a-8adb-36c8080ce464</testCaseGuid>
+</TestCaseEntity>

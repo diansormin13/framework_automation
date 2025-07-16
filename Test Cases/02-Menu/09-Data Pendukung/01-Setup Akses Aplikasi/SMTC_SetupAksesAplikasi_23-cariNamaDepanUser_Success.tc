@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-23</description>
+   <name>SMTC_SetupAksesAplikasi_23-cariNamaDepanUser_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>03d55874-6b04-4694-aa1b-8bacd5e85a39</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6a0f9bcf-31e3-4879-8300-65d5f6d574d2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ADE'</defaultValue>
+      <description></description>
+      <id>6a0f9bcf-31e3-4879-8300-65d5f6d574d2</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-27</description>
+   <name>SMTC_SetupAksesAplikasi_27-cariSembarangAngkaUser_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c00ed8d8-9274-41fd-b4e0-124773fa5584</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1fff8e92-3a67-4ac6-8af1-99ddb8f05f74</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'999'</defaultValue>
+      <description></description>
+      <id>1fff8e92-3a67-4ac6-8af1-99ddb8f05f74</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

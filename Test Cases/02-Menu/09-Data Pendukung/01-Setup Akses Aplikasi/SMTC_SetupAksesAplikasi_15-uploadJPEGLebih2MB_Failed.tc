@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-15</description>
+   <name>SMTC_SetupAksesAplikasi_15-uploadJPEGLebih2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3b52aa47-58e1-4590-b2f9-5e8712aa6dd8</testCaseGuid>
+</TestCaseEntity>
