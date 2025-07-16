@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-10</description>
+   <name>SMTC_SetupAksesAplikasi_10-pengajuanLewatdariAkhirBulan_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>16e445ca-9454-4baf-be0d-8b3f583529a8</testCaseGuid>
+</TestCaseEntity>

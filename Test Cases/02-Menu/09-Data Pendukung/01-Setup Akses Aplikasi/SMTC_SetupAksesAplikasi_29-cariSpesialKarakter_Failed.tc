@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-29</description>
+   <name>SMTC_SetupAksesAplikasi_29-cariSpesialKarakter_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4c51fbab-30ec-4161-9ee7-5bbe3ecb9174</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>09edaff7-d48e-46d6-8d20-477538545dd9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'%$'</defaultValue>
+      <description></description>
+      <id>09edaff7-d48e-46d6-8d20-477538545dd9</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

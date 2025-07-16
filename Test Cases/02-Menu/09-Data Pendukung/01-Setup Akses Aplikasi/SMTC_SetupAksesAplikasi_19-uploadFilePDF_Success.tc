@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-19</description>
+   <name>SMTC_SetupAksesAplikasi_19-uploadFilePDF_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>522b30e2-b974-4b9f-bf18-e6c0d51bfa32</testCaseGuid>
+</TestCaseEntity>

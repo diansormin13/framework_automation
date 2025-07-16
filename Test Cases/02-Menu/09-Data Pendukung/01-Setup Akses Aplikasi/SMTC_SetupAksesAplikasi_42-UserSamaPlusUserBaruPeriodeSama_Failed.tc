@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-42</description>
+   <name>SMTC_SetupAksesAplikasi_42-UserSamaPlusUserBaruPeriodeSama_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c19d7525-2b4e-45dd-a285-df124d2dacb2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2bd16c28-67e8-4988-be6b-11c50f027cbb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f74ec5ef-409c-4932-9a75-4718c7cd0be5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2109e8d9-f64b-4b86-9377-96a1a7dbb1c1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>81817767-5141-4c52-83d8-aae1fd1815a4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ec5d1a3b-a530-4f93-ab43-afd156b215b6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('SMDF_userSMILE').getValue('USM', 5)</defaultValue>
+      <description></description>
+      <id>2bd16c28-67e8-4988-be6b-11c50f027cbb</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('SMDF_userSMILE').getValue('PSW', 5)</defaultValue>
+      <description></description>
+      <id>f74ec5ef-409c-4932-9a75-4718c7cd0be5</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'ini keterangan'</defaultValue>
+      <description></description>
+      <id>2109e8d9-f64b-4b86-9377-96a1a7dbb1c1</id>
+      <masked>false</masked>
+      <name>keterangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'sample_below_2mb.jpg'</defaultValue>
+      <description></description>
+      <id>81817767-5141-4c52-83d8-aae1fd1815a4</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+   <variable>
+      <defaultValue>['AD112254', 'AG288470', 'AH179010']</defaultValue>
+      <description></description>
+      <id>ec5d1a3b-a530-4f93-ab43-afd156b215b6</id>
+      <masked>false</masked>
+      <name>userparam</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-24</description>
+   <name>SMTC_Overtime_24-loginTanpaPengajuan_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f5999338-b39d-4df2-9e94-789cb5a01a0d</testCaseGuid>
+</TestCaseEntity>

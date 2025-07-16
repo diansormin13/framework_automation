@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-48</description>
+   <name>SMTC_Overtime_48-loginPengajuanApproved_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>10056348-7ed3-4ce5-86a6-3f6c5f6418e0</testCaseGuid>
+</TestCaseEntity>

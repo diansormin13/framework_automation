@@ -17,11 +17,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import sectionLogin.Overtime as overtime 
 
 KeywordUtil.logInfo("TC-OVT-05 > Sebagai User Aplikasi, saya ingin melakukan pengajuan akses smile dengan hanya mengisi username pada form pengajuan")
 
-WebUI.callTestCase(findTestCase('Test Cases/01-Login/03 - Overtime/SMTC_Overtime_02-viewFormOvt_Success'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'sectionLogin.Overtime.clickBtnOvertime'()
 
 CustomKeywords.'sectionLogin.Overtime.negativePengajuanOnlyByUsername'(username)
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime", "pengajuan_only_username")
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'("overtime/individu", "pengajuan_only_username")

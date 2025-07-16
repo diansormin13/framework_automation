@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-18</description>
+   <name>SMTC_SetupAksesAplikasi_18-uploadFileJPEG_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28d67db7-615d-4cbd-b0ca-1f9b90148634</testCaseGuid>
+</TestCaseEntity>

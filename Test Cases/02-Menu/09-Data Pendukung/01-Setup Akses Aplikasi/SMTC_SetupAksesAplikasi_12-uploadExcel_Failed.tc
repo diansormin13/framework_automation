@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-12</description>
+   <name>SMTC_SetupAksesAplikasi_12-uploadExcel_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>838c99b4-477d-4f9c-bf8d-584b84744c74</testCaseGuid>
+</TestCaseEntity>

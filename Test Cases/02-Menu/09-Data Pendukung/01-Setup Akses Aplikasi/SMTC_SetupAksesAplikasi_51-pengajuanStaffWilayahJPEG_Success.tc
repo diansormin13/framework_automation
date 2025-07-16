@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-51</description>
+   <name>SMTC_SetupAksesAplikasi_51-pengajuanStaffWilayahJPEG_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d0908654-364f-42dd-aac8-94f17732a18c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d9d58a38-8a67-4b8f-bf3d-9f1b51619ff0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ce2d7837-fb4f-4e97-9f33-10519e91699f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7065b4af-8ac9-4513-ac9c-34bc832df59a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'pengajuan kolektif by PENATA WILAYAH'</defaultValue>
+      <description></description>
+      <id>d9d58a38-8a67-4b8f-bf3d-9f1b51619ff0</id>
+      <masked>false</masked>
+      <name>keterangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'sample_below_2mb.jpeg'</defaultValue>
+      <description></description>
+      <id>ce2d7837-fb4f-4e97-9f33-10519e91699f</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+   <variable>
+      <defaultValue>['AB126890', 'AF112268']</defaultValue>
+      <description></description>
+      <id>7065b4af-8ac9-4513-ac9c-34bc832df59a</id>
+      <masked>false</masked>
+      <name>userparam</name>
+   </variable>
+</TestCaseEntity>

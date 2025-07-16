@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC-OVT-11</description>
-   <name>SMTC_Overtime_09-batalPengajuanToolX_Failed</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a2ee63b7-aec4-4a56-bc0b-48e2eac3be24</testCaseGuid>
-</TestCaseEntity>

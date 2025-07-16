@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-22</description>
+   <name>SMTC_Overtime_22-pengajuanwithFileJPGUpTo2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8579eade-8a8d-4b48-992e-bcbb0b1ef242</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f32ba2f-d223-408d-8fbe-5cf3159b52a0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'sample_above_2mb.jpg'</defaultValue>
+      <description></description>
+      <id>9f32ba2f-d223-408d-8fbe-5cf3159b52a0</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+</TestCaseEntity>

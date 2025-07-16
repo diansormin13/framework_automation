@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-58</description>
+   <name>SMTC_SetupAksesAplikasi_58-pengajuanStaffKapuJPEG_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5d4a887a-7265-4245-8269-f6c5d850d990</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b069504a-ac92-452e-93f4-d005e2c3e31f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3cfddae4-9fe5-4e2f-b1b9-98a7be4b93c5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4008f31f-090e-4d79-814f-da31e185cfe5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'pengajuan kolektif KAPU'</defaultValue>
+      <description></description>
+      <id>b069504a-ac92-452e-93f4-d005e2c3e31f</id>
+      <masked>false</masked>
+      <name>keterangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'sample_below_2mb.jpeg'</defaultValue>
+      <description></description>
+      <id>3cfddae4-9fe5-4e2f-b1b9-98a7be4b93c5</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+   <variable>
+      <defaultValue>['MU171920', 'GD169300']</defaultValue>
+      <description></description>
+      <id>4008f31f-090e-4d79-814f-da31e185cfe5</id>
+      <masked>false</masked>
+      <name>userparam</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-16</description>
+   <name>SMTC_SetupAksesAplikasi_16-uploadPDFLebih2MB_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4d2bd04f-8acd-4c4f-8bf0-435520254827</testCaseGuid>
+</TestCaseEntity>

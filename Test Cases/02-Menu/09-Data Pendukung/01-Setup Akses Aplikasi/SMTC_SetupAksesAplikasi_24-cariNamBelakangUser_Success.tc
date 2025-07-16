@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-24</description>
+   <name>SMTC_SetupAksesAplikasi_24-cariNamBelakangUser_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c3a6152c-6c1e-495c-bf1d-a09270bc0d89</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7b0f878f-e012-4e44-9db9-492a5d29647a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'MINTARSIH'</defaultValue>
+      <description></description>
+      <id>7b0f878f-e012-4e44-9db9-492a5d29647a</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

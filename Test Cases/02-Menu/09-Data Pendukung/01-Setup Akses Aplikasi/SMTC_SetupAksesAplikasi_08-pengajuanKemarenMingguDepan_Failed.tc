@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-08</description>
+   <name>SMTC_SetupAksesAplikasi_08-pengajuanKemarenMingguDepan_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>919a9b59-e2cf-454b-9bfa-8538eee66c3c</testCaseGuid>
+</TestCaseEntity>

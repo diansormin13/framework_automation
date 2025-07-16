@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-07</description>
+   <name>SMTC_Overtime_07-cekPeriodePengajuan_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f8ec6f41-ef9d-40c4-9216-ec7d5d67d26b</testCaseGuid>
+</TestCaseEntity>

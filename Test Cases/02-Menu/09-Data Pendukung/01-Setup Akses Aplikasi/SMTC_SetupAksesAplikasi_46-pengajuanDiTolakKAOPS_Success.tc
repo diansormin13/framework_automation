@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-46</description>
+   <name>SMTC_SetupAksesAplikasi_46-pengajuanDiTolakKAOPS_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1e1161a-1878-4fef-a7e1-53a3e2aa7000</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d27aecb5-d225-4166-8105-6178013e934f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>269f513b-67af-4f0d-aded-71cc2a1a96ba</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'pti-dev04@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description>Kepala Kantor Operasional</description>
+      <id>21fd1a14-a120-4757-8b29-70b68ebc0cc3</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+   <variable>
+      <defaultValue>'geenphwskpjjuwns'</defaultValue>
+      <description></description>
+      <id>00db8053-0cbc-40ea-a353-671b3b8bd1a2</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.SUBJECT_COLLECTIVE</defaultValue>
+      <description></description>
+      <id>5b8e2acc-87ac-4fc7-b418-9e4e4ac1a480</id>
+      <masked>false</masked>
+      <name>subject</name>
+   </variable>
+   <variable>
+      <defaultValue>'TOLAK'</defaultValue>
+      <description></description>
+      <id>1c687b5b-e628-4e59-98de-d2d0feb91d9f</id>
+      <masked>false</masked>
+      <name>action</name>
+   </variable>
+</TestCaseEntity>

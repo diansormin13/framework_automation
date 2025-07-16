@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-21</description>
+   <name>SMTC_SetupAksesAplikasi_21-selectSingleUser_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a68c77a7-ef1c-4876-b6c3-0608bccbc30a</testCaseGuid>
+</TestCaseEntity>

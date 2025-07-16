@@ -23,4 +23,39 @@
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AH177000'</initValue>
+      <name>username</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bpjstk456!'</initValue>
+      <name>password</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Pengajuan Kolektif Akses di Luar Jam Kerja Aplikasi SMILE'</initValue>
+      <name>SUBJECT_COLLECTIVE</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Pengajuan Akses di Luar Jam Kerja Aplikasi SMILE'</initValue>
+      <name>SUBJECT</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>untuk kolektif maupun individu</description>
+      <initValue>'Status Pengajuan Akses di Luar Jam Kerja Aplikasi SMILE'</initValue>
+      <name>SUBJECT_STATUS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

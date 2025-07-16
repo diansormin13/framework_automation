@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-03</description>
+   <name>SMTC_SetupAksesAplikasi_03-pengajuanTanpaIsiForm_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>39307a69-7101-43f1-8421-888c1398f68c</testCaseGuid>
+</TestCaseEntity>

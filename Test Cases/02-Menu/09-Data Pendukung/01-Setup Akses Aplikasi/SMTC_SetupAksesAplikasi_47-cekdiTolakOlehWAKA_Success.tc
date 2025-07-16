@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-47</description>
+   <name>SMTC_SetupAksesAplikasi_47-cekdiTolakOlehWAKA_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6b000553-76e2-4b8e-a94f-5e6ec3e93fdb</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>803a4511-6095-4ed6-aafc-122471bfd4ec</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ec923d38-c58d-45f9-b84a-9b10a32a708d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>330f6c43-981d-4584-b9d6-9c440ed8e86b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ba5ac479-c70f-4f6f-805d-4822be229c3c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef0fe73d-a665-4c69-85c8-05fa5968d556</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'pti-dev02@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description>WAKA</description>
+      <id>803a4511-6095-4ed6-aafc-122471bfd4ec</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+   <variable>
+      <defaultValue>'xktogshdnvjeqdwv'</defaultValue>
+      <description></description>
+      <id>ec923d38-c58d-45f9-b84a-9b10a32a708d</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>['BA185440', 'DA188990']</defaultValue>
+      <description>username dalam body</description>
+      <id>330f6c43-981d-4584-b9d6-9c440ed8e86b</id>
+      <masked>false</masked>
+      <name>usernames</name>
+   </variable>
+   <variable>
+      <defaultValue>'pengajuan kolektif by penata pengendalian operasional'</defaultValue>
+      <description></description>
+      <id>ba5ac479-c70f-4f6f-805d-4822be229c3c</id>
+      <masked>false</masked>
+      <name>keterangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'septa.ringgadaniarta@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description>email username </description>
+      <id>ef0fe73d-a665-4c69-85c8-05fa5968d556</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

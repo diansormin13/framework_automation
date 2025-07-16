@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-48</description>
+   <name>SMTC_SetupAksesAplikasi_48-cekdiTolakOlehUSMK_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>62d8cb3a-6f28-4a78-a379-15155d84d503</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b820f1b0-2a3a-48c6-ad20-f6c0c34adcc4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e4783728-4f93-4b6c-a994-d23d8058e3d5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>da1026ab-dd08-4780-97c3-ee36a62457c4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>21229599-c4e8-4b85-8755-b8971b3ceb1d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1e035df9-95ed-4e55-831d-1e2f7fd1acaa</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'pti-dev05@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description>USMK</description>
+      <id>b820f1b0-2a3a-48c6-ad20-f6c0c34adcc4</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+   <variable>
+      <defaultValue>'rdfwatsajmrfynrx'</defaultValue>
+      <description></description>
+      <id>e4783728-4f93-4b6c-a994-d23d8058e3d5</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>['BA185440', 'DA188990']</defaultValue>
+      <description>username dalam body</description>
+      <id>da1026ab-dd08-4780-97c3-ee36a62457c4</id>
+      <masked>false</masked>
+      <name>usernames</name>
+   </variable>
+   <variable>
+      <defaultValue>'reason'</defaultValue>
+      <description></description>
+      <id>21229599-c4e8-4b85-8755-b8971b3ceb1d</id>
+      <masked>false</masked>
+      <name>keterangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'septa.ringgadaniarta@bpjsketenagakerjaan.go.id'</defaultValue>
+      <description>email username </description>
+      <id>1e035df9-95ed-4e55-831d-1e2f7fd1acaa</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

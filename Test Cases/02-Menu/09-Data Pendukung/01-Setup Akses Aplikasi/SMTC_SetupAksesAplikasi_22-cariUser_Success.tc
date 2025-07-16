@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-OVT-22</description>
+   <name>SMTC_SetupAksesAplikasi_22-cariUser_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>87ade471-e13f-4323-b702-ebee785c4c51</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a958a6f7-9336-4f2c-87ca-8e0483353a3a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ADE RATNA MINTARSIH'</defaultValue>
+      <description></description>
+      <id>a958a6f7-9336-4f2c-87ca-8e0483353a3a</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>
