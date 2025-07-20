@@ -108,6 +108,42 @@ test.describe('Admin Login Suite', () => {
   npx playwright test -g "login berhasil"
   ```
 
+---
+
 ## Struktur Folder Project Pengujian
 
 ```
+pw/
+│
+├── tests/                # Folder utama untuk semua file pengujian (test cases)
+│   ├── example.spec.ts   # Contoh file pengujian TypeScript
+│   ├── example-js.spec.js # Contoh file pengujian JavaScript
+│   └── ...               # Tambahkan file pengujian lain di sini
+│
+├── helpers/              # (Opsional) Fungsi utilitas/helper & Page Object Model
+│   └── homepage-admin.ts
+│
+├── fixtures/             # (Opsional) Data dummy atau data uji (test data)
+│   └── admin.json
+│
+├── reports/              # (Otomatis) Hasil laporan pengujian (HTML, dsb)
+├── test-results/         # (Otomatis) Hasil run test Playwright (trace, dsb)
+├── node_modules/         # Folder dependensi npm (otomatis)
+├── package.json          # Konfigurasi npm & dependensi
+├── package-lock.json     # Lock file npm
+├── playwright.config.ts  # Konfigurasi Playwright (baseURL, reporter, dsb)
+├── README.md             # Dokumentasi project
+└── PUSH_GUIDE.md         # Panduan git push file baru
+```
+
+---
+
+### Penjelasan folder/file yang sering dipakai:
+- `tests/` : Tempat semua file pengujian Playwright (`*.spec.js`/`*.spec.ts`).
+- `helpers/` : Untuk Page Object Model dan fungsi bantu.
+- `fixtures/` : Untuk data uji, misal data user, produk, dsb.
+- `reports/` : Tempat hasil laporan pengujian (HTML).
+- `test-results/` : Hasil run test Playwright (trace, dsb).
+- `playwright.config.ts` : File konfigurasi Playwright (baseURL, reporter, dsb).
+
+---
