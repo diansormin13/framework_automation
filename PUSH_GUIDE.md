@@ -136,3 +136,7 @@ Ganti `<branch-anda>` dengan nama branch yang sedang aktif (misal: `main` atau `
 ---
 
 Jika ada file yang tidak ingin di-push, pastikan file tersebut tidak di-add atau sudah masuk `.gitignore`. 
+
+---
+
+© 2025 [diansamuel13](https://github.com/diansormin13) 

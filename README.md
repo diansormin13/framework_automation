@@ -147,3 +147,5 @@ pw/
 - `playwright.config.ts` : File konfigurasi Playwright (baseURL, reporter, dsb).
 
 ---
+
+© 2025 [diansamuel13](https://github.com/diansormin13)
