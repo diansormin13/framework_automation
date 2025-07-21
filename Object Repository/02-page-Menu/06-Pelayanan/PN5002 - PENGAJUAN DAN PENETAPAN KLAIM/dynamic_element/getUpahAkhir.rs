@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id=&quot;mydata&quot;]//tr[4]//td[text()=&quot;DD001932&quot;]</value>
+         <value>//table[@id=&quot;mydata&quot;]//tr[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

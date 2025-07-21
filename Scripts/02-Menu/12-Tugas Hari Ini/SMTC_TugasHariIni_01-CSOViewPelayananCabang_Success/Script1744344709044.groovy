@@ -16,18 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-KeywordUtil.logInfo("TC-TDL-001,TC-TDL-002 - Sebagai role CSO, saya ingin melihat tab navigasi  tugas hari ini khususnya untuk pelayanan cabang")
+KeywordUtil.logInfo('TC-TDL-001,TC-TDL-002 - Sebagai role CSO, saya ingin melihat tab navigasi  tugas hari ini khususnya untuk pelayanan cabang')
 
 // Call the test case for selecting role in SMILE
-WebUI.callTestCase(
-    findTestCase('Test Cases/01-Login/02 - Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'),
-    [
-        'inisial': inisial,
-        'role'   : role
-    ]
-)
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/02 - Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'), [('inisial') : inisial
+        , ('role') : role])
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
@@ -39,6 +34,7 @@ CustomKeywords.'sectionMenu.todolist.viewPelayananCabang'()
 
 CustomKeywords.'sectionMenu.todolist.verifyPageTodolist'(inisial, 'Pelayanan Cabang')
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','SuccesClickDetailActiveRoleKlaimJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist', 'SuccesClickDetailActiveRoleKlaimJHT')
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
+

@@ -21,13 +21,8 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 KeywordUtil.logInfo('TC-TDL-036 - Sebagai PMP, Sebagai Role Smile, Saya ingin melakukan approval Klaim JHT pada salah satu approval JHT untuk melihat adanya perubahan jumlah nilai task di section todo dan section approved')
 
 // Call the test case for selecting role in SMILE
-WebUI.callTestCase(
-    findTestCase('Test Cases/01-Login/02 - Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'),
-    [
-        'inisial': inisial,
-        'role'   : roles
-    ]
-)
+WebUI.callTestCase(findTestCase('Test Cases/01-Login/02 - Login and Role/SMTC_Login_02-pilihRoleSSMILE_Success'), [('inisial') : inisial
+        , ('role') : roles])
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
@@ -39,28 +34,30 @@ def categoryId = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariabl
 
 def subCategoryID = CustomKeywords.'utility.ConfigYuga.getDatafromDB'(GlobalVariable.configDB, subCategoryId)
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','beforeApprovalJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist', 'beforeApprovalJHT')
 
-def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("todo", (categoryId[0])['id'], (subCategoryID[0])['id'],
-	role, category, subCategory)
+def taskTodo = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'('todo', (categoryId[0])['id'], (subCategoryID[
+    0])['id'], role, category, subCategory)
 
 CustomKeywords.'sectionMenu.todolist.clickDetailApproval'(typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'], 
     role, category, subCategory)
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','processApprovalJKKbyPMP')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist', 'processApprovalJKKbyPMP')
 
-CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.clickPengajuanTahapI'('KODE_4')	
+CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.clickPengajuanTahapI'('KODE_7')
 
-CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.approvalJKKpadaPMP'('TERBENTUR', 'PESAWAT ANGKUT', 'MATA', 'LUKA-LUKA', 'KLINIK RAHAYU')
+CustomKeywords.'sectionMenu.pn5002PengajuanPenetapanKlaim.approvalJKKpadaPMP'('TERBENTUR', 'PESAWAT ANGKUT', 'MATA', 'LUKA-LUKA', 
+    'KLINIK RAHAYU')
 
 CustomKeywords.'sectionMenu.utilityMenu.closeTabActive'(tabActive)
 
 CustomKeywords.'sectionMenu.utilityMenu.clickTab'(param)
 
-def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'("approved", (categoryId[0])['id'], (subCategoryID[0])['id'],
-	role, category, subCategory)
+def taskApproval = CustomKeywords.'sectionMenu.todolist.getAmountTaskApproval'('approved', (categoryId[0])['id'], (subCategoryID[
+    0])['id'], role, category, subCategory)
 
-CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo,taskApproval,typeApproval, (categoryId[0])['id'], (subCategoryID[0])['id'],
-	role, category, subCategory)
+CustomKeywords.'sectionMenu.todolist.validateChangeinValueApproval'(taskTodo, taskApproval, typeApproval, (categoryId[0])[
+    'id'], (subCategoryID[0])['id'], role, category, subCategory)
 
-CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist','afterApprovalJHT')
+CustomKeywords.'sectionMenu.utilityMenu.takeScreenshot'('todolist', 'afterApprovalJHT')
+
