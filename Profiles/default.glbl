@@ -6,20 +6,33 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://172.28.108.49:5248/smile/login.bpjs'</initValue>
+      <initValue>'http://172.28.108.46:5300/smile/main.bpjs'</initValue>
       <name>baseURL</name>
       <protected>false</protected>
+      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'ZI123'</initValue>
+      <initValue>findTestData('SMDF_userSMILE').getValue('USM', 8)</initValue>
       <name>username</name>
       <protected>false</protected>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'BPJSTK1'</initValue>
+      <initValue>findTestData('SMDF_userSMILE').getValue('PSW', 8)</initValue>
       <name>password</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>true</initValue>
+      <name>ENABLE_MAIN_LISTENER</name>
+      <protected>false</protected>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>true</initValue>
+      <name>AUTO_LOGIN</name>
       <protected>false</protected>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

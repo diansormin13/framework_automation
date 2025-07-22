@@ -154,4 +154,17 @@ public class utilityMenu {
 			WebUI.comment("Element '${testObjectPath}' tidak muncul dalam ${maxWait / 60} menit.")
 		}
 	}
+
+	@Keyword
+	static void switchToWindowTitleContains(String partialTitle) {
+		List<String> handles = WebUI.getWindowHandles()
+		for (int i = 0; i < handles.size(); i++) {
+			WebUI.switchToWindowIndex(i)
+			String currentTitle = WebUI.getWindowTitle()
+			if (currentTitle.contains(partialTitle)) {
+				return
+			}
+		}
+		throw new Exception("No window with title containing: " + partialTitle)
+	}
 }

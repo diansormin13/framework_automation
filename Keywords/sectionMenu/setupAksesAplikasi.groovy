@@ -19,7 +19,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import sectionLogin.Overtime as overtime
-import CustomKeywords
 import internal.GlobalVariable
 import org.openqa.selenium.Keys
 import java.util.Properties

@@ -20,9 +20,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.xml.XmlSlurper
 import groovy.xml.XmlUtil
-
 import internal.GlobalVariable
 import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.Cookie
+import java.net.HttpURLConnection
+import java.io.InputStream
+import java.io.FileNotFoundException
 
 
 public class commonUtility {
@@ -119,4 +123,78 @@ public class commonUtility {
 		}
 		return formattedDate
 	}
+
+	@Keyword
+	static void switchToWindowTitleContains(String partialTitle) {
+		def driver = DriverFactory.getWebDriver()
+		def handles = driver.getWindowHandles().toList()
+		for (int i = 0; i < handles.size(); i++) {
+			driver.switchTo().window(handles[i])
+			String currentTitle = driver.getTitle()
+			if (currentTitle.contains(partialTitle)) {
+				return
+			}
+		}
+		throw new Exception("No window with title containing: " + partialTitle)
+	}
+
+	/**
+	 * Download file PDF dari popup/tab baru dan simpan ke Include/resources.
+	 * Akan menunggu sampai URL valid, membawa cookie session, dan validasi content-type PDF.
+	 * @param fileName - nama file hasil download
+	 */
+	@Keyword
+	static void downloadPdfFromPopup(String fileName) {
+		def driver = DriverFactory.getWebDriver()
+		def handles = driver.getWindowHandles().toList()
+		driver.switchTo().window(handles[-1])
+
+		int maxWait = 30
+		int waited = 0
+		String pdfUrl = driver.getCurrentUrl()
+		while ((pdfUrl == null || pdfUrl.startsWith("about:") || !pdfUrl.toLowerCase().contains("/pdf")) && waited < maxWait) {
+			WebUI.delay(1)
+			waited++
+			pdfUrl = driver.getCurrentUrl()
+		}
+		if (pdfUrl == null || pdfUrl.startsWith("about:") || !pdfUrl.toLowerCase().contains("/pdf")) {
+			throw new Exception("Tidak menemukan URL PDF yang valid di popup. URL terakhir: " + pdfUrl)
+		}
+		WebUI.switchToWindowUrl(pdfUrl)
+		Set<Cookie> cookies = driver.manage().getCookies()
+		String cookieHeader = cookies.collect { "${it.name}=${it.value}" }.join("; ")
+		String resourceDir = RunConfiguration.getProjectDir() + "/Include/resources/"
+		java.nio.file.Files.createDirectories(java.nio.file.Paths.get(resourceDir))
+		String filePath = resourceDir + fileName
+		URL url = new URL(pdfUrl)
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection()
+		connection.setRequestProperty("Cookie", cookieHeader)
+		connection.connect()
+		String contentType = connection.getContentType()
+		if (!contentType?.toLowerCase()?.contains("pdf")) {
+			throw new Exception("URL tidak mengarah ke file PDF. Content-Type: " + contentType)
+		}
+		InputStream input = connection.getInputStream()
+		java.nio.file.Files.copy(input, java.nio.file.Paths.get(filePath), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+		input.close()
+		connection.disconnect()
+		WebUI.comment("File berhasil didownload ke: " + filePath)
+		WebUI.closeBrowser()
+	}
+
+    /**
+     * Membaca file dari folder Include/resources.
+     * @param fileName - nama file yang ingin dibaca
+     * @return byte[] - isi file dalam bentuk byte array
+     */
+    @Keyword
+    static byte[] readFileFromResources(String fileName) {
+        String resourceDir = RunConfiguration.getProjectDir() + "/Include/resources/"
+        String filePath = resourceDir + fileName
+        java.nio.file.Path path = java.nio.file.Paths.get(filePath)
+        if (!java.nio.file.Files.exists(path)) {
+            throw new FileNotFoundException("File tidak ditemukan: " + filePath)
+        }
+        return java.nio.file.Files.readAllBytes(path)
+    }
 }

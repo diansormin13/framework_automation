@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>example_readResultDownload</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b132c5d4-7c0b-42bc-a675-bad6a2ef04f5</testCaseGuid>
+</TestCaseEntity>
