@@ -1,0 +1,29 @@
+{
+  "name": "framework_automation",
+  "version": "1.0.0",
+  "description": "this is my personal project for testing example website local host",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diansormin13/framework_automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/diansormin13/framework_automation/issues"
+  },
+  "homepage": "https://github.com/diansormin13/framework_automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.2.0",
+    "typescript": "^5.9.3"
+  }
+}
