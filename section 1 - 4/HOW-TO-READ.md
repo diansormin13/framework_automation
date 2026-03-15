@@ -1,6 +1,6 @@
 # How to Read Section Files Properly
 
-This guide explains how to preview `section-1.md`, `section-2.md`, and `section-3.md` using **Markdown Live Preview**.
+This guide explains how to preview `section-1.md`, `section-2.md`, `section-3.md`, and `section-4.md` using **Markdown Live Preview**.
 
 ---
 
@@ -24,6 +24,7 @@ Open one of the following files in your code editor (e.g. VS Code):
 | `section-1.md` | JobStreet Indonesia – Registration Test Case Document |
 | `section-2.md` | Bug Report – JPetStore Demo Application |
 | `section-3.md` | QA Automation Questions |
+| `section-4.md` | Automation Exercise Repository Notes |
 
 ---
 

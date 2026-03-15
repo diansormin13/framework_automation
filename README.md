@@ -26,11 +26,12 @@ framework_automation/
 │   └── videos/
 ├── scripts/
 │   └── run-cypress-spec.cjs
-├── section 1 - 3/
+├── section 1 - 4/
 │   ├── HOW-TO-READ.md
 │   ├── section-1.md
 │   ├── section-2.md
-│   └── section-3.md
+│   ├── section-3.md
+│   └── section-4.md
 ├── cypress.config.js
 ├── package.json
 └── README.md
