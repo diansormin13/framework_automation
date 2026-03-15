@@ -7,11 +7,11 @@
     "test": "cypress run",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:full": "cypress run --spec cypress/e2e/full-scenario.cy.js",
-    "cypress:login": "cypress run --spec cypress/e2e/login.cy.js",
-    "cypress:inventory": "cypress run --spec cypress/e2e/inventory.cy.js",
-    "cypress:cart": "cypress run --spec cypress/e2e/cart.cy.js",
-    "cypress:checkout": "cypress run --spec cypress/e2e/checkout.cy.js"
+    "cypress:spec": "node scripts/run-cypress-spec.cjs --headed",
+    "cypress:spec:headless": "node scripts/run-cypress-spec.cjs",
+    "report:merge": "mochawesome-merge cypress/results/*.json -o cypress/results/combined.json",
+    "report:generate": "marge cypress/results/combined.json --reportDir cypress/results/html --inline",
+    "report": "npm run report:merge && npm run report:generate"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/diansormin13/framework_automation#readme",
   "devDependencies": {
-    "cypress": "^15.12.0"
+    "cypress": "^15.12.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
