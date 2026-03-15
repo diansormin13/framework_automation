@@ -1,62 +1,68 @@
 # framework_automation
-This is my personal project for testing a local example website.
 
-## Cypress Structure
+A personal QA automation project using Cypress, testing the JPetStore Demo application. Includes test cases, bug reports, and QA automation documentation.
 
-- `cypress/pages`: page object model for each page
-- `cypress/fixtures/accounts.json`: account credentials
-- `cypress/fixtures/testData.json`: checkout and product test data
-- `cypress/support/commands.js`: custom commands such as `cy.loginByStandardUser()`
-- `cypress/e2e/full-scenario.cy.js`: one large end-to-end scenario
-- `cypress/e2e/*.cy.js`: one file per test case
+## Project Structure
+
+```
+framework_automation/
+├── cypress/
+│   ├── e2e/
+│   │   ├── checkout.cy.js
+│   │   ├── inventory.cy.js
+│   │   └── login.cy.js
+│   ├── fixtures/
+│   │   ├── accounts.json
+│   │   └── testData.json
+│   ├── pages/
+│   │   ├── CartPage.js
+│   │   ├── CheckoutPage.js
+│   │   ├── InventoryPage.js
+│   │   └── LoginPage.js
+│   ├── results/
+│   ├── support/
+│   │   ├── commands.js
+│   │   └── e2e.js
+│   └── videos/
+├── scripts/
+│   └── run-cypress-spec.cjs
+├── section 1 - 3/
+│   ├── HOW-TO-READ.md
+│   ├── section-1.md
+│   ├── section-2.md
+│   └── section-3.md
+├── cypress.config.js
+├── package.json
+└── README.md
+```
 
 ## Browser Configuration
 
-- Only `chrome` and `edge` are allowed.
+Only `chrome` and `edge` are allowed.
 
 ## Run Tests
 
-- `npm run cypress:open`
-- `npm run cypress:run`
-- `npm run cypress:full`
-- `npm run cypress:login`
-- `npm run cypress:inventory`
-- `npm run cypress:cart`
-- `npm run cypress:checkout`
+```bash
+npm run cypress:open
+npm run cypress:run
+npm run cypress:spec
+npm run cypress:spec:headless
+```
 
-## Notes for Pulling the Cypress Branch on Another Device
+## Reports
 
-If the `Cypress` branch is pulled on another laptop or PC, follow these steps:
+```bash
+npm run report:merge
+npm run report:generate
+npm run report
+```
 
-1. Fetch the latest branch and check out the `Cypress` branch.
+## Setup
 
 ```bash
 git fetch origin
 git checkout Cypress
 git pull origin Cypress
-```
-
-2. Install the project dependencies.
-
-```bash
 npm install
-```
-
-3. Verify that the Cypress binary is installed.
-
-```bash
 npx cypress verify
 ```
-
-4. Run the tests as needed.
-
-```bash
-npm run cypress:open
-# or
-npm run cypress:run -- --browser chrome
-npm run cypress:run -- --browser edge
-```
-
-Notes:
-- The project configuration limits browsers to `chrome` and `edge`.
-- For Linux or container environments, if Cypress fails to start because of missing OS dependencies, install the required system packages such as `xvfb` and related GUI libraries.
