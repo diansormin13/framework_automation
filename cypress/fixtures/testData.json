@@ -1,0 +1,17 @@
+{
+  "checkout": {
+    "firstName": "Dian",
+    "lastName": "Sormin",
+    "postalCode": "12345"
+  },
+  "products": {
+    "primary": {
+      "name": "Sauce Labs Backpack",
+      "slug": "sauce-labs-backpack"
+    },
+    "secondary": {
+      "name": "Sauce Labs Bike Light",
+      "slug": "sauce-labs-bike-light"
+    }
+  }
+}

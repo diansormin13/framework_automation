@@ -1,0 +1,31 @@
+{
+  "name": "framework_automation",
+  "version": "1.0.0",
+  "description": "this is my personal project for testing example website local host",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:full": "cypress run --spec cypress/e2e/full-scenario.cy.js",
+    "cypress:login": "cypress run --spec cypress/e2e/login.cy.js",
+    "cypress:inventory": "cypress run --spec cypress/e2e/inventory.cy.js",
+    "cypress:cart": "cypress run --spec cypress/e2e/cart.cy.js",
+    "cypress:checkout": "cypress run --spec cypress/e2e/checkout.cy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diansormin13/framework_automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/diansormin13/framework_automation/issues"
+  },
+  "homepage": "https://github.com/diansormin13/framework_automation#readme",
+  "devDependencies": {
+    "cypress": "^15.12.0"
+  }
+}
