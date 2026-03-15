@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-03-15T18:41:16.122Z",
+    "end": "2026-03-15T18:41:25.881Z",
+    "duration": 9759,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "94e7871e-dad7-4785-8e63-7f04c2b115f9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\inventory.cy.js",
+      "file": "cypress\\e2e\\inventory.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+          "title": "Inventory test case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "adds a product to cart and shows it in the cart page",
+              "fullTitle": "Inventory test case adds a product to cart and shows it in the cart page",
+              "timedOut": null,
+              "duration": 1685,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.processAddToChart(testData.products.primary.slug, testData.products.primary.name, cartBadgeCount);",
+              "err": {},
+              "uuid": "ed1108ad-a13c-4f84-8517-efb1a1fc9ce6",
+              "parentUUID": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "adds one item then removes it on inventory page and cart badge disappears",
+              "fullTitle": "Inventory test case adds one item then removes it on inventory page and cart badge disappears",
+              "timedOut": null,
+              "duration": 1303,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.addProductToCart(testData.products.primary.slug);\n_InventoryPage.default.assertCartBadgeCount(1);\n_InventoryPage.default.removeProductFromInventory(testData.products.primary.slug);\n_InventoryPage.default.assertCartBadgeNotVisible();",
+              "err": {},
+              "uuid": "c15f573f-67e7-4248-b762-51acc826e171",
+              "parentUUID": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "removes a product from cart and the product is no longer displayed",
+              "fullTitle": "Inventory test case removes a product from cart and the product is no longer displayed",
+              "timedOut": null,
+              "duration": 1242,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.processAddToChart(testData.products.primary.slug, testData.products.primary.name, cartBadgeCount);\n_CartPage.default.removeProductFromCart(testData.products.primary.slug);\n_CartPage.default.assertProductNotInCart(testData.products.primary.name);",
+              "err": {},
+              "uuid": "314df9b8-5e8f-4735-80c6-cbc70c316546",
+              "parentUUID": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "adds two items to cart and shows both items in the cart page",
+              "fullTitle": "Inventory test case adds two items to cart and shows both items in the cart page",
+              "timedOut": null,
+              "duration": 1250,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.addProductToCart(testData.products.primary.slug);\n_InventoryPage.default.addProductToCart(testData.products.secondary.slug);\n_InventoryPage.default.assertCartBadgeCount(2);\n_InventoryPage.default.openCart();\n_CartPage.default.assertCartPage();\n_CartPage.default.assertProductInCart(testData.products.primary.name);\n_CartPage.default.assertProductInCart(testData.products.secondary.name);",
+              "err": {},
+              "uuid": "072bbfbf-6e00-4139-98e6-a7429b58d71d",
+              "parentUUID": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "adds two items then removes one item from cart detail page",
+              "fullTitle": "Inventory test case adds two items then removes one item from cart detail page",
+              "timedOut": null,
+              "duration": 1343,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.addProductToCart(testData.products.primary.slug);\n_InventoryPage.default.addProductToCart(testData.products.secondary.slug);\n_InventoryPage.default.assertCartBadgeCount(2);\n_InventoryPage.default.openCart();\n_CartPage.default.assertCartPage();\n_CartPage.default.removeProductFromCart(testData.products.primary.slug);\n_InventoryPage.default.assertCartBadgeCount(1);\n_CartPage.default.assertProductNotInCart(testData.products.primary.name);\n_CartPage.default.assertProductInCart(testData.products.secondary.name);",
+              "err": {},
+              "uuid": "aa0b6baf-9309-4215-9ebb-6e83bbc757f8",
+              "parentUUID": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "decreases cart count when remove is clicked on inventory page",
+              "fullTitle": "Inventory test case decreases cart count when remove is clicked on inventory page",
+              "timedOut": null,
+              "duration": 1292,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.addProductToCart(testData.products.primary.slug);\n_InventoryPage.default.addProductToCart(testData.products.secondary.slug);\n_InventoryPage.default.assertCartBadgeCount(2);\n_InventoryPage.default.removeProductFromInventory(testData.products.primary.slug);\n_InventoryPage.default.assertCartBadgeCount(1);",
+              "err": {},
+              "uuid": "e507a105-9668-41c1-816d-8fddb36919d1",
+              "parentUUID": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "adds two items then removes both items from cart detail page",
+              "fullTitle": "Inventory test case adds two items then removes both items from cart detail page",
+              "timedOut": null,
+              "duration": 1449,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.addProductToCart(testData.products.primary.slug);\n_InventoryPage.default.addProductToCart(testData.products.secondary.slug);\n_InventoryPage.default.assertCartBadgeCount(2);\n_InventoryPage.default.openCart();\n_CartPage.default.assertCartPage();\n_CartPage.default.removeProductFromCart(testData.products.primary.slug);\n_CartPage.default.removeProductFromCart(testData.products.secondary.slug);\n_InventoryPage.default.assertCartBadgeNotVisible();\n_CartPage.default.assertProductNotInCart(testData.products.primary.name);\n_CartPage.default.assertProductNotInCart(testData.products.secondary.name);",
+              "err": {},
+              "uuid": "c3056350-0aa4-445c-8353-b323f770dc5a",
+              "parentUUID": "04db6cbb-79e4-42e7-809d-5719d27b9ad1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed1108ad-a13c-4f84-8517-efb1a1fc9ce6",
+            "c15f573f-67e7-4248-b762-51acc826e171",
+            "314df9b8-5e8f-4735-80c6-cbc70c316546",
+            "072bbfbf-6e00-4139-98e6-a7429b58d71d",
+            "aa0b6baf-9309-4215-9ebb-6e83bbc757f8",
+            "e507a105-9668-41c1-816d-8fddb36919d1",
+            "c3056350-0aa4-445c-8353-b323f770dc5a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9564,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

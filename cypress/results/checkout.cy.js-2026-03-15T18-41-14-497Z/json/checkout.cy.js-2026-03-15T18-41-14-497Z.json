@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-03-15T18:40:53.339Z",
+    "end": "2026-03-15T18:41:13.434Z",
+    "duration": 20095,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "98afaa23-d0bc-4bc3-a4e8-35c4bb738ca9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkout.cy.js",
+      "file": "cypress\\e2e\\checkout.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16c74d28-a6b5-4659-aeb7-0acad1a1f9a3",
+          "title": "Checkout test case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "completes checkout for a single product",
+              "fullTitle": "Checkout test case completes checkout for a single product",
+              "timedOut": null,
+              "duration": 4687,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToCheckoutInformationStep();\n_CheckoutPage.default.processToFinalCheckout(testData.checkout.firstName, testData.checkout.lastName, testData.checkout.postalCode);\n_LoginPage.default.assertLoginSuccess();",
+              "err": {},
+              "uuid": "50fcff0b-a3d3-41e7-a208-4609fc6ca4f8",
+              "parentUUID": "16c74d28-a6b5-4659-aeb7-0acad1a1f9a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "shows an error when postal code is empty",
+              "fullTitle": "Checkout test case shows an error when postal code is empty",
+              "timedOut": null,
+              "duration": 5696,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToCheckoutInformationStep();\n_CheckoutPage.default.fillInformation(testData.checkout.firstName, testData.checkout.lastName, '');\n_CheckoutPage.default.continue();\n_CheckoutPage.default.assertPostalCodeRequiredError();",
+              "err": {},
+              "uuid": "b354f124-29b2-4742-9dd3-56247adbda47",
+              "parentUUID": "16c74d28-a6b5-4659-aeb7-0acad1a1f9a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "shows an error when first name is empty",
+              "fullTitle": "Checkout test case shows an error when first name is empty",
+              "timedOut": null,
+              "duration": 2554,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToCheckoutInformationStep();\n_CheckoutPage.default.fillInformation('', testData.checkout.lastName, testData.checkout.postalCode);\n_CheckoutPage.default.continue();\n_CheckoutPage.default.assertFirstNameRequiredError();",
+              "err": {},
+              "uuid": "9bea8276-7ae0-4ee0-a705-b4c1e3461141",
+              "parentUUID": "16c74d28-a6b5-4659-aeb7-0acad1a1f9a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "shows an error when last name is empty",
+              "fullTitle": "Checkout test case shows an error when last name is empty",
+              "timedOut": null,
+              "duration": 2293,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToCheckoutInformationStep();\n_CheckoutPage.default.fillInformation(testData.checkout.firstName, '', testData.checkout.postalCode);\n_CheckoutPage.default.continue();\n_CheckoutPage.default.assertLastNameRequiredError();",
+              "err": {},
+              "uuid": "541e2baf-9f25-44d6-ae5e-6b590aebd8bd",
+              "parentUUID": "16c74d28-a6b5-4659-aeb7-0acad1a1f9a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "shows an error when first name, last name, and postal code are empty",
+              "fullTitle": "Checkout test case shows an error when first name, last name, and postal code are empty",
+              "timedOut": null,
+              "duration": 1878,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToCheckoutInformationStep();\n_CheckoutPage.default.fillInformation('', '', '');\n_CheckoutPage.default.continue();\n_CheckoutPage.default.assertFirstNameRequiredError();",
+              "err": {},
+              "uuid": "b7e8e350-bc7e-4441-b278-6b1ee70e0890",
+              "parentUUID": "16c74d28-a6b5-4659-aeb7-0acad1a1f9a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "completes checkout for more than one item",
+              "fullTitle": "Checkout test case completes checkout for more than one item",
+              "timedOut": null,
+              "duration": 2776,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.addProductToCart(testData.products.primary.slug);\n_InventoryPage.default.addProductToCart(testData.products.secondary.slug);\n_InventoryPage.default.assertCartBadgeCount(2);\n_InventoryPage.default.openCart();\n_CartPage.default.assertCartPage();\n_CartPage.default.assertProductInCart(testData.products.primary.name);\n_CartPage.default.assertProductInCart(testData.products.secondary.name);\n_CartPage.default.continueToCheckout();\n_CheckoutPage.default.processToFinalCheckout(testData.checkout.firstName, testData.checkout.lastName, testData.checkout.postalCode);\n_LoginPage.default.assertLoginSuccess();",
+              "err": {},
+              "uuid": "ac303074-459e-4daa-b668-5ae1a2d5d21c",
+              "parentUUID": "16c74d28-a6b5-4659-aeb7-0acad1a1f9a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50fcff0b-a3d3-41e7-a208-4609fc6ca4f8",
+            "b354f124-29b2-4742-9dd3-56247adbda47",
+            "9bea8276-7ae0-4ee0-a705-b4c1e3461141",
+            "541e2baf-9f25-44d6-ae5e-6b590aebd8bd",
+            "b7e8e350-bc7e-4441-b278-6b1ee70e0890",
+            "ac303074-459e-4daa-b668-5ae1a2d5d21c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19884,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

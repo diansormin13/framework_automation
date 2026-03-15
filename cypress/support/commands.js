@@ -1,4 +1,4 @@
-const loginPage = require('../pages/LoginPage');
+import loginPage from '../pages/LoginPage';
 
 Cypress.Commands.add('loginByStandardUser', () => {
   cy.fixture('accounts').then(({ standardUser }) => {
